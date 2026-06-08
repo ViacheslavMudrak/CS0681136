@@ -1,0 +1,50 @@
+name: Deploy to Test-Customer-Portal
+
+on:
+  push:
+    branches:
+      - Test
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "latest"
+
+      # Copy root .npmrc into app folder.
+      - name: Copy .npmrc into app folder
+        run: cp .npmrc headapps/customer-portal/.npmrc
+
+      # Just to verify the file, not required for auth
+      - name: Show .npmrc (masked)
+        working-directory: headapps/customer-portal
+        run: |
+          echo "----- .npmrc in headapps/customer-portal -----"
+          sed 's/_authToken=.*/_authToken=***MASKED***/' .npmrc
+          echo "----------------------------------------------"
+
+      - name: Install dependencies
+        working-directory: headapps/customer-portal
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }} # PAT with read:packages
+        run: |
+          echo "Using NODE_AUTH_TOKEN length: ${#NODE_AUTH_TOKEN}"
+          npm whoami --registry=https://npm.pkg.github.com || echo "npm whoami failed"
+          npm install
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_Test_Customer_Portal }}
+        run: vercel --prod --token "$VERCEL_TOKEN" --yes

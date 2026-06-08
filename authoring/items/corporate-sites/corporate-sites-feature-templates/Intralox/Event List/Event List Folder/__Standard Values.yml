@@ -1,0 +1,36 @@
+﻿---
+ID: "51f955da-a73a-4db8-9d11-6395520f1285"
+Parent: "d1a442ba-a8d7-4fc6-a845-8d7ce9a88b6d"
+Template: "d1a442ba-a8d7-4fc6-a845-8d7ce9a88b6d"
+Path: /sitecore/templates/Feature/Intralox/Event List/Event List Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {5B5D3B58-6330-466B-92DF-CE491E96E3E3}
+    {D1A442BA-A8D7-4FC6-A845-8D7CE9A88B6D}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ef96bf18-f334-450f-9519-e4cfe10a5d4c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "731670e3-d260-4121-84bb-18c39c2c889f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T132318Z

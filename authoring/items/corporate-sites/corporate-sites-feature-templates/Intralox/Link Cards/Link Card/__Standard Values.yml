@@ -1,0 +1,47 @@
+﻿---
+ID: "a5216abe-01ed-4ee6-9bd6-e714bc74593b"
+Parent: "aaf2b0e4-b245-4e67-ba26-bd07ec48fafa"
+Template: "aaf2b0e4-b245-4e67-ba26-bd07ec48fafa"
+Path: /sitecore/templates/Feature/Intralox/Link Cards/Link Card/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "88fbfc23-9e93-46ac-9381-d61cee628c18"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05221212-7cca-495e-9f93-3cbbfce617f2"
+      Hint: Heading
+      Value: $name
+    - ID: "0d893434-ad83-4e1c-a0b6-15c76c7595ba"
+      Hint: FocalPoint
+      Value: "{F16912F9-3803-4887-A707-77EDEA71883C}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T085120Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3538f113-847f-461f-91a8-835002b4b307"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "bcfbdf01-7c20-4cec-9576-e013ba324758"
+      Hint: ColorScheme
+      Value: "{47BF3139-E40B-4EC4-923C-60EFC6E95238}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T100506Z

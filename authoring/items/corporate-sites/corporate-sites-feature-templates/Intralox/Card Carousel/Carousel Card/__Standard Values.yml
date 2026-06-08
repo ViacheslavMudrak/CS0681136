@@ -1,0 +1,44 @@
+﻿---
+ID: "9579e5c2-8556-4a2c-8682-54e2e3f2274a"
+Parent: "4ca6f4c2-3be8-4716-bb91-a07ee4999247"
+Template: "4ca6f4c2-3be8-4716-bb91-a07ee4999247"
+Path: /sitecore/templates/Feature/Intralox/Card Carousel/Carousel Card/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "88fbfc23-9e93-46ac-9381-d61cee628c18"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T085120Z
+    - ID: "4e87ffc8-673f-4438-b293-df9ea649d5bb"
+      Hint: Heading
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "57dc5b9b-8404-4b29-be72-86a4076e9041"
+      Hint: ImageOnTop
+      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a68b70ab-d020-44e4-b2a4-b52fdde80ea7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260523T080941Z

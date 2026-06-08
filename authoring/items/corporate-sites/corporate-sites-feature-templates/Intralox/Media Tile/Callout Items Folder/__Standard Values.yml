@@ -1,0 +1,38 @@
+﻿---
+ID: "3c3e0c06-5847-4432-a714-028daa0cb4cc"
+Parent: "cc1c5c22-532f-4423-a8d1-733a89975745"
+Template: "cc1c5c22-532f-4423-a8d1-733a89975745"
+Path: /sitecore/templates/Feature/Intralox/Media Tile/Callout Items Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{9F565630-79F5-4956-B862-F1B2E68DBD1C}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "073b72fe-c99c-4594-8a53-93f0abc44a2c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260306T123950Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a88830ee-1fd2-4d58-a8b9-65ff6996e0d9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T124016Z

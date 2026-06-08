@@ -1,0 +1,42 @@
+﻿---
+ID: "7ce8c796-8915-49de-9b1c-1104de219c2e"
+Parent: "e852d6ca-befd-4fa2-9187-2bdafe82fa32"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site/Presentation/Available Renderings/Language Switcher"
+BranchID: "acbd1039-3973-4357-8303-31eac2d89b0c"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: "{9AC489E2-3852-4843-8090-B9D1D7EDCD12}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3faab412-7e29-45c3-867c-e03e880376a9"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C5CAF6E6-A9FD-4831-BFA5-9F5DF06CCE8F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251218T100308Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "65241e28-dfec-4cfd-9b5e-3f688d6b6300"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251218T100308Z

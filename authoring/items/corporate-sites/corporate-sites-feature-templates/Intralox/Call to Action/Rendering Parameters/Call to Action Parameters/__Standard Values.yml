@@ -1,0 +1,36 @@
+﻿---
+ID: "1da59cb3-28c2-4bc8-b99d-cca8b37351a3"
+Parent: "2b4b681c-2221-4503-b5c2-44a645c7ec28"
+Template: "2b4b681c-2221-4503-b5c2-44a645c7ec28"
+Path: /sitecore/templates/Feature/Intralox/Call to Action/Rendering Parameters/Call to Action Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07ba54ac-df2d-4371-bff7-96b7f32cc9b5"
+      Hint: ButtonPosition
+      Value: "{2D7B1F8F-F96B-4BA2-86B7-A770D6ACFC8C}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "2ab259ef-17e0-49c6-a1c6-d692d40d18cc"
+      Hint: ContrastText
+      Value: 
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "19739b41-054a-4c49-ac29-ae423463f82b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9447211-94ff-4cc7-9d23-6e433292bb34"
+      Hint: Width
+      Value: "{3C3EB5BC-D2B8-4E40-AF6F-75AC38DBE7D6}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T142358Z

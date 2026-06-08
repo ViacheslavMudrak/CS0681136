@@ -1,0 +1,33 @@
+﻿---
+ID: "3c038cd1-5604-4242-856e-e0d320ee2f76"
+Parent: "e2aece58-8d3d-4a75-b604-c83bc5e0587f"
+Template: "e2aece58-8d3d-4a75-b604-c83bc5e0587f"
+Path: /sitecore/templates/Feature/Intralox/FAQ/FAQ/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{974D7235-016E-43E2-8D7A-0EFC2FEF9452}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9a3a24dd-2606-4216-a472-5427213beb7d"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T095750Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b66e76fd-90e2-45fd-aa3c-42423d228ba6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260326T053753Z

@@ -1,0 +1,41 @@
+﻿---
+ID: "6631500b-332c-4cda-a4b7-6e6fa549d74f"
+Parent: "af58e5a4-b121-45e4-910e-7370efe97bcf"
+Template: "af58e5a4-b121-45e4-910e-7370efe97bcf"
+Path: /sitecore/templates/Feature/Intralox/Header/Top Navigation Bar/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{EA02D488-7801-47A0-8F5A-0FE0294B72CE}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c9341010-9ee5-426d-b17b-d64f30e0cb26"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260213T074817Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21de626e-6e41-4b9d-800b-8366a3df63bd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260224T092454Z

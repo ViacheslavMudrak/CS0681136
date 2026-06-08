@@ -1,0 +1,27 @@
+﻿---
+ID: "6c221ac2-b54e-4be4-a05d-541675dc3587"
+Parent: "3b6db8b7-6503-40f6-9404-a844ee4a24c4"
+Template: "3b6db8b7-6503-40f6-9404-a844ee4a24c4"
+Path: /sitecore/templates/Feature/Customer Portal/PortalShell SideNav/Rendering Parameters/PortalShellSideNav Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2cd4111-aa7f-448f-bcd0-425b037de440"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260303T062153Z

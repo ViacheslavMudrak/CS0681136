@@ -1,0 +1,27 @@
+﻿---
+ID: "6363af99-6da9-4c5f-abb6-eec7a8f19bd6"
+Parent: "cb978f68-78ca-4e98-9aeb-5adf537b268d"
+Template: "cb978f68-78ca-4e98-9aeb-5adf537b268d"
+Path: /sitecore/templates/Feature/Customer Portal/Contact Support/Rendering Parameters/ContactSupport Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ba9c549c-613e-4150-a8fb-5eed2fd25708"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\suneel.joshi@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251222T123555Z

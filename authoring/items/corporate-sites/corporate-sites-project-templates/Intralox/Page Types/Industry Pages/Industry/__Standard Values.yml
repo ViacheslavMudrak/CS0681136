@@ -1,0 +1,44 @@
+﻿---
+ID: "56dcd411-d9b0-4308-9729-32078aec5fbf"
+Parent: "cd3d31c0-a217-48f4-8680-75178dc0d35b"
+Template: "cd3d31c0-a217-48f4-8680-75178dc0d35b"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Industry Pages/Industry/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D43AF2C7-8BEF-41E0-862D-67FFEE6FB3EC}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "443e9e99-5e09-4963-acb9-384ba4c8241e"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260306T155049Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "7de6f993-71fb-479e-b085-3602ef1490ac"
+      Hint: ShowFloatingButton
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fca202fe-cf23-4872-acfc-857295fc262f"
+    - ID: "93ef0117-e551-4061-8ec8-71bb9f44a4ae"
+      Hint: ShowSubNavigation
+      Value: 1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T165149Z

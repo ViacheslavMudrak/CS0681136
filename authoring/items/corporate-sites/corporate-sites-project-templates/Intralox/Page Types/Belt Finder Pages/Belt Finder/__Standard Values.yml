@@ -1,0 +1,31 @@
+﻿---
+ID: "2c2c735d-3fe6-4913-b510-a5b402db7e31"
+Parent: "ef4a2ec2-2504-43d0-8a61-8efa6343f14c"
+Template: "ef4a2ec2-2504-43d0-8a61-8efa6343f14c"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Belt Finder Pages/Belt Finder/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T094122Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34ab6d92-251d-4ab0-939a-be79ad08bdd7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T094122Z

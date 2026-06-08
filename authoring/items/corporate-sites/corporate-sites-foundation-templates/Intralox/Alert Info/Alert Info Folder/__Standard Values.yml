@@ -1,0 +1,38 @@
+﻿---
+ID: "0d6ee98d-b32b-4976-b737-b032f3a3f02d"
+Parent: "13d696b1-592e-44b8-b64b-7b7ac11f6872"
+Template: "13d696b1-592e-44b8-b64b-7b7ac11f6872"
+Path: /sitecore/templates/Foundation/Intralox/Alert Info/Alert Info Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{63B4BABB-055D-405F-B721-4A5BE47667C9}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "28de7f17-c3e5-497f-afa8-dffd75743075"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260306T163315Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e93661f5-9deb-44f8-bc7a-b09776b944aa"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260528T091525Z

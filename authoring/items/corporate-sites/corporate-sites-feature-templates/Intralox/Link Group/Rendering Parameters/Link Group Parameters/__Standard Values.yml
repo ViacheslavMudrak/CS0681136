@@ -1,0 +1,36 @@
+﻿---
+ID: "d35f664e-9f58-413f-a35f-47802cbf2811"
+Parent: "f94de805-8469-44aa-ae89-ab29b9cc85ff"
+Template: "f94de805-8469-44aa-ae89-ab29b9cc85ff"
+Path: /sitecore/templates/Feature/Intralox/Link Group/Rendering Parameters/Link Group Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "898a2b61-edfa-4fc8-9664-da7f73476d57"
+      Hint: ColorScheme
+      Value: "{3DE0AE27-A305-4297-A27B-17FE9C2BDB17}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc322792-adb6-46ab-8765-7e5531852457"
+    - ID: "9f1246b6-253d-4639-8860-f1234102f33f"
+      Hint: TextAlign
+      Value: "{600A0C7B-BCC0-47AD-BEBE-80B90F3670E4}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "bf244e43-3674-4447-a8ec-f5cfac9516e6"
+      Hint: Columns
+      Value: "{BDE66FA2-DC46-4237-9EE6-AD92C066BCB0}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260413T065207Z

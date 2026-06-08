@@ -1,0 +1,34 @@
+﻿---
+ID: "b37bf681-1fee-4ebc-8c81-25c265d146b9"
+Parent: "002ea6c8-8088-4594-bd52-ae3bb714a033"
+Template: "002ea6c8-8088-4594-bd52-ae3bb714a033"
+Path: /sitecore/templates/Foundation/Intralox/Page Setting/Container Width/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260528T162639Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c094d431-28e1-4db3-b8a0-a455b7683843"
+    - ID: "ac8ba681-d644-4f29-b850-a05706b71c5f"
+      Hint: ContainerWidth
+      Value: "{8FD2D2D8-7AFB-4B39-9717-2CA775AF3794}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T120930Z

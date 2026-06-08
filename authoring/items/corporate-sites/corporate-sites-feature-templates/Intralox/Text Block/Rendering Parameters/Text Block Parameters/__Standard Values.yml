@@ -1,0 +1,42 @@
+﻿---
+ID: "15c2c346-1964-4291-bb08-ca88e66a8702"
+Parent: "3a903685-30ac-421b-859b-f4b18df6cfab"
+Template: "3a903685-30ac-421b-859b-f4b18df6cfab"
+Path: /sitecore/templates/Feature/Intralox/Text Block/Rendering Parameters/Text Block Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "682d6ee9-9213-4cc4-92c8-4aed56703e61"
+      Hint: TextAlignment
+      Value: "{8389A074-6851-4568-AE01-6EB6EFD6C35D}"
+    - ID: "70ebdb3a-dd6b-4b47-9193-4052c258b032"
+      Hint: TextWidth
+      Value: "{F5BEB22F-1BD9-4021-A227-21BCFD980CBC}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cfed7678-6e3c-4734-b596-df4b3a1c3efa"
+    - ID: "a0f2ce34-840c-4ea0-ad7d-ac80746b2de0"
+      Hint: ColorScheme
+      Value: "{83759E94-15E7-41DF-B05C-2F234ADAF2EA}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "c482ee3d-a950-434e-b7f6-446d68aebf19"
+      Hint: Theme
+      Value: "{BFE5C117-497F-4FF2-8A4B-FE4AF2502533}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260331T124452Z
+    - ID: "fcd25fb4-2705-4c66-974b-786b06652d9c"
+      Hint: TextStyle
+      Value: "{28DC897A-59DD-4226-BBD5-49BE85DA260A}"

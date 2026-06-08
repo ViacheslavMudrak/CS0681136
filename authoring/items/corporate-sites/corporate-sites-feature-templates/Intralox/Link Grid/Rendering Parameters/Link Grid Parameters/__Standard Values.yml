@@ -1,0 +1,42 @@
+﻿---
+ID: "0cf62f5e-a7bd-4b8e-99f2-957372b33874"
+Parent: "5d69472c-5e15-484c-b0de-54dd8d7940dd"
+Template: "5d69472c-5e15-484c-b0de-54dd8d7940dd"
+Path: /sitecore/templates/Feature/Intralox/Link Grid/Rendering Parameters/Link Grid Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "2d795519-1198-4f0d-8b13-78272df0360c"
+      Hint: Width
+      Value: "{3C3EB5BC-D2B8-4E40-AF6F-75AC38DBE7D6}"
+    - ID: "462c217e-a816-4e33-96f0-0a8daad0f596"
+      Hint: TextAlignment
+      Value: "{8389A074-6851-4568-AE01-6EB6EFD6C35D}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2fdb63c5-4a9e-4e2c-8983-d050153d65a2"
+    - ID: "975893de-7b9c-47ec-bed3-601e4ab20dcf"
+      Hint: ColorScheme
+      Value: "{346A5881-D1EC-46FD-9B2F-91B8B6CED234}"
+    - ID: "aa6e43a5-4025-4da2-a3f7-0eab5bb367c9"
+      Hint: HeadlineSize
+      Value: "{084B13B2-A095-41E0-AD86-C7A66C392AD6}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T121512Z
+    - ID: "f5045d1e-1812-4f4e-aa0f-a179f96356cd"
+      Hint: CardSize
+      Value: "{A99E8C4A-0290-4CDE-A279-CE148C5700FB}"

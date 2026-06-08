@@ -1,0 +1,36 @@
+---
+description: PR checklist for customer-portal UI changes
+alwaysApply: false
+globs:
+  - "src/components/**"
+  - "src/app/**"
+---
+
+# Customer Portal PR Checklist (UI)
+
+Before merging UI work:
+
+## Styling
+
+- [ ] No **new** `*.module.css` or component-scoped `.scss` files
+- [ ] Colors use design tokens (`bg-bg-basic`, `text-text-heading`, `border-border-default`, `bg-portal-sidebar-start`, etc.)
+- [ ] No new `bg-[#...]` / `text-gray-*` when a token exists
+- [ ] Touching a component with a CSS module → migrate module to inline Tailwind in the same PR when feasible (boy scout rule)
+
+## Interactive UI
+
+- [ ] Prefer `@laitram-l-l-c/intralox-ui-components` via `src/components/ui/` wrappers
+- [ ] Direct `react-aria-components` only when DS lacks the primitive; follow `ui-components.mdc`
+- [ ] Dialogs: controlled `isOpen` on overlay — no `if (!isOpen) return null`
+- [ ] Tables: `selectionMode` + `Checkbox slot="selection"` when row selection is enabled
+
+## Metrics (track over time)
+
+| Metric                                | Target                             |
+| ------------------------------------- | ---------------------------------- |
+| `*.module.css` under `src/components` | Decrease each sprint; goal &lt; 30 |
+| TSX files importing `*.module.css`    | Decrease; goal &lt; 15%            |
+
+Referenced:
+@.cursor/rules/general.mdc
+@.cursor/rules/ui-components.mdc

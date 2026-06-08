@@ -1,0 +1,36 @@
+﻿---
+ID: "ea6c28e2-88b6-4546-be3a-eccf687e37d9"
+Parent: "55e958f4-ab00-4a14-9ca9-6f3ca4cfb0fa"
+Template: "55e958f4-ab00-4a14-9ca9-6f3ca4cfb0fa"
+Path: /sitecore/templates/Feature/Customer Portal/Order Management/OrderManagement Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {DE95FFA8-69AF-4FB7-ADC2-505B5698CE66}
+    {55E958F4-AB00-4A14-9CA9-6F3CA4CFB0FA}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "a8b01508-39eb-43c6-a714-c8a8baa4f2ce"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "25b24d1a-bfa3-444b-8baf-5f17f6ade68d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260324T090705Z

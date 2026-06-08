@@ -1,0 +1,27 @@
+﻿---
+ID: "56812d18-584c-458d-acec-fe0e413a909c"
+Parent: "5fecd8e6-173c-4007-a7a2-4c9ceaf40c64"
+Template: "5fecd8e6-173c-4007-a7a2-4c9ceaf40c64"
+Path: /sitecore/templates/Feature/Intralox/Cookie Banner/Rendering Parameters/Cookie Banner Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3c6160e-aefa-41a8-b0f0-b9b84abcb02d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T065642Z

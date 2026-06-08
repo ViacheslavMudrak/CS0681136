@@ -1,0 +1,111 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "customerportal",
+  "items": {
+    "path": "customerportal",
+    "includes": [
+      {
+        "name": "Customer-App-Project-Templates",
+        "path": "/sitecore/templates/Project/Customer App",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "Customer-App-Feature-Templates",
+        "path": "/sitecore/templates/Feature/Customer Portal",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "Customer-App-Feature-Branch-Templates",
+        "path": "/sitecore/templates/Branches/Feature/Customer Portal",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "Customer-App-Feature-Renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Customer Portal",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "Customer-App-Feature-Placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Customer Portal",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "Customer-App-Feature-Settings",
+        "path": "/sitecore/system/Settings/Feature/Customer Portal",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "Customer-App-Project-Settings",
+        "path": "/sitecore/system/Settings/Project/Customer App",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "Customer-App-Tenant-Folder",
+        "path": "/sitecore/content/Customer Sites",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Tenant",
+        "path": "/sitecore/content/Customer Sites/Customer App",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Site-Folder",
+        "path": "/sitecore/content/Customer Sites/Customer App/CXP",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Global-Folder",
+        "path": "/sitecore/content/Customer Sites/Customer App/Global",
+        "scope": "ItemAndChildren",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Shared-Site-Folder",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Shared-Site",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Shared-Available-Renderings",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site/Presentation/Available Renderings",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "Customer-App-Shared-Headless-Variants",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site/Presentation/Headless Variants",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "Customer-App-Shared-Global-Style",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site/Presentation/Styles",
+        "scope": "ItemAndChildren",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Customer-App-Shared-Data-Folder",
+        "path": "/sitecore/content/Customer Sites/Customer App/Shared Site/shared-site/Data",
+        "scope": "ItemAndChildren",
+        "allowedPushOperations": "CreateOnly"
+      }
+    ]
+  }
+}

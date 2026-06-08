@@ -1,0 +1,50 @@
+﻿---
+ID: "1de7d8a5-f453-459a-b142-ebb42408cd88"
+Parent: "5a279d0e-4273-459d-b5f4-89e2affaed85"
+Template: "5a279d0e-4273-459d-b5f4-89e2affaed85"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {5A279D0E-4273-459D-B5F4-89E2AFFAED85}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c474e782-13eb-45fd-9aa8-ae906ad777be"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260210T090329Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5cea847a-d468-49c0-b78a-dd3383e8dca3"
+    - ID: "934af159-6fb4-4e20-804a-75745113c833"
+      Hint: Title
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "bcc7991f-46e1-43c2-8516-8ac768d70886"
+      Hint: FaviconIcon
+      Value: |
+        <image mediaid="{F6913233-94BE-4D93-8F32-DE8200DC0508}" alt="Intralox" height="" width="" hspace="" vspace="" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T095631Z

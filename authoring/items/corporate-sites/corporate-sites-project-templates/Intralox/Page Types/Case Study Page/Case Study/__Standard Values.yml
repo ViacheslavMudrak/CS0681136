@@ -1,0 +1,41 @@
+﻿---
+ID: "ecf61873-5478-44aa-9531-4d35ba510773"
+Parent: "3adfb01b-06cb-4ddf-815f-479554f6202f"
+Template: "3adfb01b-06cb-4ddf-815f-479554f6202f"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Case Study Page/Case Study/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ab0f551d-1834-4c43-a85d-3ea812e4859d"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T084842Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1ca4353-d96e-40af-a22a-27f585d9c356"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "cf5c9f33-2583-433d-976c-2599bc31c23e"
+      Hint: Company
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260527T183440Z

@@ -1,0 +1,47 @@
+﻿---
+ID: "811f69db-e011-4835-9d6e-dd2847d5b51b"
+Parent: "d41f568d-fe86-43a0-83f4-11c238b15cb5"
+Template: "d41f568d-fe86-43a0-83f4-11c238b15cb5"
+Path: /sitecore/templates/Project/Customer App/Page/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {D41F568D-FE86-43A0-83F4-11C238B15CB5}
+    {9D9F1ECF-AEA7-4BC8-9AF2-1E26D62CED7D}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "82f2a84c-9a7f-4648-a398-c78709a38422"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251120T121956Z
+    - ID: "307f47ec-f66d-446e-9f33-4bfe7217c8c5"
+      Hint: Title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\suneel.joshi@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\suneel.joshi@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0afa92b3-b28e-4434-9280-15052f30fec5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\suneel.joshi@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260325T134113Z

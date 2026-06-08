@@ -1,0 +1,36 @@
+﻿---
+ID: "02fc0e1e-5387-40cf-8957-42a0b45903e9"
+Parent: "79b7e5ef-9457-4be6-b82a-5777baa23868"
+Template: "79b7e5ef-9457-4be6-b82a-5777baa23868"
+Path: /sitecore/templates/Feature/Intralox/Timeline/Timeline Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {ABCB7872-7D09-4DE1-8498-53C884B4D590}
+    {79B7E5EF-9457-4BE6-B82A-5777BAA23868}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c20388b4-1fb4-4113-936b-ba4a30856413"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "19c4adb7-af42-4937-953f-377fc6247459"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260423T140156Z

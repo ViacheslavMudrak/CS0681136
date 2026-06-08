@@ -1,0 +1,14 @@
+/**
+ * Per-site overrides for @theme tokens defined in `variables.scss`.
+ *
+ * `html[data-site]` is set early in `app/[site]/layout.tsx` (see `siteThemeDataAttr`).
+ * Add one `html[data-site='…']` block per Sitecore site slug.
+ *
+ * Example: Site name `My Brand` → slug `my-brand`. Duplicate the `accent-blue`
+ * template, rename the selector to match your slug, and adjust token values.
+ */
+
+/* Template: “blue” accent palette — copy and set [data-site] to your site slug. */
+html[data-site="intralox"] {
+  --color-main-color: #000;
+}

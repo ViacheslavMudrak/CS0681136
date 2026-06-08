@@ -1,0 +1,50 @@
+﻿---
+ID: "238093a1-3dd8-489b-9176-1d97522ba1f5"
+Parent: "a9195503-6e37-4ca0-a0d9-89f5de392d3c"
+Template: "a9195503-6e37-4ca0-a0d9-89f5de392d3c"
+Path: /sitecore/templates/Feature/Customer Portal/Order Management/Order Pagination/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6448d512-ff3e-47a0-8038-0532a98147ca"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260401T120430Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5e0becfc-d522-4b89-9987-434b5824360e"
+      Hint: PageSizeOptionList
+      Value: |
+        {445FD81C-DB19-420D-BCD4-4ED902A2852E}
+        {43EDBEB8-3C3C-4D26-8409-0C40D0B71EAE}
+        {CAEFD224-0007-4D2A-BA5E-592E23FA0EF7}
+    - ID: "86751383-7349-4a27-b620-c4eba7fa6d9f"
+      Hint: ResultSummaryPattern
+      Value: "Showing {start} – {end} of {total} results"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e85d139-24ec-4f05-8f50-e3353da2e977"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260407T063651Z
+    - ID: "e60359be-9d1f-4338-a210-2222559bb8c4"
+      Hint: DefaultPageSize
+      Value: 10

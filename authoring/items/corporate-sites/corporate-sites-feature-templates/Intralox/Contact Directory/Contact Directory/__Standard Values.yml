@@ -1,0 +1,62 @@
+﻿---
+ID: "6e8ee945-f425-4629-af4f-037dc889ea08"
+Parent: "5885e076-fcda-4517-9913-5539c306e53b"
+Template: "5885e076-fcda-4517-9913-5539c306e53b"
+Path: /sitecore/templates/Feature/Intralox/Contact Directory/Contact Directory/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b28dd694-eb16-4902-b224-7c77f460887f"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260220T071232Z
+    - ID: "2cf414f4-b26c-4ebc-8ab3-fda39c9f1bfa"
+      Hint: TollFreeTelephoneLabel
+      Value: Local Toll Free Number
+    - ID: "3b78b110-98b5-4831-8a03-cb6198336cbc"
+      Hint: EnquiryHeading
+      Value: For all other inquiries, please use the information below.
+    - ID: "44d2017c-5801-4dbd-aebf-c59e813d5327"
+      Hint: TollFreeFaxLabel
+      Value: Toll Free Fax Number
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "57151aeb-5eda-46f5-a110-19023f2296e6"
+      Hint: WhatsApp
+      Value: WhatsApp
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "7f62fa64-f6fe-4ff6-ae33-ef3d578605d2"
+      Hint: FaxLabel
+      Value: Regular Fax Number
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f706f845-1b94-42eb-a08c-8d9c0cfbd0da"
+    - ID: "9c7d8139-ba34-41cb-9047-b88afb162371"
+      Hint: EmailLabel
+      Value: "E-mail"
+    - ID: "ac338b92-8fbb-4b27-8bd6-c24aa79693cf"
+      Hint: TelephoneLabel
+      Value: Regular Phone Number
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260507T152928Z
+    - ID: "e07d4d93-f872-40f3-b9f7-22eec825f53d"
+      Hint: InternationalTollFreeTelephoneLabel
+      Value: International Toll Free Number

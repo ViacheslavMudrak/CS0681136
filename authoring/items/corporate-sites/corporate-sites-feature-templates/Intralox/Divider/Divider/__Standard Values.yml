@@ -1,0 +1,40 @@
+﻿---
+ID: "b50b0913-967c-4e68-ac6c-f2634dbf6942"
+Parent: "23727fae-9f62-4137-89f3-ca72600ccd65"
+Template: "23727fae-9f62-4137-89f3-ca72600ccd65"
+Path: /sitecore/templates/Feature/Intralox/Divider/Divider/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "12ec70db-585c-4566-901f-63a0a58325e6"
+      Hint: Style
+      Value: "{33A5E5EC-118A-4354-8F6A-6889EF269C0A}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260311T095547Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ffd6972f-e92a-4d87-8e9a-6333b996cd28"
+    - ID: "8fa5cd48-14c9-448b-9bcf-b861c2aa5253"
+      Hint: Width
+      Value: "{3156F62B-ED09-4120-8B1B-DDDDB40E2315}"
+    - ID: "aa92d6b1-4e0b-406c-8825-e5cc02c962c2"
+      Hint: Spacing
+      Value: "{ED2A9C8B-E84D-4D24-9585-C931284B615E}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260424T102219Z

@@ -1,0 +1,33 @@
+﻿---
+ID: "3222add9-9397-4a5c-b3e8-e596bd126114"
+Parent: "90f33f3f-685c-4414-a9ef-06b3268214d5"
+Template: "90f33f3f-685c-4414-a9ef-06b3268214d5"
+Path: /sitecore/templates/Feature/Intralox/Billboard/Rendering Parameters/Billboard Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b894b44-c8e2-47d5-ac56-63775acebbe4"
+      Hint: ColorScheme
+      Value: "{96A49D59-55AB-4A5D-BDB2-A1EBF79BDF69}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a95ed660-e12e-45fa-aa8c-d083e6ce7f60"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260317T140757Z
+    - ID: "e5ba9ab2-b945-4760-8c37-5f6e85b80eba"
+      Hint: ContainerWidth
+      Value: "{808FC88D-06BC-4265-8D6C-69DEB77314D4}"

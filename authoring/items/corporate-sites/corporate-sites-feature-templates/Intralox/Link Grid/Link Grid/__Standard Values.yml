@@ -1,0 +1,41 @@
+﻿---
+ID: "f7b8f254-9e99-4bcf-8b43-e9aca3d8a7d6"
+Parent: "c9422b95-b98f-4aa8-9e67-1d31fda49137"
+Template: "c9422b95-b98f-4aa8-9e67-1d31fda49137"
+Path: /sitecore/templates/Feature/Intralox/Link Grid/Link Grid/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8514c915-a532-4402-82b8-0e4c3aa5c341"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260311T095547Z
+    - ID: "39d4defd-590d-4768-80ad-81e840e8297a"
+      Hint: LinkType
+      Value: "{6053EC1E-13AB-46CE-BE54-E79B372A6CBA}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f4c90679-de17-4c70-bff8-54dd11fd4055"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260322T093358Z

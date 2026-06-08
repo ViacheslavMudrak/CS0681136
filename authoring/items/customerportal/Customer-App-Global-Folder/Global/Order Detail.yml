@@ -1,0 +1,30 @@
+﻿---
+ID: "f9420579-276e-47f3-bf44-7d4bbf886784"
+Parent: "f66fae57-6019-4f75-865b-37dad6e28231"
+Template: "9ad231af-34bd-4df8-884c-bf80d15399f9"
+Path: /sitecore/content/Customer Sites/Customer App/Global/Order Detail
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "86f82d02-1535-41c9-804e-157c4aa687fc"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260327T113345Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9fd48fed-6b89-4436-8e2c-d057e03b7cef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T113709Z

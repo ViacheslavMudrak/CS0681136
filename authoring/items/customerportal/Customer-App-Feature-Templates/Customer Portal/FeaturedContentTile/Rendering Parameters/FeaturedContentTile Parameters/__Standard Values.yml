@@ -1,0 +1,27 @@
+﻿---
+ID: "45afb3a2-6911-46c3-b5af-1578ed7ea526"
+Parent: "4af3b8d6-8c18-4902-ad87-51368492e647"
+Template: "4af3b8d6-8c18-4902-ad87-51368492e647"
+Path: /sitecore/templates/Feature/Customer Portal/FeaturedContentTile/Rendering Parameters/FeaturedContentTile Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "18d78add-f799-473f-8f31-04569b7361fa"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260512T132647Z

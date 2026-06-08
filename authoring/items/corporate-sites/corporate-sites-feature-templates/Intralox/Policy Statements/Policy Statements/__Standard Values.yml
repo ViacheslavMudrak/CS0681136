@@ -1,0 +1,44 @@
+﻿---
+ID: "0f77d3f1-036a-4e50-8efc-367eceddf6ca"
+Parent: "ea286462-b2fa-4f6b-98f2-f5292a81bc98"
+Template: "ea286462-b2fa-4f6b-98f2-f5292a81bc98"
+Path: /sitecore/templates/Feature/Intralox/Policy Statements/Policy Statements/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "1a1ca08a-67f3-49aa-a396-bf8534d01d8b"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09b9ff8d-6e55-44ef-9106-202c912dcd5c"
+      Hint: CountryLabel
+      Value: "Select your country or region:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260220T071232Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "6390a7a0-aadc-4eb4-8e39-f6a13386d442"
+      Hint: LanguageLabel
+      Value: "Choose your language:"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b292d168-c6ec-4362-b18f-30d5d9b84823"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260224T121302Z

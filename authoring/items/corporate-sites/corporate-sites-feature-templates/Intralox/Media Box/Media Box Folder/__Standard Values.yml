@@ -1,0 +1,36 @@
+﻿---
+ID: "bfb80cf3-0ab6-49d9-a43d-e1e8e5af3443"
+Parent: "b9f10d41-a608-4aa5-ae55-33d8419a99ac"
+Template: "b9f10d41-a608-4aa5-ae55-33d8419a99ac"
+Path: /sitecore/templates/Feature/Intralox/Media Box/Media Box Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1AC1B62E-05FD-4BA2-B745-49E2782DF993}
+    {B9F10D41-A608-4AA5-AE55-33D8419A99AC}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "29f49309-9541-487d-b5ed-e6636490903a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b91c617-b13e-4dc3-be41-74e2b4c0333a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T142435Z

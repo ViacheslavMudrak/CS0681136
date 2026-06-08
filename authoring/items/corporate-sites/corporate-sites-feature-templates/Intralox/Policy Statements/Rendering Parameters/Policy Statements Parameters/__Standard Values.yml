@@ -1,0 +1,27 @@
+﻿---
+ID: "f2ff4acf-89dd-4c67-a99c-ef6f7c13babe"
+Parent: "83f43416-305c-440e-b617-e0d1cb5c6d51"
+Template: "83f43416-305c-440e-b617-e0d1cb5c6d51"
+Path: /sitecore/templates/Feature/Intralox/Policy Statements/Rendering Parameters/Policy Statements Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c29fe0f2-99ab-42f0-b259-b87c0ddc7e5c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260220T070704Z

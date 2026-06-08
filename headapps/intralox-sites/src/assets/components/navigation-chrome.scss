@@ -1,0 +1,43 @@
+/* Global mobile nav chrome — targets #page-wrap / body outside component scope.
+   Component rules live in navigationUtils.ts, headerUtils.ts, localNavigationUtils.ts. */
+
+@media (max-width: 991px) {
+  /* Keep duration in sync with MobileOverlay drawer (`duration-500`). */
+  #page-wrap {
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #layout-sticky-chrome {
+    overflow: visible;
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  body[data-nav-mobile-menu-open='true'][data-nav-mobile-menu-conceal-chrome='true'] #layout-sticky-chrome {
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
+
+  #layout-chrome-spacer {
+    transition: height 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+body[data-nav-mobile-menu-open='true'][data-nav-mobile-menu-conceal-chrome='true'] .floating-action-viewport-anchor {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-navigation *,
+  .header-navigation *::before,
+  .header-navigation *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  #page-wrap,
+  #layout-sticky-chrome,
+  #layout-chrome-spacer {
+    transition-duration: 0.01ms !important;
+  }
+}

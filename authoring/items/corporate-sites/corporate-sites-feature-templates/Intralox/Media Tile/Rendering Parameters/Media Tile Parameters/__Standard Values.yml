@@ -1,0 +1,45 @@
+﻿---
+ID: "cca1fd7e-b28b-483a-89ac-40c410fda48f"
+Parent: "9c5eb232-097e-4d1d-a23d-25831694bbb6"
+Template: "9c5eb232-097e-4d1d-a23d-25831694bbb6"
+Path: /sitecore/templates/Feature/Intralox/Media Tile/Rendering Parameters/Media Tile Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "52c387db-71fd-472f-a601-be213425a443"
+      Hint: CalloutTextAlign
+      Value: "{C09973F7-735E-4971-AFB3-8949F052D0CB}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "73315f88-0641-45d6-a180-866c5d8a2fb9"
+    - ID: "b9ae5491-12cd-4ab6-bdbb-33ad902a6ddb"
+      Hint: CalloutDirection
+      Value: "{7D84D40F-895D-49D7-920B-96C57EA673AD}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "bfd72070-46fb-4bc0-8bba-28b5d3df9531"
+      Hint: CalloutStyle
+      Value: "{E0E733B5-BAFE-4794-AB9D-4A1258AD3277}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260405T071805Z
+    - ID: "e549d7dd-825e-4f3f-9e7d-72e33a4e3a3a"
+      Hint: CalloutTextSize
+      Value: "{F3910704-E1EA-4396-88AD-3317CCA82131}"
+    - ID: "f3bcf3b6-a731-4309-80bc-7ed84b6afd4d"
+      Hint: HasWhiteBackground
+      Value: 
+    - ID: "fd8fed99-9d89-445a-9e81-daf8acc6a3e8"
+      Hint: CalloutColorScheme
+      Value: "{10CA87D1-7D7C-4F24-840F-E239A9119B87}"

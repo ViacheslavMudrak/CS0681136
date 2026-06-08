@@ -1,0 +1,33 @@
+﻿---
+ID: "465ba698-3c83-4c84-be37-db62ae23bb42"
+Parent: "016dd768-1107-4b86-af52-d3ef0bfff45d"
+Template: "016dd768-1107-4b86-af52-d3ef0bfff45d"
+Path: /sitecore/templates/Feature/Intralox/Text and Aside/Text and Aside/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "87d2633e-b2a0-4a96-8ce5-0a9662e30b65"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T095750Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c991ea34-70d8-48a4-b3f0-d3dd6cea0275"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260324T115527Z

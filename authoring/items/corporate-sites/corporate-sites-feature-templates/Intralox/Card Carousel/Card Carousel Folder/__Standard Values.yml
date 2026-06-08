@@ -1,0 +1,36 @@
+﻿---
+ID: "7ccd9400-1bb0-443c-81c1-5f4d294eb003"
+Parent: "261e8597-32d1-4b79-b780-d716d8ccfbf7"
+Template: "261e8597-32d1-4b79-b780-d716d8ccfbf7"
+Path: /sitecore/templates/Feature/Intralox/Card Carousel/Card Carousel Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1BAA140F-F02E-4B2B-88ED-6DC948A4A4B2}
+    {261E8597-32D1-4B79-B780-D716D8CCFBF7}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "240e37a5-28ee-4173-9af0-cd4d046921f9"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9a6fcdc0-54a1-4c7b-b66b-e177fb260172"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260523T061653Z

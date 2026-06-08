@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/*
+ * Layout utility variants — pixel-aligned with https://www.intralox.com/ (sm 600, md 768, lg 992, xl 1200).
+ * max-mobile stays from --breakpoint-mobile (380px). Use layout-mobile for <600.
+ * Prefer Tailwind `sm:`–`xl:` for width utilities; use large-desktop-* for semantic names at 1200px.
+ */
+@custom-variant layout-mobile (@media (width < 600px));
+@custom-variant tablet-only (@media (width >= 600px) and (width < 992px));
+@custom-variant tablet-up (@media (width >= 600px));
+@custom-variant below-desktop (@media (width < 992px));
+@custom-variant desktop-up (@media (width >= 992px));
+@custom-variant below-large-desktop (@media (width < 1200px));
+@custom-variant large-desktop-up (@media (width >= 1200px));
+/* Legacy SCSS @apply utilities (--breakpoint-mobile / --breakpoint-mobile-large) */
+@custom-variant max-mobile (@media (width <= 380px));
+@custom-variant max-mobile-large (@media (width < 992px));
+
+@import "@laitram-l-l-c/intralox-tailwind-config/theme.css";
+
+@import "./base/index.scss";
+@import "./components/index.scss";
+
+@layer base;
+@layer components;
+@layer utilities;
+@import "@laitram-l-l-c/intralox-ui-components/src/styles/prose.css"
+  layer(components);
+
+@plugin '@laitram-l-l-c/intralox-ui-components/tailwindcss-plugin';
+
+/* bootstrap grid to tailwind plugin */
+@plugin 'tailwind-bootstrap-grid' {
+  container_max_widths:
+    "sm", "600px", "md", "768px", "lg", "992px", "xl", "1200px";
+}
+
+/* preload tailwind-bootstrap-grid utility classes; */
+/* responsive classes are in base/tailwind-bootstrap-grid */
+@source inline("col-{1..12}");
+@source inline("offset-{1..12}");
+
+/* Storybook stories (Tailwind v4 content); keep in sync with src/stories/ mirror layout */
+@source "../stories/**/*.{tsx,ts,jsx,js,mdx}";
+
+@source "../components/country-language-dropdown/**/*.{tsx,ts}";
+
+/* Rich Text Tailwind arbitrary variants (trademarks dividers, patents table, image grid). */
+@source "../components/rich-text/**/*.{ts,tsx}";
+@source "../components/product-segment/**/*.{ts,tsx}";
+@source "../components/callout/**/*.{ts,tsx}";
+@source "../components/quick-link-group/**/*.{ts,tsx}";
+@source "../lib/**/*.{ts,tsx}";
+@source inline("rte-trademarks-catalog");

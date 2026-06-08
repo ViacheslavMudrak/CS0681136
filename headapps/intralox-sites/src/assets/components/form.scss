@@ -1,0 +1,838 @@
+#content > div {
+  @apply w-full;
+}
+
+.two-column-right-column {
+  .main-form-wrapper {
+    @apply bg-white border border-gray-300 rounded-2xl shadow-md p-6 lg:p-10;
+    .form-page {
+      .landing-page-row {
+        .inner-row-div {
+          @apply !pl-0;
+          .landing-page-slot {
+            @apply !max-w-full;
+          }
+          .ONE_THIRD {
+            @apply !max-w-fit !mb-0 lg:!mb-5;
+          }
+          .TWO_THIRDS{
+            @apply w-auto !mb-5;
+            .text-desktop{
+              p{
+                @apply !pl-0 text-sm font-bold text-gray-900;
+              }
+            }
+          }
+          .slot-container {
+            .component {
+              @apply !mb-[15px];
+              .form-input-wrapper-element {
+                @apply flex-col gap-0;
+                .form-field-label {
+                  @apply w-full min-w-[inherit] text-left p-0 text-sm text-gray-800 font-normal;
+                }
+                .form-input-element:not(.form-input-checkbox-element) {
+                  @apply h-9.5 shadow-none text-base text-gray-800;
+                }
+              }
+              &.form-input-error-field {
+                .form-input-wrapper-element {
+                  .form-field-label {
+                    @apply !text-accent-danger;
+                  }
+                }
+              }
+              .form-field-required {
+                @apply relative right-auto;
+              }
+              &.checkbox-component {
+                .form-input-wrapper-element {
+                  @apply flex-row gap-4;
+                  .form-input-wrapper-div {
+                    @apply min-h-[18px] ml-[1px];
+                  }
+                  .form-field-label {
+                    @apply ml-0;
+                  }
+                  .form-input-checkbox-element {
+                    @apply shrink-0 p-0 w-[18px] h-[18px] mt-[2px] rounded-sm
+                    border !border-stroke-default focus:outline-none focus-visible:ring-1 focus-visible:ring-stroke-input-focus;
+
+                    &:checked {
+                      @apply !border-link-hover bg-link-hover;
+                      & ~ .checkbox-check-marker {
+                        @apply block;
+                      }
+                    }
+                  }
+                  .checkbox-check-marker {
+                    @apply text-base text-white  w-[13px] h-[13px] -ml-[8px]
+                    -mt-[11px];
+                  }
+                }
+              }
+            }
+            .form-input-error-message {
+              @apply !pl-0;
+            }
+            .image-component{
+              @apply !pl-0 w-20 pr-4 shrink-0  md:!mb-1;
+              img{
+                @apply !w-full;
+              }
+            }
+          }
+        }
+        .button-component {
+          @apply mx-0.5;
+          button {
+            @apply w-full inline-flex p-3 items-center justify-center text-sm font-normal border-0
+            rounded-[9999px] text-center bg-action hover:bg-action-link leading-tight min-w-28 no-underline
+            transition-colors ease-in-out duration-150 focus:outline-none focus:ring-0
+             focus-visible:ring-2 focus-visible:ring-accent-nav;
+          }
+        }        
+        
+        &:first-child {
+          .inner-row-div{
+            .row-slot-wrapper{
+              @apply flex-row md:flex-col lg:flex-row ;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-form-wrapper {
+  @apply max-w-[1200px] mx-auto px-4 w-full pb-12 md:pb-20;
+  .form-page {
+    @apply mt-4;
+    .landing-page-row {
+      &:last-child {
+        .inner-row-div {
+          @apply md:pl-[210px];
+          .row-slot-wrapper {
+            @apply md:items-center;
+          }
+          .landing-page-slot {
+            @apply max-w-fit;
+            .component {
+              @apply md:mb-0 mb-[15px];
+              &.text-desktop {
+                p {
+                  @apply md:pl-4 font-normal;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  form,
+  .inner-row-div {
+    @apply relative !max-w-full;
+    .landing-page-slot {
+      @apply max-w-full;
+    }
+    .slot-container {
+      @apply text-base text-gray-900;
+      .component {
+        @apply p-0 mb-[15px] flex flex-wrap;
+        .form-input-wrapper-element {
+          @apply w-full flex items-start md:gap-[15px] md:flex-nowrap md:flex-row;
+          & > .lp-flex-1 {
+            @apply w-full;
+          }
+          .form-field-label {
+            @apply relative md:w-[195px] w-full md:min-w-[195px] md:text-right
+            text-base text-gray-900 pt-[3px] md:px-[15px] font-normal font-media-tile;
+            .form-field-required {
+              @apply md:absolute md:right-2 !text-gray-900;
+            }
+          }
+          .form-select-option-container {
+            @apply w-full md:w-[calc(100%-210px)] md:left-[210px] top-[calc(1rem+46px)] md:top-[34px];
+          }
+          .form-input-wrapper-div {
+            @apply border-none min-h-8.5 items-start;
+            &:has(.form-input-element:focus) {
+              @apply outline-none;
+            }
+          }
+          .limit-counter {
+            @apply hidden;
+          }
+          .field-lg {
+            @apply lg:w-[262px] xl:w-[362px];
+          }
+          .field-auto {
+            @apply w-auto;
+          }
+        }
+        &.required-component {
+          .form-field-label {
+            @apply font-bold;
+          }
+        }
+        &.radio-component {
+          .form-input-wrapper-element {
+            @apply items-start;
+          }
+        }
+        .radio-group-container {
+          @apply flex flex-wrap gap-x-5 gap-y-[7px];
+          .radio-wrapper {
+            @apply mb-0;
+            .form-input-wrapper-element {
+              @apply cursor-pointer;
+              .form-field-label {
+                @apply !text-gray-900;
+              }
+            }
+            .form-input-wrapper-div {
+              @apply min-h-[inherit];
+            }
+          }
+          .radio-field {
+            @apply gap-0 items-center;
+            &:hover {
+              .form-input-radio-element {
+                @apply border-[rgba(0,0,0,0.7)];
+              }
+            }
+            .form-input-radio-element {
+              @apply shrink-0 p-0 w-[14px] h-[14px] border !border-[rgba(0,0,0,0.42)] focus:outline-none focus-visible:ring-1 focus-visible:ring-black;
+              &:before {
+                @apply w-[7px] h-[7px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ml-0 mt-0 bg-link-hover;
+              }
+              &:checked {
+                @apply !border-link-hover;
+              }
+            }
+            .form-field-label {
+              @apply w-auto min-w-auto ml-[5px] font-normal px-0 text-gray-900;
+            }
+          }
+        }
+        .checkbox-group-container {
+          @apply flex flex-wrap gap-x-5 gap-y-[7px];
+          .checkbox-wrapper {
+            @apply mb-0;
+            .checkbox-field {
+              @apply mb-0;
+              .form-input-wrapper-element {
+                @apply gap-0 items-center cursor-pointer;
+                .form-field-label {
+                  @apply !text-gray-900;
+                }
+                &:hover {
+                  .form-input-checkbox-element {
+                    @apply border-[rgba(0,0,0,0.7)];
+                  }
+                }
+                .form-input-checkbox-element {
+                  @apply shrink-0 p-0 w-[14px] h-[14px] mt-[2px] border !border-[rgba(0,0,0,0.42)] focus:outline-none focus-visible:ring-1 focus-visible:ring-black;
+
+                  &:checked {
+                    @apply !border-link-hover bg-link-hover;
+                    & ~ .checkbox-check-marker {
+                      @apply block;
+                    }
+                  }
+                }
+                .checkbox-check-marker {
+                  @apply text-xs text-white  w-[13px] h-[13px] -ml-[6px] -mt-[6px];
+                }
+                .form-field-label {
+                  @apply w-auto min-w-auto ml-[5px] font-normal px-0 text-gray-900;
+                }
+              }
+            }
+            .form-input-wrapper-div {
+              @apply min-h-[inherit];
+            }
+          }
+        }
+        &.form-input-error-field {
+          textarea {
+            @apply !border-accent-danger;
+          }
+          .form-input-wrapper-element {
+            .form-field-label {
+              @apply text-accent-danger;
+              .form-field-required {
+                @apply !text-accent-danger;
+              }
+            }
+          }
+          .checkbox-group-container {
+            .checkbox-wrapper {
+              .checkbox-field {
+                .form-input-wrapper-element {
+                  .form-field-label {
+                    @apply !text-accent-danger;
+                  }
+                }
+              }
+            }
+          }
+          .radio-group-container {
+            .radio-wrapper {
+              .form-input-wrapper-element {
+                .form-field-label {
+                  @apply !text-accent-danger;
+                }
+              }
+            }
+          }
+        }
+        &.text-desktop {
+          p {
+            @apply md:pl-[210px] font-bold font-media-tile;
+          }
+          h2,
+          h3 {
+            @apply font-media-tile mb-[5px] text-[21px] border-b border-gray-300 font-normal block w-full;
+          }
+        }
+        &.image-component {
+          @apply md:pl-[210px];
+          img {
+            @apply w-auto;
+          }
+        }
+        &.file_upload-component {
+          @apply md:pl-[210px];
+          .file_upload-box {
+            .form-field-label {
+              @apply font-media-tile;
+            }
+            .form-input-description {
+              @apply pl-0;
+            }
+          }
+        }
+      }
+
+      .button-component {
+        @apply justify-start mb-0;
+        button {
+          @apply m-0 inline-block text-sm font-normal p-2 bg-accent-danger
+             text-ink-inverse rounded-sm focus:outline-none hover:bg-accent-danger-muted font-media-tile;
+        }
+      }
+    }
+    .form-input-element:not(
+      .form-input-radio-element,
+      .form-input-checkbox-element
+    ) {
+      @apply h-8.5;
+    }
+
+    textarea,
+    input:not(.form-input-radio-element, .form-input-checkbox-element) {
+      @apply border border-stroke-default rounded-sm p-1.5 focus:border-stroke-input-focus
+      focus:outline-none shadow-form-input text-sm text-ink-primary font-media-tile;
+      &:where(:not([data-rac])):focus {
+        @apply border-stroke-input-focus;
+      }
+      &::-webkit-input-placeholder {
+        @apply text-ink-primary text-sm;
+      }
+      &::-moz-placeholder {
+        @apply text-ink-primary text-sm;
+      }
+      &:-ms-input-placeholder {
+        @apply text-ink-primary text-sm font-media-tile;
+      }
+    }
+    input:not(
+      .form-input-radio-element,
+      .form-input-checkbox-element,
+      [name="address"]
+    ) {
+      @apply lg:w-[262px] xl:w-[362px] font-media-tile;
+    }
+    .phone_input-component {
+      input {
+        @apply w-[240px];
+      }
+      &.form-input-error-field {
+        .form-input-description {
+          @apply text-accent-danger font-media-tile;
+        }
+      }
+    }
+    .single-select-field {
+      .selected-indicator {
+        @apply hidden;
+      }
+      .text-indicator {
+        @apply whitespace-nowrap;
+      }
+      .form-input-wrapper-element,
+      .form-input-element {
+        @apply !w-auto;
+      }
+    }
+    .form-input-select-element {
+      .mdi-menu-down {
+        @apply bottom-[15px] md:top-[11px] md:bottom-auto;
+        @apply before:content-[''] before:block before:w-2 before:h-2
+        before:border-r-2 before:border-gray-900
+        before:border-b-2 before:rotate-45;
+      }
+    }
+    .form-input-description {
+      @apply w-full md:pl-[210px] text-gray-700 font-media-tile;
+    }
+
+    .form-select-option-container {
+      .form-select-option {
+        @apply text-sm font-media-tile;
+      }
+    }
+    .landing-page-slot {
+      &.HALF {
+        @apply md:w-1/2 lg:w-auto md:!max-w-fit;
+        .single-select-field {
+          .form-input-element {
+            @apply md:!w-full lg:!w-auto;
+          }
+        }
+        &:last-child {
+          .single-select-field {
+            @apply md:flex-nowrap;
+          }
+        }
+      }
+    }
+    .single-select-field:has(
+      input[name="number_of_variable_frequency_drives"]
+    ) {
+      .form-input-element {
+        @apply !w-full md:!w-auto;
+      }
+    }
+  }
+  .form-input-error-message {
+    @apply relative md:!pl-[210px] text-sm !text-accent-danger !font-media-tile;
+    .mdi {
+      @apply hidden;
+    }
+  }
+}
+
+.radio-group-field:has(
+  input[name="straight_angle"],
+  input[name="turn_angle"],
+  input[name="final_straight_angle"],
+  input[name="straight_2_angle"],
+  input[name="turn_2_angle"],
+  input[name="turn_3_angle"],
+  input[name="turn_4_angle"],
+  input[name="straight_3_angle"],
+  input[name="straight_4_angle"]
+),
+.shared-input-field:has(
+  input[name="straight_dimension"],
+  input[name="turn_dimension"],
+  input[name="final_straight_dimension"],
+  input[name="straight_2_dimension"],
+  input[name="straight_3_dimension"],
+  input[name="straight_4_dimension"],
+  input[name="turn_4_dimension"],
+  input[name="turn_2_dimension"],
+  input[name="turn_3_dimension"]
+) {
+  .form-field-label {
+    @apply hidden md:block;
+  }
+  .radio-group-container {
+    .form-field-label {
+      @apply inline-block;
+    }
+  }
+  .form-field-required {
+    @apply !hidden;
+  }
+}
+
+input[name="belt_width"],
+input[name="length"],
+input[name="flight_height"],
+input[name="flight_spacing"],
+input[name="sideguard_height"],
+input[name="sprocket_pitch_diameter"],
+input[name="bore"],
+input[name="journal_diameter"],
+input[name="product_load"],
+input[name="product_size"],
+input[name="product_size_1"],
+input[name="product_size_3"],
+input[name="product_spacing"],
+input[name="individual_product_weight"],
+input[name="product_temperature"],
+input[name="belt_speed"],
+input[name="temperature_drive"],
+input[name="If_yes"],
+input[name="elevation_change_value"],
+input[name="concentration"],
+input[name="temperature_of_cleaning_media"],
+input[name="product_load"],
+input[name="weight_per_piece"],
+input[name="product_dimensions"],
+input[name="product_dimensions_1"],
+input[name="product_dimensions_2"],
+input[name="production_rate"],
+input[name="production_hours_per_day"],
+input[name="incoming_product_temperature"],
+input[name="operating_environment_temperature"],
+input[name="minimum_operating_environment_temperature"],
+input[name="maximum_operating_environment_temperature"],
+input[name="tier_pitch"],
+input[name="take_up_travel_length"],
+input[name="belt_length"],
+input[name="minimum_roller_diameter"],
+input[name="drum_measurement"],
+input[name="belt_width"],
+input[name="infeed_length_a"],
+input[name="discharge_length_b"],
+input[name="distance_between_drums"],
+input[name="rail_spacing"],
+input[name="overhang"],
+input[name="cage_bar_dimensions"],
+input[name="cage_bar_dimensions_1"],
+input[name="cage_bar_dimensions_2"],
+input[name="infeed_length_i"],
+input[name="length_of_straight_run"],
+input[name="inside_radius_of_turn"],
+input[name="if_yes_2"],
+input[name="angle_of_turn"],
+input[name="angle_of_turn_other"],
+input[name="straight_dimension"],
+input[name="length_of_straight_run_2"],
+input[name="if_yes_3"],
+input[name="inside_radius_of_turn_2"],
+input[name="if_yes_4"],
+input[name="angle_of_turn_2_other"],
+input[name="straight_2_dimension"],
+input[name="turn_2_dimension"],
+input[name="length_of_straight_run_3"],
+input[name="If_yes_5"],
+input[name="inside_radius_of_turn _3"],
+input[name="if_yes_6"],
+input[name="angle_of_turn_3_other"],
+input[name="straight_3_dimension"],
+input[name="turn_3_dimension"],
+input[name="length_of_straight_run_4"],
+input[name="if_yes_7"],
+input[name="inside_radius_of_turn_4"],
+input[name="if_yes_8"],
+input[name="angle_of_turn_4_other"],
+input[name="straight_4_dimension"],
+input[name="turn_4_dimension"],
+input[name="length_of_final_straight_run"],
+input[name="if_yes_9"],
+input[name="final_straight_dimension"],
+input[name="spiral_1"],
+input[name="spiral_2"],
+input[name="turn_dimension"] {
+  @apply !w-16;
+}
+
+input[name="number_of_turns"] {
+  @apply !w-25;
+}
+
+.shared-input-field:has(
+  input[name="belt_width"],
+  input[name="length"],
+  input[name="flight_height"],
+  input[name="flight_spacing"],
+  input[name="sideguard_height"],
+  input[name="sprocket_pitch_diameter"],
+  input[name="bore"],
+  input[name="journal_diameter"],
+  input[name="product_load"],
+  input[name="product_size"],
+  input[name="product_size_1"],
+  input[name="product_size_3"],
+  input[name="product_spacing"],
+  input[name="individual_product_weight"],
+  input[name="product_temperature"],
+  input[name="belt_speed"],
+  input[name="temperature_drive"],
+  input[name="If_yes"],
+  input[name="elevation_change_value"],
+  input[name="concentration"],
+  input[name="temperature_of_cleaning_media"],
+  input[name="product_load"],
+  input[name="weight_per_piece"],
+  input[name="product_dimensions"],
+  input[name="product_dimensions_1"],
+  input[name="product_dimensions_2"],
+  input[name="production_rate"],
+  input[name="production_hours_per_day"],
+  input[name="incoming_product_temperature"],
+  input[name="operating_environment_temperature"],
+  input[name="minimum_operating_environment_temperature"],
+  input[name="maximum_operating_environment_temperature"],
+  input[name="tier_pitch"],
+  input[name="take_up_travel_length"],
+  input[name="belt_length"],
+  input[name="minimum_roller_diameter"],
+  input[name="drum_measurement"],
+  input[name="belt_width"],
+  input[name="infeed_length_a"],
+  input[name="discharge_length_b"],
+  input[name="distance_between_drums"],
+  input[name="rail_spacing"],
+  input[name="overhang"],
+  input[name="cage_bar_dimensions"],
+  input[name="cage_bar_dimensions_1"],
+  input[name="cage_bar_dimensions_2"],
+  input[name="infeed_length_i"],
+  input[name="length_of_straight_run"],
+  input[name="inside_radius_of_turn"],
+  input[name="if_yes_2"],
+  input[name="angle_of_turn"],
+  input[name="angle_of_turn_other"],
+  input[name="straight_dimension"],
+  input[name="length_of_straight_run_2"],
+  input[name="if_yes_3"],
+  input[name="inside_radius_of_turn_2"],
+  input[name="if_yes_4"],
+  input[name="angle_of_turn_2_other"],
+  input[name="straight_2_dimension"],
+  input[name="turn_2_dimension"],
+  input[name="length_of_straight_run_3"],
+  input[name="If_yes_5"],
+  input[name="inside_radius_of_turn _3"],
+  input[name="if_yes_6"],
+  input[name="angle_of_turn_3_other"],
+  input[name="straight_3_dimension"],
+  input[name="turn_3_dimension"],
+  input[name="length_of_straight_run_4"],
+  input[name="if_yes_7"],
+  input[name="inside_radius_of_turn_4"],
+  input[name="if_yes_8"],
+  input[name="angle_of_turn_4_other"],
+  input[name="straight_4_dimension"],
+  input[name="turn_4_dimension"],
+  input[name="length_of_final_straight_run"],
+  input[name="if_yes_9"],
+  input[name="final_straight_dimension"],
+  input[name="drive_location_other"],
+  input[name="turn_dimension"]
+) {
+  label {
+    @apply md:!w-auto;
+  }
+  .form-input-description {
+    @apply !pl-[5px] !w-auto !text-ink-primary absolute left-16 md:left-0
+    md:relative bottom-1.5 md:bottom-auto font-media-tile;
+  }
+  &.form-input-error-field {
+    .form-input-description {
+      @apply bottom-8.5 md:bottom-auto;
+    }
+  }
+}
+.landing-page-row:has(
+  input[name="product_load"],
+  input[name="individual_product_weight"],
+  input[name="elevation_change_value"],
+  input[name="weight_per_piece"],
+  input[name="production_rate"],
+  input[name="drum_measurement"]
+) {
+  @apply relative;
+  .row-slot-wrapper {
+    @apply flex-row;
+  }
+  .HALF {
+    @apply md:w-1/2 lg:w-auto lg:!max-w-fit;
+    &:last-child {
+      @apply max-md:absolute max-md:left-0 max-md:w-[calc(100%-64px)];
+      .form-input-wrapper-element {
+        @apply absolute md:relative md:top-0 md:left-0 top-[3px] left-16;
+      }
+      .text_input745f4f636bdf4449841905783042d038 {
+        .form-input-wrapper-element {
+          @apply md:left-0 left-[188px];
+        }
+      }
+      .form-field-label {
+        @apply md:hidden;
+        .form-field-required {
+          @apply hidden;
+        }
+      }
+      .single-select-field {
+        .form-select-option-container {
+          @apply !w-full !left-0;
+        }
+      }
+    }
+    .component {
+      @apply static;
+    }
+    .form-input-error-field {
+      @apply !pb-5;
+      .form-input-error-message {
+        @apply bottom-[10px] absolute left-0;
+      }
+    }
+  }
+}
+.landing-page-row:has(input[name="elevation_change_value"]) {
+  .HALF {
+    @apply md:w-1/2 lg:w-auto lg:!max-w-fit;
+
+    &:last-child {
+      .form-input-wrapper-element {
+        @apply max-md:w-auto max-md:left-[188px];
+      }
+      .form-input-description {
+        @apply max-md:left-[260px] max-md:top-[27px];
+      }
+      .form-input-error-message {
+        @apply max-md:top-16;
+      }
+    }
+  }
+}
+.landing-page-row:has(input[name="drum_measurement"]) {
+  .HALF {
+    @apply md:w-1/2 lg:w-auto lg:!max-w-fit;
+    &:first-child {
+      .component {
+        @apply mb-0 md:mb-4;
+      }
+      .form-input-error-field {
+        @apply !pb-0 md:!pb-6;
+      }
+    }
+    &:last-child {
+      .component {
+        @apply mb-4;
+      }
+      .form-input-wrapper-element {
+        @apply relative top-0 left-0;
+      }
+      .form-input-description {
+        @apply bottom-5 md:bottom-auto;
+      }
+      .form-field-label {
+        @apply hidden;
+        .form-field-required {
+          @apply hidden;
+        }
+      }
+      .form-input-error-field {
+        @apply !pb-6;
+        .form-input-description {
+          @apply bottom-10 md:bottom-auto;
+        }
+      }
+    }
+    .component {
+      @apply static;
+    }
+    .form-input-error-field {
+      @apply !pb-6;
+      .form-input-error-message {
+        @apply bottom-[10px] absolute left-0;
+      }
+    }
+  }
+}
+
+.landing-page-row:has(
+  input[name="product_size"],
+  input[name="product_dimensions"],
+  input[name="cage_bar_dimensions"]
+) {
+  @apply relative;
+  .row-slot-wrapper {
+    @apply !flex-row gap-1 relative pt-7 md:pt-0;
+  }
+  .ONE_THIRD {
+    @apply w-1/3 md:w-auto md:!max-w-fit;
+    label {
+      @apply !w-auto;
+    }
+    .shared-input-field {
+      @apply flex-nowrap;
+    }
+    &:first-child {
+      .shared-input-field {
+        @apply static;
+      }
+      .form-field-label {
+        @apply !absolute top-0 md:top-auto md:!relative;
+      }
+      .form-input-description {
+        @apply bottom-5 md:bottom-auto;
+      }
+      .form-input-error-field {
+        .form-input-description {
+          @apply bottom-[42px] md:bottom-auto;
+        }
+      }
+    }
+    &:last-child,
+    &:nth-child(2) {
+      .form-field-label {
+        @apply hidden;
+      }
+      .form-input-error-message {
+        @apply hidden md:block;
+      }
+      .form-input-error-field {
+        .form-input-description {
+          @apply bottom-[28px] md:bottom-auto;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .slot-container {
+        @apply w-auto;
+      }
+    }
+    .form-input-error-field {
+      @apply !pb-5 md:!pb-6;
+      .form-input-error-message {
+        @apply bottom-[10px] absolute left-0;
+      }
+    }
+  }
+}
+.global-image {
+  img {
+    @apply max-w-[362px];
+  }
+}
+.landing-page-row:has(
+  input[name="spiral_2"],
+  input[name="configuration_spiral_2"]
+) {
+  .form-input-wrapper-element {
+    @apply w-auto !max-w-fit;
+  }
+  .form-input-description {
+    @apply pl-[5px] w-auto mt-7.5 md:mt-2;
+  }
+}
+
+.global-text:has(.text-desc) {
+  @apply mt-[-10px];
+  .text-desc {
+    @apply text-gray-700 !font-normal font-media-tile;
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "corporate-sites",
+  "items": {
+    "path": "corporate-sites",
+    "includes": [
+      {
+        "name": "corporate-sites-project-templates",
+        "path": "/sitecore/templates/Project/Corporate Sites/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "corporate-sites-feature-templates",
+        "path": "/sitecore/templates/Feature/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "corporate-sites-feature-branch-templates",
+        "path": "/sitecore/templates/Branches/Feature/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "corporate-sites-project-branch-templates",
+        "path": "/sitecore/templates/Branches/Project/Corporate Sites/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "corporate-sites-feature-renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "corporate-sites-feature-placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "corporate-sites-feature-settings",
+        "path": "/sitecore/system/Settings/Feature/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "corporate-sites-project-settings",
+        "path": "/sitecore/system/Settings/Project/Corporate Sites/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "custom-rendering-contents-resolvers",
+        "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/Custom Rendering Contents Resolvers",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "corporate-sites-foundation-templates",
+        "path": "/sitecore/templates/Foundation/Intralox",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}

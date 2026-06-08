@@ -1,0 +1,36 @@
+﻿---
+ID: "531d2a65-c178-4162-89d8-64d54a788205"
+Parent: "de4eb026-65d5-43d4-a95b-ece6d445f457"
+Template: "de4eb026-65d5-43d4-a95b-ece6d445f457"
+Path: /sitecore/templates/Feature/Intralox/Link Cards/Link Cards Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {EC58B639-39F3-4AE6-9ACB-A8382BA9A6D6}
+    {DE4EB026-65D5-43D4-A95B-ECE6D445F457}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6f83d079-50d1-4229-a844-2fe45b0cf2b2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a36a97e9-7ae7-4eac-a72f-9885501f6245"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260217T083835Z

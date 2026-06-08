@@ -1,0 +1,27 @@
+﻿---
+ID: "fbe97a23-8e7a-4d3c-b11f-3f046ac8e508"
+Parent: "06ec9e2f-37a4-445c-aba0-a0d3aa68b4e2"
+Template: "06ec9e2f-37a4-445c-aba0-a0d3aa68b4e2"
+Path: /sitecore/templates/Feature/Customer Portal/Recent Quotes Widget/Rendering Parameters/RecentQuoteWidget Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0a4a1d7f-7225-4553-b37a-771a94a0977e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T115842Z

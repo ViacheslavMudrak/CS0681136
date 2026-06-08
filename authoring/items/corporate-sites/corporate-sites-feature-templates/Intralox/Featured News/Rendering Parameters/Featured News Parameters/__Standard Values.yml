@@ -1,0 +1,33 @@
+﻿---
+ID: "21550a64-14c6-4811-9499-d675f39a7016"
+Parent: "99daeb83-5011-424d-8829-29711dcfc889"
+Template: "99daeb83-5011-424d-8829-29711dcfc889"
+Path: /sitecore/templates/Feature/Intralox/Featured News/Rendering Parameters/Featured News Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "26c63d6c-7688-43e9-8c17-a7b514356af1"
+    - ID: "975893de-7b9c-47ec-bed3-601e4ab20dcf"
+      Hint: ColorScheme
+      Value: "{346A5881-D1EC-46FD-9B2F-91B8B6CED234}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T121748Z
+    - ID: "f5045d1e-1812-4f4e-aa0f-a179f96356cd"
+      Hint: CardSize
+      Value: "{A99E8C4A-0290-4CDE-A279-CE148C5700FB}"

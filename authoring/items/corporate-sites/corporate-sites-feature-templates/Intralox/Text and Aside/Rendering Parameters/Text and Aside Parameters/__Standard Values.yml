@@ -1,0 +1,39 @@
+﻿---
+ID: "03d85530-78c7-4ce6-95a6-9da56cfcf242"
+Parent: "7fd4638a-3749-4a96-85bd-883a1d89cab8"
+Template: "7fd4638a-3749-4a96-85bd-883a1d89cab8"
+Path: /sitecore/templates/Feature/Intralox/Text and Aside/Rendering Parameters/Text and Aside Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "76a26eca-8288-44ab-a9a5-c2b7b46b9059"
+      Hint: AsidePosition
+      Value: "{BD51406A-806B-4180-B62B-0A42DE8F9770}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2e39827-fcba-4089-a56c-8af2c0d3f4f0"
+    - ID: "977b33d2-b17c-4017-b3d0-1a9f05f26435"
+      Hint: AsideWidth
+      Value: "{9FB19BD3-5161-42BE-A3C7-BBE05DE50DB0}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d112b49e-1530-4ef0-ba56-5b6ca8f07099"
+      Hint: BackgroundColor
+      Value: "{8CEA29DA-9CA8-4B7A-B7F8-73D9528A2D49}"
+    - ID: "d660462f-3a48-4679-acec-a87cb7d70763"
+      Hint: AlignColumns
+      Value: "{8FE01B77-1BDC-4988-82CE-26CA1366E35F}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T104842Z

@@ -1,0 +1,75 @@
+---
+description: Intralox — inline Tailwind in JSX only (zero class consts, zero utils maps). Mandatory for all styling refactors.
+alwaysApply: true
+globs: []
+---
+
+# Intralox Inline Tailwind Refactor (IT-INLINE)
+
+**Client rule (Intralox):** Tailwind classes **inside JSX**; **`cn()` for conditional assignments**; **no constants** and **no separate style files** unless Tailwind cannot be applied on the JSX node.
+
+## Required
+
+- Static layout/presentation: `className="flex gap-4 …"` on the JSX element
+- Conditionals (CMS params, state, theme): `className={cn('flex …', isActive && 'bg-surface', params.styles)}` on the **same node**
+- Utils: **data only** — field parsing, visibility, labels, test ids (not Tailwind strings)
+- Design tokens: `@theme` utilities (`bg-surface`, `text-ink-primary`), not raw hex
+
+## Prohibited
+
+- Top-level `const FOO_CLASS = '…'` in any `.tsx` (private or exported)
+- `export const *_CLASS` / `*_CLASS_MAP` in `.tsx`
+- `*Classes.ts` and class strings in `*Utils.ts` (`getXClass`, `buildXClassName`, maps)
+- `className={SOME_CONST}` — use inline literal or inline `cn()` instead
+- New component SCSS / CSS modules for layout, color, or typography
+
+## Allowed exceptions (rare — document in PR with reason)
+
+| Exception | When |
+|-----------|------|
+| Separate style module | **Only** when Tailwind cannot be placed on JSX (e.g. third-party root without `className`, legacy global SXA override that cannot be beaten inline) |
+| `style={{ '--var': value }}` | Dynamic CSS variables only |
+| Non-style consts | `TEST_ID`, `AUTOPLAY_MS`, labels, URLs — not Tailwind strings |
+| Legacy files during migration | `*Classes.ts` / `componentShellClasses.ts` — **delete or inline** when the consuming component is in the current batch |
+
+## Per-batch workflow (mandatory — no skip)
+
+1. **Scope:** one component folder from the batch list only (or an agreed multi-batch range)
+2. **Status:** set **In progress** in `docs/intralox-inline-tailwind-refactor-plan.md` before coding
+3. **Inline:** move every class string onto the JSX element that uses it
+4. **Delete:** remove class consts, `*Classes.ts`, utils class functions/maps from that folder
+5. **Recheck** (run all; fix until clean):
+
+```bash
+cd headapps/intralox-sites
+
+# No top-level class consts in touched folder
+grep -rnE '^const [A-Z_][A-Z0-9_]* = ['\''"]' src/components/<folder> --include '*.tsx' | grep -iE 'class|flex|grid|text-|bg-|border-|rounded|gap-|items-|justify-|p-|m-|w-|h-|md:|lg:' || true
+
+# No exported layout class consts in touched folder tsx
+grep -rnE '^export const [A-Z_][A-Z0-9_]*(CLASS|Classes|_MAP)' src/components/<folder> --include '*.tsx' || true
+
+# No *Classes.ts left in folder
+find src/components/<folder> -name '*Classes.ts' | wc -l
+
+# No class builders left in folder utils
+grep -rnE 'export function \w*(Class|Classes|className)' src/components/<folder> --include '*Utils.ts' || true
+
+npm run lint
+```
+
+6. **Status doc:** update **Current status** in `docs/intralox-inline-tailwind-refactor-plan.md` (summary table, batch row, iteration log, header date) — **mandatory before ending the session**
+
+7. **Do not** start the next batch until recheck passes and status is updated
+
+## PR checklist (each batch)
+
+- [ ] Zero `*_CLASS` top-level consts in touched TSX
+- [ ] Zero class maps / class builders in touched Utils
+- [ ] Zero `*Classes.ts` in touched folder
+- [ ] All `className` use inline literals or inline `cn()` on the node
+- [ ] Lint + folder tests pass (when present)
+- [ ] **Current status** updated in `docs/intralox-inline-tailwind-refactor-plan.md`
+- [ ] Visual QA: 320, 768, 992, 1200px if layout changed
+
+Referenced: `tailwind-only-styling.mdc`, `src/assets/base/variables.scss`, `docs/intralox-inline-tailwind-refactor-plan.md`

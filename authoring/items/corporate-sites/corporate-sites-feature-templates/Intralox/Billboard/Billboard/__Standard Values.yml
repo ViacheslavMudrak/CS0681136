@@ -1,0 +1,47 @@
+﻿---
+ID: "5b1ccec5-3fa9-4bbb-89f3-9816c5acae26"
+Parent: "f516221b-b952-4bd8-9941-a8ea30e41153"
+Template: "f516221b-b952-4bd8-9941-a8ea30e41153"
+Path: /sitecore/templates/Feature/Intralox/Billboard/Billboard/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{197FEEE8-00AC-422C-917B-4BFC00CBF40B}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9dee3b19-da68-4a47-82d5-83a236addde3"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T083300Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf89f203-a8f2-4bf1-9e2c-55f8aeede31c"
+    - ID: "ac999475-5601-4fc1-8358-566bd26ada49"
+      Hint: ButtonAlignment
+      Value: "{0F4546CC-1D89-49D6-B000-B057375C9C77}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "bd527aa7-8e82-4027-97c9-6bf03ee25281"
+      Hint: MediaType
+      Value: "{BEFDBBEA-75AB-4F7A-B906-F97061E79ECA}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T085017Z

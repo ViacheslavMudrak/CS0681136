@@ -1,0 +1,23 @@
+﻿---
+ID: "5530c12d-e407-4f71-b458-990965882f5c"
+Parent: "f66fae57-6019-4f75-865b-37dad6e28231"
+Template: "9ad231af-34bd-4df8-884c-bf80d15399f9"
+Path: /sitecore/content/Customer Sites/Customer App/Global/Content Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251209T072358Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f666f6e8-7122-49e2-ad0a-e19b6e55c699"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251209T075202Z

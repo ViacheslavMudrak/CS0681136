@@ -1,0 +1,49 @@
+﻿---
+ID: "a26f8c70-4414-4fb6-ab64-4ee565b88bb9"
+Parent: "5d2cb473-63c7-42f7-a12b-4e6f32ad3565"
+Template: "5d2cb473-63c7-42f7-a12b-4e6f32ad3565"
+Path: /sitecore/templates/Feature/Intralox/Carousel/Carousel/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {27B4C71E-F3C5-4DB0-B459-BE8B149C44C7}
+    {63D90F51-8360-418E-83CF-4471F7D98016}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "42c8c6b4-092e-40c5-b223-973b4e569921"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "090a122c-a992-4b1a-bda8-c154d54ec46f"
+      Hint: BackgroundColor
+      Value: "{2CE5A99F-6D46-42E7-92F9-3F7D3FA31187}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T085134Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f1cd92c7-262f-4715-90e2-60bd30bf220c"
+    - ID: "9108c3d6-eded-4dab-afb9-41fb8a1dfc29"
+      Hint: ContentType
+      Value: "{B379A5A7-15F7-4F2E-AEE7-276B0FA35999}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T183325Z

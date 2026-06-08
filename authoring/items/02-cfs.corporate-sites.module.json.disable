@@ -1,0 +1,57 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "cfs",
+  "items": {
+    "path": "cfs",
+    "includes": [
+      {
+        "name": "cfs-site-Project-Templates",
+        "path": "/sitecore/templates/Project/Corporate Sites/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "cfs-site-Feature-Templates",
+        "path": "/sitecore/templates/Feature/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "cfs-site-Feature-Branch-Templates",
+        "path": "/sitecore/templates/Branches/Feature/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "cfs-site-Feature-Renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "cfs-site-Feature-Placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "cfs-site-Feature-Settings",
+        "path": "/sitecore/system/Settings/Feature/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "cfs-site-Project-Settings",
+        "path": "/sitecore/system/Settings/Project/Corporate Sites/Commercial Food Sanitation",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "cfs-site-Tenant",
+        "path": "/sitecore/content/Corporate Sites/Commercial Food Sanitation",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      }
+    ]
+  }
+}

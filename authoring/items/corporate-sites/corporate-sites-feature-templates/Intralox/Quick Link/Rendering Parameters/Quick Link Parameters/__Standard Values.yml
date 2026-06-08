@@ -1,0 +1,39 @@
+﻿---
+ID: "4390f9e2-cb41-4287-a7aa-df549f45cc0a"
+Parent: "e64c044f-4a7f-418b-8fdb-cddd6e65b48c"
+Template: "e64c044f-4a7f-418b-8fdb-cddd6e65b48c"
+Path: /sitecore/templates/Feature/Intralox/Quick Link/Rendering Parameters/Quick Link Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e524a518-2149-4c84-9984-39cbc9de827a"
+    - ID: "9f7a1fba-f6c3-42d3-971c-09b55ed10afa"
+      Hint: CardType
+      Value: "{3F2D3EFF-7CD1-41DB-9DBC-5B169AAA54BA}"
+    - ID: "a427c222-782c-401f-b48f-65d5e64b3535"
+      Hint: Theme
+      Value: "{690467F2-F0F8-403A-960C-2FCADD3F81D5}"
+    - ID: "a909b48e-d905-4853-a785-3801dd31227a"
+      Hint: TextSize
+      Value: "{ED5424B1-2543-49B5-B6E0-FAC86AD43CF1}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d7b3e2a2-0484-4e95-b039-d870f73a3695"
+      Hint: IconPosition
+      Value: "{B29DEF2F-87B4-479D-B977-19DDB8D226EA}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260316T071622Z

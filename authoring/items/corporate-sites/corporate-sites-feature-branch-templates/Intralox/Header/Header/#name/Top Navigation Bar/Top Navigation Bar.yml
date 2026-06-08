@@ -1,0 +1,23 @@
+﻿---
+ID: "325a3b79-0127-4e9f-b2ab-85c579d47c53"
+Parent: "d8b544a4-09ff-4f96-acb5-dbf751de4940"
+Template: "af58e5a4-b121-45e4-910e-7370efe97bcf"
+Path: /sitecore/templates/Branches/Feature/Intralox/Header/Header/$name/Top Navigation Bar/Top Navigation Bar
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260213T093952Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "036805bf-85fc-4b4c-b674-c412c00c0620"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260213T093952Z

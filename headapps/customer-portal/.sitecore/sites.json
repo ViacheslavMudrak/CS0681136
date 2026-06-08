@@ -1,0 +1,7 @@
+[
+  {
+    "name": "customer-portal",
+    "hostName": "*",
+    "language": "en"
+  }
+]

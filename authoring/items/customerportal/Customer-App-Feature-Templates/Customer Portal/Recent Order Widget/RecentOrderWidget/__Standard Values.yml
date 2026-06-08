@@ -1,0 +1,44 @@
+﻿---
+ID: "6bdb9756-f0f2-49b4-8bc6-a07391827d0e"
+Parent: "a1077115-b2c8-43b0-a48e-651d16726ff0"
+Template: "a1077115-b2c8-43b0-a48e-651d16726ff0"
+Path: /sitecore/templates/Feature/Customer Portal/Recent Order Widget/RecentOrderWidget/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "aeec6d08-dab9-4dd9-ab1d-6b3c01b81986"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "147c4d60-43b2-4b1f-ae59-f0dd2975b6d6"
+      Hint: DefaultDateSelectionCriteria
+      Value: "{A6D9F255-30F4-4EA8-BC61-8871A7F6A0B9}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260507T064719Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5880cd35-f1a6-4b5b-ac7d-b769c3c5f212"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d771ce34-2f7d-4178-8dc3-280642daf373"
+      Hint: MaxItemsDisplayed
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260528T114942Z

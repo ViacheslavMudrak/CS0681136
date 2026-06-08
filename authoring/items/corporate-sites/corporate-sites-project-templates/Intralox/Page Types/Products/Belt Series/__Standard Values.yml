@@ -1,0 +1,83 @@
+﻿---
+ID: "f83e77d3-a18c-4469-bce7-ceae0a9b6e32"
+Parent: "41379a3e-df8d-4c9b-9dd6-15b0dd92d509"
+Template: "41379a3e-df8d-4c9b-9dd6-15b0dd92d509"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Products/Belt Series/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {4CE9073B-CA79-42B4-AAB7-9CC77B63BBFC}
+    {E7A8BCF0-7675-44AF-A31B-46814F0E0364}
+    {4B6F486F-582A-4DA6-A771-F771EF97456A}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c81d928e-10fd-4d07-8ae4-ebaffdc46a2d"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T103048Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "760a8332-97cb-4bab-ac6b-4440d0e6a55d"
+      Hint: Types
+      Value: |
+        {C30E03CB-1766-4B06-8A33-1C1BECEC2773}
+        {90EE021C-1AEC-4D56-A443-F307337067CE}
+        {5B38A020-71EB-4AEE-9725-4B1113113B1C}
+        {B81B73F2-A799-4385-BA3A-700EBAFB7B67}
+        {563E708B-B9B5-4AC5-9804-000824453DB1}
+        {D35ECCCA-43AD-47ED-AD5A-2954BC89EBD9}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b9c33ff7-55bc-44ff-a8e3-86826003f701"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d4a86cfa-f73a-445e-a701-d65a4fef633c"
+      Hint: Styles
+      Value: |
+        {AEE9A232-8812-4180-A9A1-78992617E8BF}
+        {FA947D8D-5AFB-4A96-9162-43E3426F50C6}
+        {DD5F451F-A34D-46D9-ACF2-8371D7F43F1C}
+        {CEB15E87-E949-4DD3-BF15-3B5B7AADEAFE}
+        {E26AB919-86D1-4CD8-953D-642A072E8C0E}
+        {BBCFA66D-7F7E-4068-BD9C-552626AE165F}
+        {75EED659-3A07-4DCD-83D3-E329C3DCB692}
+        {0BD0AE89-3071-4776-9A70-324291F08C57}
+        {69C7ACA2-D44D-4374-B3CE-19DCA9FD3452}
+        {F2BB2818-795D-4BC8-9C01-61095F3C7B39}
+        {4BDAF15A-E005-4CAA-83B1-00112BA56BB4}
+        {D27BC659-5580-4E3B-8F75-C30A7F82F7EA}
+        {6323EF2B-46A3-405D-BB82-8239515532AB}
+        {7A951987-DE0A-4C28-96E9-A0FE2B12D186}
+        {BD235BC6-5143-49D6-A0E2-4D6365FE120C}
+        {3359F5CC-9280-407E-BD97-823612E07B92}
+        {D9ECE3B1-59F1-44DE-A239-37369C864768}
+        {185F70D9-9158-4ADB-938B-CE9955694819}
+        {8E039B92-CC0D-430F-BEC9-11EFDC4FE482}
+        {732A8DFB-C44B-48DC-8075-8943AAC9E4CA}
+        {EB1590C0-CC89-4180-AF84-EAE5607E9645}
+        {18BE39C3-542D-4710-90B5-F03289F7A066}
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260601T090007Z
+    - ID: "e371b825-9fd8-4880-b21b-38a157ff175c"
+      Hint: Technologies
+      Value: |
+        {5EAE3A7F-C63A-4A5E-9D11-4B9B39356E4B}
+        {BC73D5D4-6334-4DA3-81DA-FB6226FCE3F8}

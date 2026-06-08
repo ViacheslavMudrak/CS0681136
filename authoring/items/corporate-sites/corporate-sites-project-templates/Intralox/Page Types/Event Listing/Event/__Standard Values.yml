@@ -1,0 +1,41 @@
+﻿---
+ID: "6b616f6f-3886-4014-b10d-b15ec8c7843b"
+Parent: "90fd055d-55d5-4eed-8c21-09613c25aee4"
+Template: "90fd055d-55d5-4eed-8c21-09613c25aee4"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Event Listing/Event/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "38d4f786-55a5-4127-993f-a7f6e12900b8"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T115120Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0960ac7e-8793-4705-ba74-257c8c91dbfc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260527T183534Z
+    - ID: "ed5063df-9f19-4b95-88cc-ec4048c6bba6"
+      Hint: EventName
+      Value: $name

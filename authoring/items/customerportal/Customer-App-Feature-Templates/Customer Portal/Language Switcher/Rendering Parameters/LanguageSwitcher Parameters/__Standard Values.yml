@@ -1,0 +1,27 @@
+﻿---
+ID: "5f3d29d7-6922-4c03-a666-6a68a1f41ecc"
+Parent: "ff4480fc-56f5-4f98-99f2-11971dd69a07"
+Template: "ff4480fc-56f5-4f98-99f2-11971dd69a07"
+Path: /sitecore/templates/Feature/Customer Portal/Language Switcher/Rendering Parameters/LanguageSwitcher Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e913f1e9-70b1-447f-bb1f-b333dca7c090"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251218T080632Z

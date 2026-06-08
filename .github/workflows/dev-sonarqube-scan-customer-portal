@@ -1,0 +1,83 @@
+name: Dev SonarQube Scan - Customer Portal
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Copy npmrc
+        run: cp .npmrc headapps/intralox-sites/.npmrc
+
+      - name: Install dependencies
+        working-directory: headapps/intralox-sites
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        run: npm install
+
+      - name: Install test deps
+        working-directory: headapps/intralox-sites
+        run: npm install -D vitest @vitest/coverage-v8
+
+      - name: Clean coverage
+        working-directory: headapps/intralox-sites
+        run: rm -rf coverage
+
+      - name: Run tests with coverage
+        working-directory: headapps/intralox-sites
+        run: |
+          echo "Running Vitest..."
+
+          npx vitest run \
+            --coverage \
+            --coverage.provider=v8 \
+            --coverage.reporter=lcov \
+            --coverage.reportsDirectory=coverage \
+            --coverage.include="src/**"
+
+      - name: Verify coverage
+        working-directory: headapps/intralox-sites
+        run: |
+          if [ -f coverage/lcov.info ]; then
+            echo "Coverage file found"
+            head -20 coverage/lcov.info
+          else
+            echo "Coverage file missing"
+            exit 1
+          fi
+
+      - name: Fix LCOV paths
+        working-directory: headapps/intralox-sites
+        run: |
+          sed -i 's|SF:.*/headapps/intralox-sites/|SF:|g' coverage/lcov.info
+
+      - name: SonarQube Scan
+        working-directory: headapps/intralox-sites
+        env:
+          SONAR_NEW_TOKEN: ${{ secrets.SONAR_NEW_TOKEN }}
+        run: |
+          curl -sSLo sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1.3006-linux.zip
+          unzip -q sonar-scanner.zip
+          export PATH="$PATH:$PWD/sonar-scanner-5.0.1.3006-linux/bin"
+
+          sonar-scanner \
+            -Dsonar.projectKey=Site-newIntralox.com \
+            -Dsonar.sources=src \
+            -Dsonar.tests=src \
+            -Dsonar.test.inclusions=**/*.test.ts,**/*.test.tsx,**/*.spec.ts,**/*.spec.tsx \
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info \
+            -Dsonar.cpd.exclusions=**/src/storybook/** \
+            -Dsonar.host.url=https://sonarqube.icreondemoserver.com:49876 \
+            -Dsonar.token=$SONAR_NEW_TOKEN

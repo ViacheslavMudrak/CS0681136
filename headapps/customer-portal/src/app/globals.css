@@ -1,0 +1,41 @@
+@import url("~@laitram-l-l-c/intralox-tailwind-config/css/fonts.css");
+@import "../assets/main.scss";
+
+.okta-form-title {
+  @apply h-auto sm:h-[30px] md:h-[32px] lg:h-[34px] leading-[1.2] sm:leading-[1.25] md:leading-[1.3] lg:leading-normal text-[24px] sm:text-[26px] md:text-[27px] lg:text-[28px] text-[#222222] tracking-[-0.4px] sm:tracking-[-0.45px] md:tracking-[-0.48px] lg:tracking-[-0.5px] w-full;
+}
+
+.link-btn {
+  @apply no-underline;
+}
+
+.link-btn:hover {
+  @apply no-underline!;
+}
+
+/* Desktop */
+input,
+textarea,
+select {
+  font-size: 14px;
+}
+
+/* Mobile */
+/* iOS auto-zooms when font-size is below 16px on form inputs. Setting it to 16px prevents the zoom. */
+@media (max-width: 768px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* Hide password reveal (eye) button on edge */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.column-spiltter-client-side {
+  @apply gap-[21px];
+}

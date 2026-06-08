@@ -1,0 +1,90 @@
+---
+description: Interactive UI — design system vs react-aria-components
+alwaysApply: false
+globs:
+  - "src/components/ui/**"
+  - "src/components/shared/**"
+  - "src/components/layout/**"
+---
+
+# UI Components and React Aria Conventions
+
+## Design system first
+
+- Use `@laitram-l-l-c/intralox-ui-components` for buttons, inputs, selects, popovers, and modals when available.
+- Wrap DS primitives in `src/components/ui/` — do not re-implement RAC primitives that the DS already exports.
+- Promote reusable patterns to the DS with Chromatic stories when multiple apps need them.
+
+## When to use `react-aria-components` directly
+
+Use RAC in the app only when the DS does not expose the primitive:
+
+- `RangeCalendar` / `DateField` / `DateSegment` composition
+- Accessible data tables (`Table`, `Row`, `Column`, `Cell`)
+- Full overlay shells not covered by DS exports (see `AppDialogShell`)
+
+Do not import `@react-aria/*` hooks in customer-portal — use `react-aria-components` or the DS.
+
+## Contribution conventions (Chromatic)
+
+Authoritative docs (internal):
+
+https://main--656e2fad67b38b22e605fc23.chromatic.com/?path=/docs/contribution-component-conventions--docs
+
+Until mirrored in-repo, follow these RAC patterns:
+
+### Dialogs and overlays
+
+```tsx
+<ModalOverlay isOpen={isOpen} onOpenChange={...} isDismissable>
+  <Modal>
+    <Dialog>
+      {({ close }) => (
+        <>
+          <Heading slot="title">Title</Heading>
+          {/* content */}
+        </>
+      )}
+    </Dialog>
+  </Modal>
+</ModalOverlay>
+```
+
+- Use controlled `isOpen` / `onOpenChange` — **do not** `return null` when closed (breaks enter/exit and focus).
+- Prefer `AppDialogShell` in `src/components/shared/app-dialog-shell/` for app modals.
+
+### Buttons and press
+
+- RAC `Button`: use `onPress`, not `onClick`.
+- DS `Button` wrappers: forward `onPress` via DS props.
+
+### Forms (direct RAC only)
+
+- Compose `TextField` → `Label` + `Input` + `FieldError` when not using DS `Input`.
+
+### Tables
+
+- Set `aria-label` on `Table`.
+- Wire `selectedKeys` / `onSelectionChange` to RAC selection — avoid parallel checkbox state.
+- Use stable row `id` values for selection.
+
+### Styling RAC components
+
+- Prefer `className` render props: `({ isPressed, isFocusVisible }) => cn(...)`.
+- Use design-system Tailwind tokens, not `gray-*` or arbitrary hex.
+
+### Dates
+
+- Use `@internationalized/date` with `I18nProvider` for calendars.
+
+## File placement
+
+| Location | Purpose |
+|----------|---------|
+| `src/components/ui/` | Thin DS wrappers (portal variants) |
+| `src/components/shared/` | App-wide shells (modal, panel, toast) |
+| `src/components/core/*/` | Feature-specific UI |
+
+Referenced:
+@src/components/shared/app-dialog-shell/AppDialogShell.tsx
+@src/components/ui/Button.tsx

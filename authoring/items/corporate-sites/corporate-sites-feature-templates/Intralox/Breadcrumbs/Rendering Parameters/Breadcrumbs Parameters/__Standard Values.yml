@@ -1,0 +1,33 @@
+﻿---
+ID: "7b4f0615-a77f-4929-b3ed-a29d388ecd40"
+Parent: "b62a3897-1034-4711-9ce9-a98cd3327c8e"
+Template: "b62a3897-1034-4711-9ce9-a98cd3327c8e"
+Path: /sitecore/templates/Feature/Intralox/Breadcrumbs/Rendering Parameters/Breadcrumbs Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a38a4f0-a412-44d8-8405-f744c902f128"
+      Hint: ColorScheme
+      Value: "{C00E05E0-6ECA-46E4-993B-09996BED2636}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5880ca2e-ccbf-48b4-a58b-5e551682ead5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260328T094626Z
+    - ID: "eeeaa157-d288-44a5-9fe6-cd030dc35066"
+      Hint: TextAlign
+      Value: "{2791AA75-4C0C-457C-A7C9-4325EDCF02EF}"

@@ -1,0 +1,127 @@
+#jqfiletree {
+  ul {
+    @apply text-ink-primary text-[11px] leading-[18px] p-0 m-0;
+    li {
+      @apply list-none p-0 m-0 pl-5 whitespace-nowrap;
+      &.directory {
+        @apply bg-[url("/assets/image/directory.png")] bg-no-repeat bg-left-top;
+        &.collapsed,
+        &.expanded {
+          @apply !list-none;
+        }
+      }
+      &.file {
+        @apply bg-[url("/assets/image/file.png")] bg-no-repeat bg-left-top !list-none;
+      }
+      &.expanded {
+        @apply bg-[url("/assets/image/folder_open.png")] bg-no-repeat bg-left-top;
+      }
+      &.wait {
+        @apply bg-[url("/assets/image/spinner.gif")] bg-no-repeat bg-left-top;
+      }
+      &.ext_3gp,
+      &.ext_avi,
+      &.ext_mov,
+      &.ext_mp4,
+      &.ext_mpg,
+      &.ext_mpeg,
+      &.ext_wmv {
+        @apply bg-[url("/assets/image/film.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_afp,
+      &.ext_afpa,
+      &.ext_asp,
+      &.ext_aspx,
+      &.ext_c,
+      &.ext_cfm,
+      &.ext_cgi,
+      &.ext_cpp,
+      &.ext_h,
+      &.ext_lasso,
+      &.ext_vb,
+      &.ext_xml {
+        @apply bg-[url("/assets/image/code.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_bat,
+      &.ext_com,
+      &.ext_exe {
+        @apply bg-[url("/assets/image/application.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_bmp,
+      &.ext_gif,
+      &.ext_jpg,
+      &.ext_jpeg,
+      &.ext_pcx,
+      &.ext_png,
+      &.ext_tif,
+      &.ext_tiff {
+        @apply bg-[url("/assets/image/picture.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_css {
+        @apply bg-[url("/assets/image/css.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_doc {
+        @apply bg-[url("/assets/image/doc.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_fla,
+      &.ext_swf {
+        @apply bg-[url("/assets/image/flash.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_htm,
+      &.ext_html {
+        @apply bg-[url("/assets/image/html.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_jar {
+        @apply bg-[url("/assets/image/java.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_js,
+      &.ext_pl,
+      &.ext_py {
+        @apply bg-[url("/assets/image/script.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_log,
+      &.ext_txt {
+        @apply bg-[url("/assets/image/txt.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_m4p,
+      &.ext_mp3,
+      &.ext_ogg,
+      &.ext_wav {
+        @apply bg-[url("/assets/image/music.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_pdf {
+        @apply bg-[url("/assets/image/pdf.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_php {
+        @apply bg-[url("/assets/image/php.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_ppt {
+        @apply bg-[url("/assets/image/ppt.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_psd {
+        @apply bg-[url("/assets/image/psd.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_rb,
+      &.ext_rbx,
+      &.ext_rhtml,
+      &.ext_ruby {
+        @apply bg-[url("/assets/image/ruby.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_rpm {
+        @apply bg-[url("/assets/image/linux.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_sql {
+        @apply bg-[url("/assets/image/db.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_xls {
+        @apply bg-[url("/assets/image/xls.png")] bg-no-repeat bg-left-top;
+      }
+      &.ext_zip {
+        @apply bg-[url("/assets/image/zip.png")] bg-no-repeat bg-left-top;
+      }
+    }
+    a {
+      @apply block text-[11px] leading-[18px] text-ink-primary no-underline px-[2px] hover:bg-cad-files-hover;
+    }
+  }
+}

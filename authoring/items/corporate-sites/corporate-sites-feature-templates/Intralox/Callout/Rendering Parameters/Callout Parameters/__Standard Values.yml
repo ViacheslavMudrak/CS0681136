@@ -1,0 +1,42 @@
+﻿---
+ID: "5cd57f28-01e2-4224-ab06-570193643a00"
+Parent: "795eb14b-33d9-4ab4-b7ef-53d93752a329"
+Template: "795eb14b-33d9-4ab4-b7ef-53d93752a329"
+Path: /sitecore/templates/Feature/Intralox/Callout/Rendering Parameters/Callout Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03a8a1f8-87e3-4895-b567-b4bc582226b2"
+      Hint: TextAlign
+      Value: "{C09973F7-735E-4971-AFB3-8949F052D0CB}"
+    - ID: "06ce5210-2384-4866-acc6-53da50981406"
+      Hint: Style
+      Value: "{E0E733B5-BAFE-4794-AB9D-4A1258AD3277}"
+    - ID: "07ff7c60-8550-4206-b802-f1aa33c11ad5"
+      Hint: Direction
+      Value: "{7D84D40F-895D-49D7-920B-96C57EA673AD}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "78345788-6003-4c32-9859-6eba6c7c90e2"
+      Hint: ColorScheme
+      Value: "{26484B6E-EF91-4480-878B-FC5B675C430C}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fdce8323-4f34-4e2a-8e43-7d122d109d0d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260316T080847Z
+    - ID: "e024158c-c6ee-4a21-810d-b97a9879b803"
+      Hint: TextSize
+      Value: "{F3910704-E1EA-4396-88AD-3317CCA82131}"

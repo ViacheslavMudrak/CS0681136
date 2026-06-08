@@ -1,0 +1,30 @@
+﻿---
+ID: "9b24eedb-0c78-4994-a0f6-0d92c4fe40d1"
+Parent: "cd6ca0a1-ec4a-4581-aa25-665eae726dbe"
+Template: "cd6ca0a1-ec4a-4581-aa25-665eae726dbe"
+Path: /sitecore/templates/Foundation/Intralox/Products/Modular Plastic Belt Variant/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "934c1f82-bcd9-4dab-acf3-fa0cbfdbf51d"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260508T114915Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "366684e7-c5c6-4c0a-8ba5-24d7b37f3b94"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shubham.lekhi@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260603T081810Z

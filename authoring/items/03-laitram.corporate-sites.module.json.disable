@@ -1,0 +1,57 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "laitram-site",
+  "items": {
+    "path": "laitram-site",
+    "includes": [
+      {
+        "name": "laitram-site-Project-Templates",
+        "path": "/sitecore/templates/Project/Corporate Sites/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "laitram-site-Feature-Templates",
+        "path": "/sitecore/templates/Feature/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "laitram-site-Feature-Branch-Templates",
+        "path": "/sitecore/templates/Branches/Feature/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "laitram-site-Feature-Renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "laitram-site-Feature-Placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "laitram-site-Feature-Settings",
+        "path": "/sitecore/system/Settings/Feature/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "laitram-site-Project-Settings",
+        "path": "/sitecore/system/Settings/Project/Corporate Sites/Laitram",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateAndUpdate"
+      },
+      {
+        "name": "laitram-site-Tenant",
+        "path": "/sitecore/content/Corporate Sites/Laitram",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      }
+    ]
+  }
+}

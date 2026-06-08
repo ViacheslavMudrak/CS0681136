@@ -1,0 +1,46 @@
+﻿---
+ID: "dd9abf9d-e023-407b-8852-f0cf262b145f"
+Parent: "f37c4e45-0498-4e6b-94be-a078874cdd62"
+Template: "f37c4e45-0498-4e6b-94be-a078874cdd62"
+Path: /sitecore/templates/Feature/Intralox/Media Tile/Rendering Parameters/Text Settings/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T102952Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "69e136ab-0aad-45a7-a6e7-67cce0ec63bb"
+      Hint: Transform
+      Value: "{7B7D616F-F380-4759-A5FB-7282F7CDDA93}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f602c426-160a-4bc2-ad91-718390d2ded2"
+    - ID: "b1753905-dfb5-4014-9947-ee75f3bb6359"
+      Hint: HeadingLevel
+      Value: "{B94C82C5-F8B3-472F-90F3-7D0764B14C44}"
+    - ID: "b8b51d48-4b0c-4cff-9b10-de4447dbac28"
+      Hint: HeadlineWidth
+      Value: "{8BA6BF0C-DCFE-4B6C-A95E-B234EB4BCECC}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d787ef31-9b94-43c8-bb7c-26a4c2c3e5ac"
+      Hint: Color
+      Value: "{9127CB77-7836-486A-A6B8-5C483784B4E3}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260217T103830Z
+    - ID: "e6734e1d-adef-40fb-8a4a-e5721fed0ebb"
+      Hint: HeadlineSize
+      Value: "{4A1D3F11-EAEF-4682-ACB1-86DF053DD3DD}"

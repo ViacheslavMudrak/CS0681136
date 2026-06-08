@@ -1,0 +1,69 @@
+﻿---
+ID: "287a7054-4998-4260-9ce1-369978f34401"
+Parent: "d3eaa1e5-f991-44c2-94f6-0ec02a7e051b"
+Template: "d3eaa1e5-f991-44c2-94f6-0ec02a7e051b"
+Path: /sitecore/templates/Feature/Intralox/Belt Identifier/Belt Identifier/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5ac00954-e0c4-4ae6-ac41-264b157c628e"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c9ab48a-1fb2-4b0d-bcb1-8a6d10dadb2d"
+      Hint: Step2Title
+      Value: "Step 2: Select your belt type"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260311T095547Z
+    - ID: "46bf7b91-2d13-4c75-b5a9-0ffeb48d8258"
+      Hint: Step2Message
+      Value: |
+        <p>{{SERIES_COUNT}} series have styles that match the selected criteria. You may <a href="{{ITEM_LINK}}">view these now</a> or continue refining your search below.</p>
+        
+    - ID: "4a5858a9-f4e3-4bc1-8d73-6b334b748851"
+      Hint: Step4Title
+      Value: "Step 4: Select the series with your belt’s pitch."
+    - ID: "4e6d424c-2805-4b4e-b5a9-9bc00fc57aba"
+      Hint: Step3Title
+      Value: "Step 3: Measure your belt’s pitch."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "54cc14a1-a933-469e-887b-12cb625a1a9c"
+      Hint: Step4Message
+      Value: "<p>{{SERIES_COUNT}} series have styles that match the selected criteria.</p>"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "add36b27-1b74-485b-b338-e05448fae56c"
+    - ID: "97187a27-f91f-4cba-8019-20329c2c6fc8"
+      Hint: ButtonText
+      Value: "View {{SERIES_COUNT}} matching series"
+    - ID: "a2d1a66e-460e-49f2-9d67-9e3bbc6087e5"
+      Hint: Step3Message
+      Value: |
+        <p>The "pitch" is defined as the distance between the center point of one belt rod ("hinge rod") to the center of the next rod.</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260529T110752Z
+    - ID: "dee83d96-e0ae-402a-96c3-c51320e52cb0"
+      Hint: Step1Message
+      Value: |
+        <p>{{SERIES_COUNT}} series have styles that match the selected criteria. You may <a href="{{ITEM_LINK}}">view these now</a> or continue refining your search below.</p>
+    - ID: "ef13ab88-f393-4eaa-b7cb-f657b1816518"
+      Hint: Step1Title
+      Value: "Step 1: Select your technology"

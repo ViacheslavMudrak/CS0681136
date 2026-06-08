@@ -1,0 +1,36 @@
+﻿---
+ID: "6a75fa1f-b7ed-4a3d-ab84-7119551c9e92"
+Parent: "3390d1f4-2cb1-4946-b4d0-61f3153c32df"
+Template: "3390d1f4-2cb1-4946-b4d0-61f3153c32df"
+Path: /sitecore/templates/Feature/Intralox/Carousel/Carousel Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {5D2CB473-63C7-42F7-A12B-4E6F32AD3565}
+    {3390D1F4-2CB1-4946-B4D0-61F3153C32DF}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "dbc7bd50-fe32-401e-9a6d-fa952ff4fae0"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5d807cf5-3d25-4d95-912b-6e08738686e1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T180615Z

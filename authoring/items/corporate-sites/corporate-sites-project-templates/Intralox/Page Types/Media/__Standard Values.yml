@@ -1,0 +1,44 @@
+﻿---
+ID: "161bc2f0-cf19-47ce-8afa-fc9137641035"
+Parent: "2df95850-4a31-4d9d-bdcf-0da1a83a9367"
+Template: "2df95850-4a31-4d9d-bdcf-0da1a83a9367"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Media/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {0420A786-51FA-44A3-9BCE-364FA4B3FDCF}
+    {CB311034-AC20-49A3-9E49-58B369366395}
+    {E8E390F2-0EF9-4F86-9879-9A6E36762757}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c26c14bc-b85a-42ca-bf44-e151c93961a0"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T114641Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b6780d4a-fc62-4f50-ada5-e777a7d623d6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260527T183712Z

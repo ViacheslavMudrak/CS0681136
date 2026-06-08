@@ -1,0 +1,229 @@
+@import url("../../node_modules/@okta/okta-signin-widget/dist/css/okta-sign-in.min.css");
+
+.okta-widget-wrapper {
+  * {
+    font-family: "Helvetica Neue LT Pro", sans-serif !important;
+  }
+
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    background: #0377ba !important;
+    border-color: #0074b3 !important;
+  }
+}
+
+.mode-signin {
+  .siw-main-footer,
+  [data-se="cancel"],
+  [data-se="reset-password"] {
+    display: none !important;
+  }
+
+  .o-form-button-bar {
+    padding-bottom: 0 !important;
+  }
+
+  .auth-content {
+    padding: 0px !important;
+  }
+
+  @media (max-width: 1024px) {
+    .auth-container {
+      width: auto !important;
+    }
+  }
+}
+
+.okta-reset-password-widget-container {
+  .o-form-button-bar {
+    padding-bottom: 0 !important;
+  }
+}
+
+#reset-password-form {
+  .auth-content {
+    padding: 32px 0px !important;
+  }
+}
+
+#okta-sign-in {
+  .okta-form-input-error {
+    margin-left: 2px;
+  }
+}
+
+.mode-register {
+  [data-se="cancel"],
+  [data-se="password-authenticator--rules"],
+  [data-se="back"] {
+    display: none !important;
+  }
+
+  .auth-content {
+    padding: 0px !important;
+  }
+
+  .chzn-container {
+    .chzn-single {
+      border-color: #d7d9da !important;
+    }
+  }
+}
+
+[data-se-for-name="userProfile.userAgreementAccepted"] {
+  margin-bottom: 25px !important;
+  margin-top: 25px !important;
+}
+
+#okta-sign-in {
+  min-width: auto !important;
+}
+
+@media (min-width: 768px) {
+  #okta-sign-in {
+    width: 380px !important;
+  }
+}
+
+#okta-sign-in .okta-sign-in-widget-container,
+.okta-widget-wrapper,
+#reset-password-form,
+#okta-sign-in,
+.okta-reset-password-widget-container {
+  margin: 0 !important;
+  border: none !important;
+
+  .identifier-container {
+    top: 0 !important;
+  }
+
+  .siw-main-view .custom-checkbox {
+    width: auto !important;
+  }
+
+  .okta-form-label {
+    color: #222222;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    line-height: 138%;
+    padding: 8px 10px 8px 0;
+  }
+
+  input::placeholder,
+  textarea::placeholder,
+  ::placeholder {
+    color: #a8aaae !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #6e6e78 !important;
+    font-size: 12px;
+  }
+
+  input:focus:placeholder-shown::placeholder {
+    opacity: 0.7 !important;
+  }
+
+  .o-form {
+    .input-fix,
+    .textarea-fix {
+      border: 0 solid #d7d9da !important;
+
+      &:hover,
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .okta-sign-in-header,
+  .o-form-head,
+  .signup-info,
+  [data-se="o-form-fieldset-rememberMe"],
+  [data-se="unlock"],
+  [data-se="help"] {
+    display: none !important;
+  }
+
+  .signup-info span:not(.signup-link) {
+    display: none !important;
+  }
+
+  .footer-info {
+    border-top: none !important;
+    padding-bottom: 1.5rem !important;
+
+    .js-enroll {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 100%;
+      color: #0377ba;
+    }
+  }
+
+  .auth-content {
+    padding-top: 0 !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    border: 1px solid #d7d9da !important;
+    height: 36px !important;
+    padding: 8px 12px !important;
+    border-radius: 2px !important;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .button-primary {
+    border-radius: 28px !important;
+    height: 44px !important;
+  }
+
+  .chzn-container-active .o-form-select,
+  .chzn-container:focus-within,
+  .chzn-drop:focus-within {
+    box-shadow: none !important;
+  }
+
+  .chzn-drop {
+    height: 30px !important;
+  }
+
+  [data-se="o-form-fieldset-userProfile.jobRoleRegistration"] .o-form-select {
+    box-shadow: none !important;
+  }
+
+  .okta-idps-container {
+    margin-bottom: 15px;
+  }
+}
+
+.okta-reset-password-widget-container .siw-main-footer {
+  display: none !important;
+}
+
+#okta-sign-in.auth-container.main-container {
+  box-shadow: none !important;
+}
+
+#reset-password-error {
+  .border-info-error,
+  .border-error {
+    align-items: center;
+
+    .text-base {
+      font-size: 12px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #okta-sign-in.auth-container .auth-content {
+    margin: 0 auto;
+    max-width: auto !important;
+  }
+}

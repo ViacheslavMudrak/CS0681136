@@ -1,0 +1,5 @@
+/*
+ * Legacy entry — do not import this file in new code.
+ * App styles load via src/app/globals.css → main.scss (SCSS tokens in base/variables.scss).
+ */
+@import './main.scss';

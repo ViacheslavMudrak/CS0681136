@@ -1,0 +1,34 @@
+﻿---
+ID: "5753bdc7-9fc6-44d9-b730-72754e4bc73f"
+Parent: "69880587-fca0-4463-9a0d-f5283179dd0e"
+Template: "69880587-fca0-4463-9a0d-f5283179dd0e"
+Path: /sitecore/templates/Foundation/Intralox/Floating Buttons/Floating Button/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fe2a994-6ce8-4507-a8c2-ed8e2260fe4d"
+      Hint: Icon
+      Value: "{4E8FAD49-EA87-464F-AC7D-54E924EF187D}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260306T162253Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "83ff487b-9b8c-42f6-948e-edce27c6fe91"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T162908Z

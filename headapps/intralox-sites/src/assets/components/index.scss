@@ -1,0 +1,16 @@
+@import "./layout.scss";
+@import "./two-column-layout.scss";
+@import "./navigation-chrome.scss";
+@import "./link-renderer.scss";
+@import "./video.scss";
+@import "./table.scss";
+@import "./form.scss";
+@import "./cad-files.scss";
+
+header #header .bs-title {
+  @apply pl-[50px] max-mobile-large:pl-0 max-mobile-large:text-center max-mobile-large:mt-[-5px];
+
+  h1 {
+    @apply text-[24px] font-semibold leading-[18px] pt-[40px] m-0 max-mobile-large:font-medium max-mobile-large:leading-[29px] max-mobile-large:pt-0 max-mobile-large:mb-[10px];
+  }
+}

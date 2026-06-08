@@ -1,0 +1,39 @@
+﻿---
+ID: "b88b99e1-0c81-4a01-b4fa-4c4e5acf456f"
+Parent: "855be2eb-ee71-483b-95c5-0b2f13d64c96"
+Template: "855be2eb-ee71-483b-95c5-0b2f13d64c96"
+Path: /sitecore/templates/Feature/Intralox/Media/Rendering Parameters/Media Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "16c08ab7-8687-48ee-95ae-d43e4879141c"
+      Hint: Format
+      Value: "{81101341-0F44-49EE-96BB-454AAFE48735}"
+    - ID: "1fc1bd78-d363-484a-bc3d-797ee45ae055"
+      Hint: Region
+      Value: "{B4A718C8-D6F6-4E91-830C-BDF1F34F2AF4}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f5b2c02-271f-42d7-addc-68f483c4a7ab"
+    - ID: "92d1d451-8fa3-4cd6-96e0-f1e52a013c28"
+      Hint: ObjectFit
+      Value: "{57F6ABEC-1253-4E71-9178-D13CCF4245A0}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260311T153616Z
+    - ID: "e938ba2d-392e-4c1a-8547-9ef845156609"
+      Hint: FocalPoint
+      Value: "{F16912F9-3803-4887-A707-77EDEA71883C}"

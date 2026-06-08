@@ -1,0 +1,41 @@
+﻿---
+ID: "c2ca22d3-39db-45a5-a580-0f41fac78e58"
+Parent: "f7f3377a-1a33-4057-a560-1fd06bf9b868"
+Template: "f7f3377a-1a33-4057-a560-1fd06bf9b868"
+Path: /sitecore/templates/Feature/Customer Portal/Auth/Auth/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8e428c0d-4466-42f8-beee-1904ec4d0b60"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251205T113859Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0a898cf7-7e0b-40de-9b44-057547613484"
+    - ID: "9c66dd40-93d2-4bf1-ae93-603e1c50bee8"
+      Hint: AuthenticationType
+      Value: Register
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T145518Z

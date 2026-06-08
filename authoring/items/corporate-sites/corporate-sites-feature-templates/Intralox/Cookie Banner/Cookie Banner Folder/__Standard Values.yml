@@ -1,0 +1,36 @@
+﻿---
+ID: "8a924dd5-4960-41e4-a48a-9df0ef49c9c7"
+Parent: "c435fec5-7ff3-4b87-8dc3-2fecaf7364c0"
+Template: "c435fec5-7ff3-4b87-8dc3-2fecaf7364c0"
+Path: /sitecore/templates/Feature/Intralox/Cookie Banner/Cookie Banner Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {1D292A8D-8C89-40A2-857F-071F81B8D7A2}
+    {C435FEC5-7FF3-4B87-8DC3-2FECAF7364C0}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3b3ef1c5-880b-4010-8f2d-6f415e9baec8"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "486e4e14-7bf8-4c1c-9a84-b93d1e666434"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260512T162218Z

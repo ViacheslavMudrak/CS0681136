@@ -1,0 +1,36 @@
+﻿---
+ID: "23251aad-fa40-4139-865b-fe43c1b3bc99"
+Parent: "c19f9ed0-9f9a-4e9c-ac01-7b196fc0eb54"
+Template: "c19f9ed0-9f9a-4e9c-ac01-7b196fc0eb54"
+Path: /sitecore/templates/Feature/Intralox/Media Box/Rendering Parameters/Media Box Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "7c512bee-f45b-429a-84dc-e2eee6e7c73f"
+      Hint: ContentOptions
+      Value: "{57F6ABEC-1253-4E71-9178-D13CCF4245A0}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "06a6837f-2fb2-4a66-97cf-4d3be85b24e0"
+    - ID: "9a209b76-d887-4fbd-8bb5-13178e869165"
+      Hint: Theme
+      Value: "{F16912F9-3803-4887-A707-77EDEA71883C}"
+    - ID: "b949ee96-5357-4211-b41c-83c559dc58d0"
+      Hint: Format
+      Value: "{81101341-0F44-49EE-96BB-454AAFE48735}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260327T142431Z

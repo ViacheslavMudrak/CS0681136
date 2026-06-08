@@ -1,0 +1,68 @@
+// SCSS Functions for calculations and transformations
+
+// Convert pixels to rem
+@function rem($pixels, $base: 16) {
+  @return ($pixels / $base) * 1rem;
+}
+
+// Convert pixels to em
+@function em($pixels, $base: 16) {
+  @return ($pixels / $base) * 1em;
+}
+
+// Calculate percentage width
+@function percentage($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+// Strip unit from a value
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Calculate line height from font size
+@function line-height($font-size, $line-height-ratio: 1.5) {
+  @return $font-size * $line-height-ratio;
+}
+
+// Color manipulation functions (complement Tailwind theme colors)
+@function lighten-color($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function darken-color($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Calculate z-index layers
+@function z($layer) {
+  $z-layers: (
+    'dropdown': 1000,
+    'sticky': 1020,
+    'fixed': 1030,
+    'modal-backdrop': 1040,
+    'modal': 1050,
+    'popover': 1060,
+    'tooltip': 1070,
+  );
+  
+  @return map-get($z-layers, $layer);
+}
+
+// Get breakpoint value (mobile <600 | tablet 600–991 | desktop ≥992 | large desktop ≥1200; matches intralox.com)
+@function breakpoint($name) {
+  $breakpoints: (
+    'mobile-max': 599px,
+    'tablet-min': 600px,
+    'tablet-max': 991px,
+    'desktop-min': 992px,
+    'desktop-large-min': 1200px,
+    'sm': 600px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+  );
+
+  @return map-get($breakpoints, $name);
+}
+

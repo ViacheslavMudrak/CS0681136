@@ -1,0 +1,33 @@
+﻿---
+ID: "2fb09576-16e3-495c-a3bd-c4e6c37ea470"
+Parent: "ca6adede-6ea4-461a-b448-f4f0489f277d"
+Template: "ca6adede-6ea4-461a-b448-f4f0489f277d"
+Path: /sitecore/templates/Feature/Intralox/Related Case Studies/Rendering Parameters/Related Case Studies Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0e3965d5-85ca-4ac5-b2c5-913b4341a9df"
+      Hint: CardSize
+      Value: "{26232D1D-5A2F-4B1B-BFD5-A9365204F1A1}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "83decbd0-177d-41a1-8fee-a5338937693c"
+      Hint: ColorScheme
+      Value: "{C92A1871-201F-47A2-B803-B739E5EABFF0}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "891bca83-31ec-44da-af4d-07b370db0bb6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260424T061921Z

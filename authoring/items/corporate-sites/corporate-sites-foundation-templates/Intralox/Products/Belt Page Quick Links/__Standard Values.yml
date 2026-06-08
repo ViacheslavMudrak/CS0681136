@@ -1,0 +1,55 @@
+﻿---
+ID: "8e049b30-1cdc-41c4-81b7-104aee73e166"
+Parent: "8be21fba-5c63-41c1-a170-8c9b03433a1e"
+Template: "8be21fba-5c63-41c1-a170-8c9b03433a1e"
+Path: /sitecore/templates/Foundation/Intralox/Products/Belt Page Quick Links/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "76f03bfa-5f64-41f3-90dd-e5c4fb6e7613"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a06d0f0-8747-4716-a485-19361cbb6a3e"
+      Hint: RequestQuoteLink
+      Value: |
+        <link text="Request a Quote" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{C256CD52-1E02-45E9-86B7-91351BED447F}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260511T102910Z
+    - ID: "264c3118-d01f-4d37-9c1a-7e7952a31084"
+      Hint: CopyButtonText
+      Value: Copy URL
+    - ID: "4b155832-e3fe-415e-8bd4-31b6dfd67d39"
+      Hint: ShareLink
+      Value: |
+        <link text="Share" linktype="javascript" url="javascript:void(0)" anchor="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "739e86f2-4248-4073-9d5c-dade02489bea"
+      Hint: CloseButtonText
+      Value: Close
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2888aeab-00e3-40af-bbac-504aa9e36254"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T103157Z
+    - ID: "e9aaa9ae-ba13-4873-ac42-a0d660dee584"
+      Hint: ModalTitle
+      Value: Copy and share this page

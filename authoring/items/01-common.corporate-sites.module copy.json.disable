@@ -1,0 +1,39 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "shared",
+  "items": {
+    "path": "shared",
+    "includes": [
+      {
+        "name": "Corporate-Sites-Project-Folder",
+        "path": "/sitecore/templates/Project/Corporate Sites",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Corporate-Sites-Project-Settings-Tenant-Folder",
+        "path": "/sitecore/system/Settings/Project/Corporate Sites",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Corporate-Sites-Tenant-Folder",
+        "path": "/sitecore/content/Corporate Sites",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Corporate-Sites-Global-Content-Folder",
+        "path": "/sitecore/content/Corporate Sites/Global Content",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateOnly"
+      },
+      {
+        "name": "Corporate-Sites-Global-Settings-Folder",
+        "path": "/sitecore/content/Corporate Sites/Global Settings",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateOnly"
+      }
+    ]
+  }
+}

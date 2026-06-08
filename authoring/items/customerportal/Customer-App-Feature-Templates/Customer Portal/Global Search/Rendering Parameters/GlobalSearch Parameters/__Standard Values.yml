@@ -1,0 +1,27 @@
+﻿---
+ID: "3712823d-6783-478b-9095-fa50873ea525"
+Parent: "a6a72793-d713-4f8c-b96b-35436c1c15b4"
+Template: "a6a72793-d713-4f8c-b96b-35436c1c15b4"
+Path: /sitecore/templates/Feature/Customer Portal/Global Search/Rendering Parameters/GlobalSearch Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a04d1aa5-e9c1-4ff3-b774-e4081b383da5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251219T111608Z

@@ -1,0 +1,44 @@
+﻿---
+ID: "7a9714b3-d2a5-4f0c-80b3-003b6cb2c6a9"
+Parent: "09de0eff-3bf0-40f3-9f3f-b3df4037c90f"
+Template: "09de0eff-3bf0-40f3-9f3f-b3df4037c90f"
+Path: /sitecore/templates/Feature/Intralox/Media Tile/Media Tile/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {CC1C5C22-532F-4423-A8D1-733A89975745}
+    {C5862026-A76B-4EE9-BEC4-5450B2F37F61}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "94e5b504-8111-4a13-b96a-a2920d65016b"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0d893434-ad83-4e1c-a0b6-15c76c7595ba"
+      Hint: FocalPoint
+      Value: "{F16912F9-3803-4887-A707-77EDEA71883C}"
+    - ID: "1be9b989-48e6-4b8d-8d55-3f60a8ad7af4"
+      Hint: ButtonAlignment
+      Value: "{0F4546CC-1D89-49D6-B000-B057375C9C77}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T092150Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f17401bb-52b0-4e50-ac6f-01437cf38cb3"
+    - ID: "a2e0fa1e-776a-4dfb-8a2f-6dc68a991c6a"
+      Hint: MediaType
+      Value: "{BEFDBBEA-75AB-4F7A-B906-F97061E79ECA}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260306T123932Z

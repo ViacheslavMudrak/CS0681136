@@ -1,0 +1,27 @@
+﻿---
+ID: "74682a8c-f504-46ab-9fbf-4780b69722ad"
+Parent: "2441a2f6-e493-4264-b024-9c5daf7f4e4f"
+Template: "2441a2f6-e493-4264-b024-9c5daf7f4e4f"
+Path: /sitecore/templates/Feature/Customer Portal/Order Management/Rendering Parameters/OrderManagement Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0af128f-f783-437a-9a6d-39df93b0b84f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260324T090657Z

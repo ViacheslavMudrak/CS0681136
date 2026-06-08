@@ -1,0 +1,34 @@
+﻿---
+ID: "30b0e2dc-607f-4181-91c4-fff189230eb6"
+Parent: "f02736d3-65be-4684-ad91-95303d3f73a6"
+Template: "f02736d3-65be-4684-ad91-95303d3f73a6"
+Path: /sitecore/templates/Foundation/Intralox/Authors/Author/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T092522Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "6ea7c9d6-ffda-4975-93d4-fa5e4b3e2337"
+      Hint: Name
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38756941-9309-4205-b474-ae7b28779ea9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T092832Z

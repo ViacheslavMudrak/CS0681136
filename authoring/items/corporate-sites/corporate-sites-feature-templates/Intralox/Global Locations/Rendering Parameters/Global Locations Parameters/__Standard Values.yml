@@ -1,0 +1,30 @@
+﻿---
+ID: "cc8e4623-f996-4639-83aa-a80d9c0b1bf7"
+Parent: "82e94cb7-66c1-4489-a257-aaff9cd35b56"
+Template: "82e94cb7-66c1-4489-a257-aaff9cd35b56"
+Path: /sitecore/templates/Feature/Intralox/Global Locations/Rendering Parameters/Global Locations Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b436588-833e-46ed-8621-c38996d6e2ef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260525T065827Z
+    - ID: "e5a05a4e-6eb0-41c2-b43a-d23a6d2a6b51"
+      Hint: BackgroundColor
+      Value: "{DEABC4B1-0E3D-4470-A8F1-7CAC50978FF9}"

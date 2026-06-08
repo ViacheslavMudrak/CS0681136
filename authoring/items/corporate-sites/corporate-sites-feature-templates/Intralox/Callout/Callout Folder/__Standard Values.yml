@@ -1,0 +1,36 @@
+﻿---
+ID: "82dbc9f2-3f1a-46e8-b8c8-35aaaec6f902"
+Parent: "1c527ac8-60e7-453c-b441-5eb5cd2b804b"
+Template: "1c527ac8-60e7-453c-b441-5eb5cd2b804b"
+Path: /sitecore/templates/Feature/Intralox/Callout/Callout Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {028BD58F-0C59-4D5E-ADFA-382329126BD9}
+    {1C527AC8-60E7-453C-B441-5EB5CD2B804B}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "92306eb2-f6d5-4b50-a0f5-7f7c66d3d672"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dba65d8d-877d-4c01-8885-616488d92985"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260217T094336Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "a1795521-3af4-4f4c-ba94-331d498ac851"
+Parent: "b1e6a9ed-d577-4142-9324-a7f73f66bd4e"
+Template: "9c7cf8a0-e158-4e3f-9dc8-bd15da8d19ba"
+Path: /sitecore/templates/Branches/Feature/Intralox/Country Contact/Country Contact/$name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260219T160507Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47b68b6a-070d-42dc-8c40-59b5b536a5ab"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260219T160507Z

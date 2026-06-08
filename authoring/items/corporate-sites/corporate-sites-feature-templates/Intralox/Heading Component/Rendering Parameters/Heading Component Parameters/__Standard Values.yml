@@ -1,0 +1,33 @@
+﻿---
+ID: "567c520e-2697-46ed-9038-cc1cec3d29b1"
+Parent: "4164172e-5307-487d-984b-91b2c17a55b4"
+Template: "4164172e-5307-487d-984b-91b2c17a55b4"
+Path: /sitecore/templates/Feature/Intralox/Heading Component/Rendering Parameters/Heading Component Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14689646-2ed4-40bd-877f-f81e79d9094e"
+    - ID: "96849b5d-0db1-450c-b716-29697ab5406f"
+      Hint: Width
+      Value: "{3C3EB5BC-D2B8-4E40-AF6F-75AC38DBE7D6}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "cde5645d-d76f-450d-842c-23fa3477f105"
+      Hint: Color
+      Value: "{972ED5B9-5070-466B-B61E-66A37F5B220C}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260510T120741Z

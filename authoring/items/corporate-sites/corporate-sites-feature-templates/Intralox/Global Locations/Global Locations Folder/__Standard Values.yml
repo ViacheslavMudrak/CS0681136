@@ -1,0 +1,36 @@
+﻿---
+ID: "cbc68bff-9c3e-4f4f-b8c3-6c99f88ec518"
+Parent: "d150373a-6022-4342-a0a2-bf9c67fa668c"
+Template: "d150373a-6022-4342-a0a2-bf9c67fa668c"
+Path: /sitecore/templates/Feature/Intralox/Global Locations/Global Locations Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {549EE4D4-C9BE-4285-AE30-F82D673EB277}
+    {D150373A-6022-4342-A0A2-BF9C67FA668C}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ea7583f9-0764-4b43-af85-838c3a5cf7ae"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1ae7acd0-0fc0-4402-945d-f7bcc487a685"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T064715Z

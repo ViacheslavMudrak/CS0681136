@@ -1,0 +1,36 @@
+﻿---
+ID: "c9376fb7-71f5-48ed-abff-787928e5f17f"
+Parent: "7b19171f-0aa0-4167-88c1-59c6f00c8024"
+Template: "7b19171f-0aa0-4167-88c1-59c6f00c8024"
+Path: /sitecore/templates/Feature/Intralox/Branding Line/Branding Line Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {D5536072-D298-4D4E-93B2-DAD7E9678CC6}
+    {7B19171F-0AA0-4167-88C1-59C6F00C8024}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6de374f2-6e6e-4d01-b8b2-f948fe1a509a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f4a30ce9-1c8e-454a-9461-dff05b54b49d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260224T133925Z

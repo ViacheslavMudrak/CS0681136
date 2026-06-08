@@ -1,0 +1,30 @@
+﻿---
+ID: "7d24a72c-09d3-4869-a071-050ae13fe531"
+Parent: "4e6b1115-de45-429f-837a-22473c42b450"
+Template: "4e6b1115-de45-429f-837a-22473c42b450"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Products/Product Group/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{5A279D0E-4273-459D-B5F4-89E2AFFAED85}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "823d3066-4ccd-4d92-b1b7-6505f84a4bfd"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260407T105945Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be2a8d9a-400e-4b21-aa4e-727f84c63a9d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260523T075014Z

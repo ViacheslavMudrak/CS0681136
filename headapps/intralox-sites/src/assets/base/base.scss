@@ -1,0 +1,99 @@
+.button-default,
+.default {
+  @apply default-link-button bg-surface-panel-active text-ink-secondary;
+}
+
+.button-success,
+.success {
+  @apply default-link-button bg-btn-green-light text-ink-inverse hover:text-ink-inverse hover:bg-btn-green;
+}
+
+.button-warning,
+.warning {
+  @apply default-link-button bg-btn-red text-ink-inverse hover:text-ink-inverse hover:bg-btn-red-active;
+}
+
+/* base richtext */
+
+h5,
+h6 {
+  @apply m-[5px_0_0];
+}
+strong {
+  @apply font-bold;
+}
+ul,
+ol {
+  @apply py-[5px] ml-[10px];
+}
+li {
+  @apply text-font-normal ml-[15px];
+}
+ul {
+  li {
+    @apply list-disc list-inside;
+  }
+}
+ol {
+  li {
+    @apply list-decimal list-inside;
+  }
+}
+/* Anchor styles scoped to rich-text output only — not applied globally.
+   Components must style their own anchors via Tailwind classes on JSX. */
+.field-richtext a,
+.rich-text a {
+  @apply text-accent-danger-muted underline text-[1em] hover:text-ink-subtle;
+}
+table {
+  @apply h-auto! border-1 border-solid border-stroke-default;
+  tr,
+  th,
+  td {
+    @apply p-[5px];
+  }
+  caption {
+    @apply bg-surface-muted overflow-hidden text-font-big font-bold text-[1.2em] p-[10px] ml-0;
+  }
+  tr {
+    @apply border-none;
+  }
+
+  /* Rich Text patents/trademarks catalogs: horizontal rules only (Tailwind in RichText.tsx). */
+  &:not(.patents-table):not(.trademarks-table) {
+    &,
+    tr,
+    th,
+    td {
+      @apply border-1 border-solid border-stroke-default bg-surface border-collapse align-middle;
+    }
+    th,
+    td {
+      @apply border-t-1 border-l-1;
+    }
+    th {
+      @apply bg-surface-subtle text-font-normal font-bold p-[7px];
+      &:first-child {
+        @apply border-l-0;
+      }
+    }
+    td {
+      &:first-child {
+        @apply border-l-0;
+      }
+    }
+  }
+
+  &.patents-table,
+  &.trademarks-table {
+    &,
+    tr,
+    th,
+    td {
+      @apply border-0 bg-surface align-middle;
+    }
+    th {
+      @apply bg-surface-subtle text-font-normal font-bold p-[7px];
+    }
+  }
+}

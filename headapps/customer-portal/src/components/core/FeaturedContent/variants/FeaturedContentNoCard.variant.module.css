@@ -1,0 +1,134 @@
+@reference '../../../../assets/tailwind.css';
+
+.promotionalPanel {
+  @apply min-h-0 bg-cover bg-no-repeat bg-center flex flex-col lg:min-h-screen;
+}
+
+.background {
+  @apply min-h-screen bg-cover bg-no-repeat bg-center flex flex-col;
+}
+
+.logo {
+  @apply absolute overflow-hidden top-0 z-10 h-[73px] w-[120px] lg:h-[108px] lg:w-[180px];
+  inset-inline-start: 0;
+}
+
+.logoImage {
+  @apply h-full w-full object-contain;
+}
+
+.content {
+  @apply inset-0 z-10 w-full flex items-start justify-start md:items-center md:justify-center md:px-[100px] lg:py-[0px] lg:px-[100px] md:pb-[32px] lg:pb-[75px];
+}
+
+.contentFrame {
+  @apply flex flex-col gap-[40px];
+}
+
+.contentWrapper {
+  @apply flex flex-col w-full max-w-[1200px] gap-10 md:gap-12 lg:gap-[40px] items-start md:items-start lg:items-center;
+}
+
+.textSection {
+  @apply flex flex-col w-full items-start gap-4 mb-6 lg:items-center lg:gap-[24px];
+}
+
+.headingWrapper {
+  @apply flex w-full items-start justify-start lg:items-center lg:justify-center;
+}
+
+.heading {
+  @apply text-white whitespace-pre-wrap text-[32px] leading-[40px] tracking-[-0.5px] md:text-[38px] md:leading-[40px] lg:text-[52px] lg:leading-[68px] lg:tracking-[-1px];
+}
+
+.headingLine {
+  @apply block px-[16px] leading-[40px] lg:leading-[100%] text-center text-[36px] md:text-[36px] lg:text-[48px];
+}
+
+.descriptionWrapper {
+  @apply flex w-full items-start justify-start md:items-start lg:items-start lg:justify-start text-white text-center text-[16px] md:text-[16px] lg:text-[20px] px-[24px];
+}
+
+.description {
+  @apply w-full;
+}
+
+/* Status timeline — class names match Sitecore RichText HTML in Content field */
+.statusContainer {
+  @apply w-full px-[16px];
+  text-align: start;
+}
+
+.statusTimeline {
+  @apply relative mb-12 pt-2;
+}
+
+.statusTimelineInner {
+  @apply relative flex items-start justify-between z-10 mt-4;
+}
+
+.statusItem {
+  @apply flex flex-col items-start flex-1 gap-2;
+}
+
+.statusItemCenter {
+  @apply flex flex-col items-center flex-1 gap-2;
+}
+
+.statusItemEnd {
+  @apply flex flex-col items-end flex-1 gap-2;
+}
+
+.statusConnector {
+  @apply absolute bottom-[35px] w-[30%] h-[2px] rounded-full bg-[#D7D9DA];
+  inset-inline-start: 11%;
+}
+
+.statusConnectorCenter {
+  @apply absolute bottom-[35px] w-[30%] h-[2px] rounded-full bg-[#D7D9DA];
+  inset-inline-start: 57%;
+}
+
+.statusLabelSubmitted {
+  @apply text-[#16C98D] text-[12px] md:text-base font-medium text-center;
+}
+
+.statusLabelReview {
+  @apply text-[#479EBC] text-[12px] md:text-base font-medium text-center;
+}
+
+.statusLabelApproved {
+  @apply text-white text-[12px] md:text-base font-medium text-center;
+}
+
+.accessInfoTitle {
+  @apply text-white text-[18px] font-medium leading-[28px] mt-12 mb-6 hidden lg:block;
+}
+
+.accessInfoList {
+  @apply text-white space-y-3 hidden lg:block;
+}
+
+.accessInfoItem {
+  @apply flex items-center gap-1;
+}
+
+.accessInfoItemFirst {
+  @apply flex items-center gap-1;
+}
+
+.accessInfoBullet {
+  @apply w-[8px] h-[8px] rounded-full bg-[#479EBC] flex-shrink-0;
+  margin-inline-end: 9.61px;
+}
+
+.accessInfoText {
+  @apply text-[16px] font-normal leading-[28px];
+}
+
+@media (min-width: 1025px) {
+  .headingLine,
+  .descriptionWrapper {
+    @apply text-start;
+  }
+}

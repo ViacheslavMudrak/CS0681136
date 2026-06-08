@@ -1,0 +1,47 @@
+﻿---
+ID: "1cb00778-e452-4f46-8794-7ad5cae6fb19"
+Parent: "77c1f394-bd9f-4c4c-bc34-bb6808154393"
+Template: "77c1f394-bd9f-4c4c-bc34-bb6808154393"
+Path: /sitecore/templates/Feature/Intralox/Featured News/Featured News/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b6d00f15-05c2-4534-8b8d-05c5c84796b9"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "254af8b4-97d7-401d-a0c6-3841d800c3e7"
+      Hint: ArticleType
+      Value: "{4947C5FC-0C07-4B6C-9CDE-DCC571A4BD32}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260311T095547Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\shivani.dogra@icreon.com
+    - ID: "69b4d0eb-7dc3-4ee0-a4ec-7e049f494893"
+      Hint: ItemCount
+      Value: 5
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f99b847-a94e-47e9-9774-d6c2406c8287"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T071832Z

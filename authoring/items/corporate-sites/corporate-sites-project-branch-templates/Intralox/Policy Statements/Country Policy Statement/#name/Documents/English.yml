@@ -1,0 +1,30 @@
+﻿---
+ID: "c759d114-2316-4b2e-ab23-5afa81bf0d4a"
+Parent: "aaf2d42d-2715-43e7-ade2-7a1fe7151fc3"
+Template: "00131eff-eee2-436b-949c-6ea3c5d93b1e"
+Path: /sitecore/templates/Branches/Project/Corporate Sites/Intralox/Policy Statements/Country Policy Statement/$name/Documents/English
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260219T161420Z
+    - ID: "55ac47ca-0ab4-4912-b04a-4b80b3144a8b"
+      Hint: Language
+      Value: English
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b65039d8-b61f-453e-89aa-da92971053cb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260219T171123Z
+    - ID: "f5037e58-b413-4c0a-9734-2de9cd522e57"
+      Hint: DocumentLink
+      Value: |
+        <link text="India_English_SO" linktype="external" url="https://assets-us-01.kc-usercontent.com/19eb64b5-1815-003a-d268-e7109927ccad/8db2bc04-67ba-42a8-9ba6-970a75392faf/52574_India_English_SO.pdf" anchor="" target="_blank" />

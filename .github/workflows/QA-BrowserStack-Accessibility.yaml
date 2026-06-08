@@ -1,0 +1,99 @@
+on:
+  push:
+    branches:
+      - QA
+
+env:
+  vmImageName: 'ubuntu-latest'
+  BROWSERSTACK_SCAN_ID: '3396562'
+  BROWSERSTACK_ACCESSIBILITY_BASE_URL: 'https://api-accessibility.browserstack.com'
+
+jobs:
+  BrowserStackScan:
+    name: Run BrowserStack Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ensure jq is installed
+      run: |
+        set -e
+        if ! command -v jq >/dev/null 2>&1; then
+          sudo apt-get update
+          sudo apt-get install -y jq
+        fi
+        jq --version
+
+    - name: Trigger BrowserStack Scan
+      run: |
+        set -e
+
+        echo "Triggering BrowserStack scan..."
+        url="${{ env.BROWSERSTACK_ACCESSIBILITY_BASE_URL }}/api/website-scanner/v1/scans/${{ env.BROWSERSTACK_SCAN_ID }}/new_scan"
+
+        response=$(curl -s -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" -X POST "$url")
+        echo "$response"
+
+        scanRunId=$(echo "$response" | jq -r '.data.scanRunId // empty')
+        if [ -z "$scanRunId" ] || [ "$scanRunId" = "null" ]; then
+          echo "ERROR: scanRunId not found in response."
+          exit 1
+        fi
+
+        echo "Scan Run ID: $scanRunId"
+        echo "SCAN_RUN_ID=$scanRunId" >> $GITHUB_ENV
+
+    - name: Wait for Scan Completion
+      run: |
+        set -e
+
+        echo "Waiting for scan completion. SCAN_RUN_ID=${{ env.SCAN_RUN_ID }}"
+
+        status_url="${{ env.BROWSERSTACK_ACCESSIBILITY_BASE_URL }}/api/website-scanner/v1/scans/${{ env.BROWSERSTACK_SCAN_ID }}/scan_runs/${{ env.SCAN_RUN_ID }}/status"
+
+        max_tries=60
+        i=0
+
+        while true; do
+          i=$((i+1))
+
+          resp=$(curl -s -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" "$status_url")
+          echo "$resp"
+
+          status=$(echo "$resp" | jq -r '.data.status // empty')
+          echo "Parsed status: ${status:-<empty>}"
+
+          if [ "$status" = "completed" ]; then
+            echo "Scan completed."
+            break
+          fi
+
+          if [ "$status" = "failed" ]; then
+            echo "Scan failed."
+            exit 1
+          fi
+
+          if [ $i -ge $max_tries ]; then
+            echo "Timed out waiting for scan to complete."
+            exit 1
+          fi
+
+          sleep 30
+        done
+
+    - name: Fetch Scan Results (summary)
+      run: |
+        set -e
+
+        echo "Fetching scan run summary..."
+        summary_url="${{ env.BROWSERSTACK_ACCESSIBILITY_BASE_URL }}/api/website-scanner/v1/scans/${{ env.BROWSERSTACK_SCAN_ID }}/scan_runs/${{ env.SCAN_RUN_ID }}"
+
+        curl -s -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" \
+          "$summary_url" > result.json
+
+        echo "Saved result.json"
+        ls -la result.json
+
+    - name: Publish BrowserStack Scan Result
+      uses: actions/upload-artifact@v4
+      with:
+        name: browserstack-accessibility
+        path: result.json

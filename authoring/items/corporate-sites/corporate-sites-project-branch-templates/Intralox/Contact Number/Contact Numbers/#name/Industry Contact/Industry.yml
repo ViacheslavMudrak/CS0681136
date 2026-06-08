@@ -1,0 +1,38 @@
+﻿---
+ID: "4f7c1359-fe51-40db-972b-6db30993f4c1"
+Parent: "db9eac73-3737-4fe9-ba34-310cb49a0588"
+Template: "fc8a9a64-e593-4910-9b9e-d7d67ee33d48"
+Path: /sitecore/templates/Branches/Project/Corporate Sites/Intralox/Contact Number/Contact Numbers/$name/Industry Contact/Industry
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c5c5d58-d04d-44e3-8d3d-50a51b3f9262"
+      Hint: Email
+      Value: india@intralox.com
+    - ID: "0dacfaf0-e555-4012-98fb-2013c7a2a62c"
+      Hint: Fax
+      Value: 000 800 100 1021
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260219T161927Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e1de5247-0463-4912-a7b6-8af64cb1edfc"
+    - ID: "97199c18-c301-474e-bffe-82cdb126dfc1"
+      Hint: Telephone
+      Value: 00 800 440 2138
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "c396c8ce-629c-490f-9933-fa497e670d03"
+      Hint: Industry
+      Value: "{10939E31-8A2D-4804-AA96-FC0BF9A8422B}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260422T095708Z
+    - ID: "f4c17d2a-0853-4548-91cd-fdfeab7f71fb"
+      Hint: TollFreeTelephone
+      Value: 000 800 100 1029

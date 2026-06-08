@@ -1,0 +1,42 @@
+﻿---
+ID: "8b022345-363a-4a72-b315-7d2ba04161fd"
+Parent: "a708497c-b02e-46ed-a576-2a2e0428dbba"
+Template: "a708497c-b02e-46ed-a576-2a2e0428dbba"
+Path: /sitecore/templates/Feature/Intralox/Link Cards/Rendering Parameters/Link Cards Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "2d795519-1198-4f0d-8b13-78272df0360c"
+      Hint: Width
+      Value: "{A605B48D-45FA-48B1-BE80-E135FB620608}"
+    - ID: "462c217e-a816-4e33-96f0-0a8daad0f596"
+      Hint: TextAlignment
+      Value: "{4F56EB5A-BAB6-415D-84DD-D8AD57513290}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0d44eb7-e3ed-44b8-aba6-7793f63501f7"
+    - ID: "975893de-7b9c-47ec-bed3-601e4ab20dcf"
+      Hint: ColorScheme
+      Value: "{346A5881-D1EC-46FD-9B2F-91B8B6CED234}"
+    - ID: "aa6e43a5-4025-4da2-a3f7-0eab5bb367c9"
+      Hint: HeadlineSize
+      Value: "{E90C326D-2E39-4378-A59D-AE5D6B5C8DB1}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260521T112628Z
+    - ID: "f5045d1e-1812-4f4e-aa0f-a179f96356cd"
+      Hint: CardSize
+      Value: "{A99E8C4A-0290-4CDE-A279-CE148C5700FB}"

@@ -1,0 +1,30 @@
+﻿---
+ID: "cccf2e08-98a0-4797-a98e-bafe3261e194"
+Parent: "84f4d9b1-d531-4b35-a9e4-6918d4b26d60"
+Template: "84f4d9b1-d531-4b35-a9e4-6918d4b26d60"
+Path: /sitecore/templates/Feature/Intralox/Search Component/Rendering Parameters/Search Component Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "4c19b886-5525-426c-8968-50e96758c696"
+      Hint: CardType
+      Value: "{BD5DB1FB-0CCB-4938-8631-1C4AC517E3F4}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "19f41aad-39ce-4e3f-babf-310b8800d499"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T065012Z

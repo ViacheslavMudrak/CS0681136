@@ -1,0 +1,60 @@
+﻿---
+ID: "ab9fb92a-4122-4681-bd05-6503ea2739d3"
+Parent: "4d1b0da6-b2fa-4f06-9001-36995acd7e23"
+Template: "4d1b0da6-b2fa-4f06-9001-36995acd7e23"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Article Page/Article Page/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ca290b04-4d3a-435e-8b08-875b65fa41b9"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "00c026f9-b518-425a-9a6a-943cf42b3be7"
+      Hint: ShowOnPortal
+      Value: 1
+    - ID: "07ab541d-eeb5-4f91-b9f3-cba84d2888a2"
+      Hint: ShowParentPage
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T072843Z
+    - ID: "3f8718f7-af74-4c1d-81cb-c8cb3e441e97"
+      Hint: ShowOnWebsite
+      Value: 1
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5de78976-b380-4eb7-8baa-f0b63cf75e29"
+      Hint: ContainerWidth
+      Value: "{7FD79BA7-7522-4E5E-8CDD-F5E564789F88}"
+    - ID: "7ec79c2c-96a1-4b21-b014-a4ee2a0548b5"
+      Hint: Title
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c0255d63-5e36-44e3-a513-b15ca2d94e7f"
+    - ID: "b7e126c9-6c1e-4658-9d52-d393151a942c"
+      Hint: ArticleType
+      Value: "{4947C5FC-0C07-4B6C-9CDE-DCC571A4BD32}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "bcc7991f-46e1-43c2-8516-8ac768d70886"
+      Hint: FaviconIcon
+      Value: |
+        <image mediaid="{F6913233-94BE-4D93-8F32-DE8200DC0508}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260527T183622Z

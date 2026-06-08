@@ -1,0 +1,47 @@
+﻿---
+ID: "b84d9e37-24d3-4f7f-897a-27cd9c2b88f4"
+Parent: "4b6f486f-582a-4da6-a771-f771ef97456a"
+Template: "4b6f486f-582a-4da6-a771-f771ef97456a"
+Path: /sitecore/templates/Project/Corporate Sites/Intralox/Page Types/Products/Belt Tool/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b016a27d-3f85-4033-ba69-442245b4239b"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07ab541d-eeb5-4f91-b9f3-cba84d2888a2"
+      Hint: ShowParentPage
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T103048Z
+    - ID: "449eae80-1440-482f-b5f6-b9c683dab211"
+      Hint: Title
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c930320f-9c62-4586-baa2-c2edaa6421a0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T144203Z

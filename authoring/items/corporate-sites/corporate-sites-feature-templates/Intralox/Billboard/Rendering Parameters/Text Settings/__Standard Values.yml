@@ -1,0 +1,52 @@
+﻿---
+ID: "84b2f47b-6af0-47a7-8016-3233e9f2229e"
+Parent: "998e5341-c9e2-488c-b27f-25136add5cb9"
+Template: "998e5341-c9e2-488c-b27f-25136add5cb9"
+Path: /sitecore/templates/Feature/Intralox/Billboard/Rendering Parameters/Text Settings/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ad5b48c-ffaa-45b3-8741-e101fa64668f"
+      Hint: VerticalPosition
+      Value: "{1B9547BB-C95D-446F-8FE7-0D7D39D6179E}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T102952Z
+    - ID: "372012dc-3583-4339-a1b7-763813d0e1e4"
+      Hint: TextAlignment
+      Value: "{4F56EB5A-BAB6-415D-84DD-D8AD57513290}"
+    - ID: "3845fa95-d494-4510-899a-dd100d4232ab"
+      Hint: TextSize
+      Value: "{271CA42A-A3E8-4888-B151-476BE9C34A13}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dc581b14-56d7-418a-8d5a-a2bd8a525187"
+    - ID: "9dabce2f-7b54-4e95-8b7c-9ae0a32e9c23"
+      Hint: TextPosition
+      Value: "{B52F1943-1F4C-48D0-B806-87DB753F8938}"
+    - ID: "a0854cd0-6e7f-4017-9ece-5306346f0300"
+      Hint: HeadlineWidth
+      Value: "{8BA6BF0C-DCFE-4B6C-A95E-B234EB4BCECC}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "bb0c0dd5-f41a-4c50-80ac-e361deed7933"
+      Hint: TextWidth
+      Value: "{F5BEB22F-1BD9-4021-A227-21BCFD980CBC}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260217T103147Z
+    - ID: "f6d3d735-a22c-4aa3-bab2-e313c953f50e"
+      Hint: HeadlineSize
+      Value: "{084B13B2-A095-41E0-AD86-C7A66C392AD6}"

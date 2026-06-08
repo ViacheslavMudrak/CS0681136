@@ -1,0 +1,88 @@
+﻿---
+ID: "eebda0d0-8e41-4d9e-bc54-ee4750c3cd91"
+Parent: "7543028d-7bce-46b4-91cb-5481d68f81b6"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Feature/Customer Portal/Page Structure/PortalShell
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: PortalShell
+- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
+  Hint: Placeholders
+  Value: |
+    {DB460978-759B-413E-9062-B4B57D6C5F9D}
+    {5E0C6814-9BAA-4E42-865C-7A137C4DB519}
+    {1E5F9713-0CC6-40E7-AC5D-8DBF3737CB5A}
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: sxa/16x16/container.png
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query GetLanguageData {
+      item(path: "/sitecore/content/Customer Sites/Customer App/Global/Language Data", language: "en") {
+        children {
+          results {
+            id
+            name
+            ... on LanguageDetails {
+              languageTitle: field(name: "LanguageTitle") { value }
+              languageAlignment: field(name: "LanguageAlignment") { value }
+              languageSource: field(name: "LanguageSource") { value }
+            }
+          }
+        }
+      }
+    }
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: 0
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Value: |
+    {99B41A1D-CBAA-45CC-83E2-B85EF367D650}
+    {BA53E217-596B-4BF8-9F17-62D7415CAFC4}
+    {995E9F11-DE5A-4A32-BC55-5787436C235C}
+    {0B0D04ED-98B1-4015-98F5-B01F65EBEA97}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "cb2e57d0-4312-4dc5-a6bf-c1585593f6f2"
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true&IsColumnSplitterRendering=true
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "9abb3cde-6055-4735-a3aa-fc69a4115f81"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Portal Shell
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260210T075709Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f5d7276d-dfc6-4528-af03-0cf7ecb8f2c6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260219T085410Z

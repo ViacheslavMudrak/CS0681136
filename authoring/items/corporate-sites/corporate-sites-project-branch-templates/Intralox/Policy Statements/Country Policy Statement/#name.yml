@@ -1,0 +1,28 @@
+﻿---
+ID: "2164b05e-aff9-4937-8014-34bcb23c197f"
+Parent: "44c52d02-6895-4bb6-aa02-0a02f82c778e"
+Template: "ec34a747-1347-45f2-a502-5857084b8778"
+Path: /sitecore/templates/Branches/Project/Corporate Sites/Intralox/Policy Statements/Country Policy Statement/$name
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E20A372B-1AC1-4662-887B-8117BB7E1717}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260422T110622Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "42705835-15a8-4d5b-a7d5-12e311f93ac0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260422T111300Z

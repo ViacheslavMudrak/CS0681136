@@ -1,0 +1,172 @@
+@theme {
+  --font-roboto: "Helvetica Neue LT Pro", sans-serif;
+
+  --color-main-color: #27272a;
+
+  --color-bg-basic-color: #ffffff;
+  --color-bg-light-gray: #f7f7f7;
+  --color-bg-lighter-gray: #fafafa;
+  --color-bg-light-gray-active: #dadada;
+  --color-bg-blue: #89c6cc;
+  --color-bg-blue-active: #15909c;
+  --color-bg-black: #000;
+  --color-bg-black-active: #3d3d3d;
+  --color-page-bg-editor: none;
+  --color-bg-dark-gray: #262626;
+  --color-bg-submenu: #edebeb;
+  --color-bg-submenu-active: #f6f6f6;
+
+  --color-text-white: #fff;
+  --color-text-heading-color: #222;
+  --color-text-basic: #747474;
+  --color-text-basic-active: #878787;
+  --color-text-blue: #89c6cc;
+  --color-text-blue-active: #15909c;
+  --color-text-red: #de232f;
+  --color-red-dark: #970000;
+  --color-red-light: #fbdadb;
+
+  --color-border-gray: #d2d2d2;
+  --color-border-basic-color: #89c6cc;
+
+  --color-border-default: #e8eaeb;
+  --color-bg-selected-tint: #eaf1fb;
+  --color-text-muted: #4d5b73;
+  --color-text-primary-dark: #19174f;
+  --color-text-active: #19174f;
+  --color-text-secondary: #4d4d4f;
+  --color-icon-muted: #a8aaae;
+  --color-action-primary: #00287b;
+  --color-action-link: #49b7f6;
+  --color-bg-avatar: #053971;
+  --color-shadow-dropdown: 0px 0px 12px 0px rgba(0, 0, 0, 0.13);
+
+  --color-brand-red: #ea1c24;
+
+  --color-portal-bg: #f8f8f8;
+  --color-portal-header-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.28);
+  --color-portal-sidebar-start: #151e2c;
+  --color-portal-sidebar-end: #1d2b42;
+
+  --color-btn-green-light: #a0ce4e;
+  --color-btn-green: #92be43;
+  --color-btn-red-active: #c34e30;
+  --color-btn-red: #bc4526;
+
+  --color-promo-bg-hero: rgba(0, 0, 0, 0.5);
+  --color-menu-hover-color: #1b809e;
+  --color-menu-active-color: #176f89;
+
+  --color-border-gray-300: #d7d9da;
+  --color-gray-100: #f8f8f8;
+  --color-gray-500: #a8aaae;
+  --color-gray-700: #646467;
+  --color-text-verified: #25803f;
+  --color-bg-green-light: #d1e9d6;
+  --color-border-active-card: #c4d0e1;
+  --color-bg-badge-current: #c5dcf0;
+  --color-icon-cyan: #479ebc;
+
+  --rounded-default: 4px;
+  --color-cyan-default: #479ebc;
+  --color-cyan-light: #e3f0f5;
+  --color-cyan-dark: #00708d;
+  --font-helvetica-neue-lt-web:
+    "Helvetica Neue LT Web", "Helvetica Neue LT Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-shadow-card: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --color-shadow-account-card: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  --color-text-black: #000;
+  --color-action-primary-hover: rgba(0, 40, 123, 0.05);
+  --color-link-text: #0377ba;
+  --color-link-visited: #5969b1;
+  --color-text-placeholder: #7a7b7f;
+
+  --color-portal-nav-text: #ffffff;
+  --color-portal-nav-text-muted: rgba(255, 255, 255, 0.7);
+  --color-portal-nav-hover: rgba(255, 255, 255, 0.08);
+  --color-portal-nav-active-border: #de232f;
+  --color-portal-nav-section-title: rgba(255, 255, 255, 0.6);
+  --color-portal-footer-text: rgba(255, 255, 255, 0.7);
+  --color-portal-footer-link: #1599e6;
+  --color-portal-modal-overlay: rgba(0, 0, 0, 0.5);
+  --color-portal-modal-header-border: #e8eaeb;
+  --color-portal-account-card-hover: #f6f8fa;
+  --color-portal-account-current-dot: #00287b;
+
+  --Border-Radius-md: 6px;
+  --color-portal-sub-nav-item-color: #b3b5b8;
+
+  --color-portal-switch-modal-bg: #151e2c;
+  --color-portal-switch-modal-dialog-bg: #1d2b42;
+  --color-portal-switch-modal-border: #314158;
+  --color-portal-switch-modal-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --color-portal-switch-modal-header-border: rgba(232, 234, 235, 0.2);
+  --color-portal-switch-modal-row-border: rgba(232, 234, 235, 0.1);
+  --color-portal-switch-modal-row-active-bg: rgba(255, 255, 255, 0.05);
+  --color-portal-switch-modal-title: #d7d9da;
+  --color-portal-switch-modal-icon-bg: rgba(71, 158, 188, 0.05);
+  --color-portal-switch-modal-icon-border: rgba(71, 158, 188, 0.2);
+  --color-portal-switch-modal-text: #ffffff;
+  --color-portal-switch-modal-text-muted: rgba(255, 255, 255, 0.9);
+  --color-portal-switch-modal-dot: #479ebc;
+
+  --portal-switch-modal-offset-top: 160px;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+
+  --color-contact-trigger-bg: #eaf1fb;
+  --color-contact-panel-bg: #ffffff;
+  --color-contact-panel-border: #e9ecf0;
+  --color-contact-panel-header-bg: #eaf1fb;
+  --color-contact-card-hover: #f1f5f9;
+  --color-contact-drawer-overlay: rgba(0, 0, 0, 0.5);
+  --color-contact-drawer-border: #e8eaeb;
+  --contact-panel-shadow:
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --color-contact-avatar-bg: #e3f0f5;
+  --color-contact-avatar-text: #00708d;
+  --color-contact-call-icon-bg: #093856;
+  --contact-panel-max-height: 80vh;
+
+  --color-role-permissions-table-stripe: #f8fafd;
+  --color-role-permissions-checkbox-border: #d1d5db;
+  --color-role-permissions-shell-border: #e8eaeb;
+  --color-role-permissions-table-inner-radius: 8px;
+  --color-role-permissions-header-bg: #f7f9fc;
+  --color-role-permissions-header-border: #e9edf4;
+  --color-role-permissions-header-label: #4d4d4f;
+  --color-role-permissions-checkmark: #4d4d4f;
+  --color-role-permissions-modal-close-hover: #d7d9da;
+  --color-role-permissions-modal-shadow: 0px 0px 22.5px 0px rgba(0, 0, 0, 0.23);
+
+  --text-font-small: 11px;
+  --text-font-normal: 13px;
+  --text-font-medium: 16px;
+  --text-font-big: 20px;
+  --text-font-extrabig: 24px;
+  --text-navigation-font-basic: 18px;
+  --text-navigation-font-basic-submenu: 14px;
+
+  --breakpoint-mobile: 380px;
+  --breakpoint-mobile-horizontal: 640px;
+  --breakpoint-mobile-large: 1025px;
+  --breakpoint-desktop: 1025px;
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  --color-bg-pagination-active: #eeeef1;
+
+  --color-bg-table-stripe: #f8fafc;
+
+  --color-quote-drawer-header-bg: #f4f7fc;
+  --color-quote-drawer-header-border: #eeeef1;
+  --color-quote-drawer-submitting-as-bg: #f4f7fc;
+  --color-quote-drawer-panel-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.25);
+  --color-quote-drawer-info-banner-border: #479ebc;
+  --color-quote-drawer-footer-border: #e5e7eb;
+}

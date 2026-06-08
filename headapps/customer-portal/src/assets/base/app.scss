@@ -1,0 +1,54 @@
+@import "../tailwind.css";
+
+html {
+  @apply text-[62.5%] mb-[0px] !h-[auto];
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-roboto, "Helvetica Neue LT Pro", sans-serif);
+  @apply relative text-[16px] leading-[1.5] text-[var(--color-text-basic)] bg-[var(--color-bg-basic-color)] !h-[auto] overflow-auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &.on-page-editor {
+    background: var(--color-page-bg-editor) !important;
+  }
+}
+
+.xa-variable {
+  @apply border-0 p-px m-0 bg-[#ebebe4] text-[#545454] select-none pointer-events-none;
+}
+
+#breadcrumbMenuSubcontrol_context_menu * {
+  box-sizing: initial;
+}
+
+.menu-mobile-navigate {
+  display: none;
+}
+
+#header,
+#content,
+#footer,
+.sc-jss-empty-placeholder {
+  @apply flex w-[100%] flex-wrap relative;
+}
+
+.sc-content-sdk-placeholder-error {
+  @apply bg-[#ff0000] outline-[5px] outline-solid outline-[#e36565] p-2.5 text-white max-w-[500px];
+}
+
+.tww-clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input,
+textarea,
+select {
+  @apply text-[16px] md:text-[14px];
+}

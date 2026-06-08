@@ -1,0 +1,116 @@
+
+name: Deploy to QA-Customer-Portal
+
+on:
+  push:
+    branches:
+      - QA
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Copy root .npmrc into app folder
+      - name: Copy .npmrc into app folder
+        run: cp .npmrc headapps/customer-portal/.npmrc
+
+      # Just to verify the file, not required for auth
+      - name: Show .npmrc (masked)
+        working-directory: headapps/customer-portal
+        run: |
+          echo "----- .npmrc in headapps/customer-portal -----"
+          sed 's/_authToken=.*/_authToken=***MASKED***/' .npmrc
+          echo "----------------------------------------------"
+
+      - name: Install dependencies
+        working-directory: headapps/customer-portal
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }} # PAT with read:packages
+        run: |
+          echo "Using NODE_AUTH_TOKEN length: ${#NODE_AUTH_TOKEN}"
+          npm whoami --registry=https://npm.pkg.github.com || echo "npm whoami failed"
+          npm install
+
+      # =======================
+      # Endor Labs + Semgrep
+      # =======================
+      - name: Run Endor Labs scan
+        env:
+          ENDOR_API_KEY: ${{ secrets.ENDOR_API_KEY }}
+          ENDOR_API_SECRET: ${{ secrets.ENDOR_API_SECRET }}
+        run: |
+          set -e
+
+          echo "Setting up Python 3 and pip..."
+          sudo apt-get update -y
+          sudo apt-get install -y python3 python3-pip
+
+          echo "Installing Semgrep v1.99.0..."
+          pip3 install semgrep==1.99.0
+
+          echo "Downloading EndorCTL CLI..."
+          curl https://api.endorlabs.com/download/endorlabs/v1.7.818/binaries/endorctl_v1.7.818_linux_amd64 -o endorctl
+
+          echo "Verifying EndorCTL checksum..."
+          echo "3012a454504828dd7d10c2f68464ce67182e3580f6855dc4ab0fe8b0edabca1f endorctl" | sha256sum --check
+
+          echo "Making EndorCTL executable..."
+          chmod +x ./endorctl
+
+          echo "Running Endor Labs scan..."
+          ./endorctl scan \
+            --api-key "$ENDOR_API_KEY" \
+            --api-secret "$ENDOR_API_SECRET" \
+            --namespace "icreon.intralox" \
+            --sast \
+            --disable-code-snippet-storage \
+            --dependencies \
+            --quick-scan \
+            --install-build-tools \
+            --insecure-sandbox \
+            --secrets \
+            --as-default-branch=true
+
+      # =======================
+      # SonarQube Scan (after Endor) - using CLI
+      # =======================
+      - name: Run SonarQube scan
+        working-directory: headapps/customer-portal
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          set -e
+
+          echo "Downloading SonarScanner CLI..."
+          SCANNER_VERSION=5.0.1.3006
+          SCANNER_DIR=sonar-scanner-$SCANNER_VERSION-linux
+          curl -sSLo sonar-scanner.zip "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SCANNER_VERSION-linux.zip"
+          unzip -q sonar-scanner.zip
+          export PATH="$PATH:$PWD/$SCANNER_DIR/bin"
+
+          echo "Running SonarQube scan for Intralox.com..."
+          sonar-scanner \
+            -Dsonar.projectKey=Intralox.com \
+            -Dsonar.projectName=Intralox.com \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=https://sonarqube.icreondemoserver.com:49876 \
+            -Dsonar.login="$SONAR_TOKEN"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "latest"
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_STATING_CUSTOMER_PORTAL }}
+        run: vercel --prod --token "$VERCEL_TOKEN" --yes

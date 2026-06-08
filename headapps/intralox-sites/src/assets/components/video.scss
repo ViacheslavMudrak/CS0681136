@@ -1,0 +1,288 @@
+/* Brightcove video player styles */
+.laitram-bc-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  .video-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vjs-dock-text {
+    display: none;
+  }
+}
+
+/**
+ * Product modal: compact progress track and control bar layout (Video.js internals).
+ */
+.laitram-bc-player--compact-controls {
+  .video-js .vjs-progress-control .vjs-slider,
+  .video-js .vjs-progress-holder {
+    height: 3px !important;
+    max-height: 3px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .video-js .vjs-load-progress,
+  .video-js .vjs-load-progress div,
+  .video-js .vjs-play-progress {
+    height: 3px !important;
+    max-height: 3px !important;
+  }
+
+  /* Icon row flush to bottom; progress track sits directly above (30px from bottom). */
+  .video-js .vjs-control-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 30px;
+    width: 100%;
+  }
+
+  .video-js .vjs-progress-control {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    width: 100%;
+    height: 3px;
+    max-height: 3px;
+    margin: 0;
+    padding: 0;
+    flex: none;
+  }
+
+  /* Live targets: 40×30 hit areas; smaller glyphs centered in each cell. */
+  .video-js .vjs-control-bar > .vjs-control.vjs-button,
+  .video-js .vjs-control-bar .vjs-play-control,
+  .video-js .vjs-control-bar .vjs-volume-panel .vjs-mute-control,
+  .video-js .vjs-control-bar .vjs-picture-in-picture-control,
+  .video-js .vjs-control-bar .vjs-fullscreen-control {
+    box-sizing: border-box;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder:before {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .video-js .vjs-time-control {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .video-js .vjs-current-time,
+  .video-js .vjs-duration {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    min-width: 0;
+    padding: 0 0.25em;
+    font-size: 12px;
+  }
+
+  .video-js .vjs-time-divider {
+    width: 20px;
+    min-width: 20px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 12px;
+  }
+}
+
+/* Modal / inline frame: letterboxed video (live desktop ref: object-fit contain) */
+.laitram-bc-player--contain {
+  .vjs-tech {
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+
+  .vjs-poster {
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+}
+
+.video-responsive-wrapper--cover {
+  .vjs-tech {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .vjs-poster {
+    background-size: cover;
+  }
+
+  .video-js .vjs-control-bar,
+  .video-js .vjs-big-play-button {
+    display: none;
+  }
+
+  .video-js {
+    pointer-events: none;
+  }
+}
+.video-cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: black;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  &:hover img {
+    opacity: 0.88;
+  }
+
+  /* Keyboard: cover is `role="button"` (Video.tsx). Inset box-shadow sits *under* the full-bleed img — use ::after above the poster, under the play glyph (z-index 11). */
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    border: 3px solid var(--color-accent-nav, #9fc1fc);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .laitram-bc-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 300ms ease-in-out;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+  }
+
+  .video-cover-image:hover & {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &--sm {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.video-caption {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/**
+ * Media carousel (`CarouselClient` Swiper uses `carousel-media-swiper`): Video.js defaults
+ * (`background-color` on `.video-js`, black under `.video-cover-image`) read as a bottom/side
+ * hairline next to the 750×422 stage — reset chrome to match the carousel surface.
+ */
+.carousel-media-swiper {
+  .laitram-bc-player,
+  .video-js,
+  .video-js video,
+  .video-js iframe {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .video-js {
+    background-color: var(--color-surface) !important;
+  }
+
+  .video-cover-image {
+    background-color: var(--color-surface);
+  }
+}

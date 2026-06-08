@@ -1,0 +1,370 @@
+/* Single source of truth for @theme tokens — do not add a parallel variables.css file. */
+@theme {
+  --font-roboto: "Roboto", "sans-serif";
+  /* // abstract/vars /_colors: */
+
+  --color-main-color: #27272a;
+
+  /* Surfaces (backgrounds) — one token per hex */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f7f7;
+  --color-surface-muted-light: #fafafa;
+  --color-surface-active: #dadada;
+  --color-surface-subtle: #f8f8f8;
+  --color-surface-raised: #f5f6f6;
+  --color-surface-selected: #e9eaeb;
+  --color-surface-inverse: #262626;
+  --color-surface-panel: #edebeb;
+  --color-surface-panel-active: #f6f6f6;
+  --color-surface-strong: #000;
+  --color-surface-strong-active: #3d3d3d;
+  --color-page-bg-editor: none;
+  --color-cad-files-hover: #bbddff;
+  --color-surface-search-box: #b3b5b8;
+
+  /* Text — role-based (not component-based) */
+  --color-ink-primary: #222;
+  --color-ink-inverse: #fff;
+  --color-ink-secondary: #747474;
+  --color-ink-subtle: #878787;
+  --color-ink-tertiary: #7a7b7f;
+  --color-ink-muted: #646467;
+  --color-ink-dropdown: #303031;
+  --color-ink: #000000;
+
+  /* Neutrals (borders, rules, disabled chrome) */
+  --color-neutral-200: #e8eaeb;
+  --color-neutral-300: #f5f5f5;
+  --color-stroke-default: #d7d9da;
+  --color-stroke-focus-search: #a8c4eb;
+  --color-stroke-input-focus: #0084bb;
+
+  /* Links & interactive blues */
+  --color-link: #0377ba;
+  --color-link-strong: #00287b;
+  --color-link-hover: #0777ba;
+  --color-link-alt: #19174f;
+
+  /* Accents */
+  --color-accent-teal: #89c6cc;
+  --color-accent-teal-active: #15909c;
+  --color-accent-cyan: #479ebc;
+  --color-quick-link-icon-rail: #4da1c0;
+  --color-accent-danger: #ea1c24;
+  --color-accent-danger-muted: #de232f;
+  --color-accent-warning: #ffa400;
+  --color-accent-nav: #9fc1fc;
+  --color-accent-highlight: #59a2ff;
+  --color-accent-tag: #ffd180;
+  --color-accent-cta: rgb(255, 212, 45);
+
+  /* Focus rings */
+  --color-focus-interactive: #0060cc;
+  --color-focus-utility: #4668a4;
+  --color-focus-nav-mobile: #e59800;
+
+  /* Chrome (header utility bar, cookie bar, chevrons) */
+  --color-chrome-stripe: #4d4d4f;
+  --color-chrome-bar: rgb(53, 53, 53);
+  --color-chrome-chevron: #b4b5b8;
+  --color-chrome-link-hover: rgb(179, 181, 184);
+  --color-nav-link-hover: #1b809e;
+  --color-nav-link-active: #176f89;
+
+  /* Brand & actions (semantic groups kept short) */
+  --color-brand-red: #c13828;
+  --color-brand-gold: #c9982a;
+  --color-btn-green-light: #a0ce4e;
+  --color-btn-green: #92be43;
+  --color-btn-red-active: #c34e30;
+  --color-btn-red: #bc4526;
+
+  /* Overlays & misc */
+  --color-promo-bg-hero: rgba(0, 0, 0, 0.5);
+  --color-pagination-text-disabled: #ffffff80;
+  --color-pagination-bg-disabled: #4d5b73;
+  --color-whatsapp-border: #bfc8cf;
+  --color-whatsapp-text: #075e54;
+  --width-media-tile-split-max: 1200px;
+  /*
+   * Eyebrow + headline max width: same line-length ratio (0.8) × reference width per band.
+   * Refs: 344px = tablet split media column (see media tile frame); 560px = landscape frame width;
+   * 456px = mid-desktop band ref so 0.8×456 = 364.8 for 992–1199px (lg–xl).
+   */
+  --width-media-tile-eyebrow-headline-line-ratio: 0.8;
+  --width-media-tile-eyebrow-headline-ref-md-split: 344px;
+  --width-media-tile-eyebrow-headline-ref-lg-band: 456px;
+  --width-media-tile-eyebrow-headline-ref-xl-up: 560px;
+  --width-media-tile-eyebrow-headline-md-split: calc(
+    var(--width-media-tile-eyebrow-headline-ref-md-split) *
+      var(--width-media-tile-eyebrow-headline-line-ratio)
+  );
+  --width-media-tile-eyebrow-headline-lg-band: calc(
+    var(--width-media-tile-eyebrow-headline-ref-lg-band) *
+      var(--width-media-tile-eyebrow-headline-line-ratio)
+  );
+  --width-media-tile-eyebrow-headline-xl-up: calc(
+    var(--width-media-tile-eyebrow-headline-ref-xl-up) *
+      var(--width-media-tile-eyebrow-headline-line-ratio)
+  );
+  --font-media-tile:
+    "NeueHelvetica", "TeX Gyre Heros", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-nav-belt-finder:
+    NeueHelvetica, "TeX Gyre Heros", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Match Figma / computed stack (ui-sans-serif, emoji fallbacks) */
+  --font-callout:
+    "NeueHelvetica", "TeX Gyre Heros", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Section rules — matches live intralox.com computed stack */
+  --font-divider:
+    "NeueHelvetica", "TeX Gyre Heros", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Standalone callout mobile text block (live computed) */
+  --width-callout-stat-mobile: 179px;
+  /* Tablet + Media Tile embedded stat cap below 600px (live w-56 / 224px) */
+  --width-callout-stat-tablet-text: 224px;
+  /*
+   * Media Tile embedded callout width below 600px: min(224px, 50vw − gutter).
+   * Matches live — 375→171.5, 390→179, 430→199, 480+→224.
+   */
+  --width-callout-stat-media-tile-fluid: min(
+    var(--width-callout-stat-tablet-text),
+    calc(50vw - var(--layout-gutter-inline))
+  );
+  /* Tablet stat grid cell (live site computed box) */
+  --width-callout-stat-cell: 368px;
+  --min-height-callout-stat-cell: 79px;
+  --min-height-callout-label: 35px;
+  /* Vertical divider height (reduced to match live; does not span full content height) */
+  --min-height-callout-separator: 1.75rem;
+  /* Tablet: row divider spans both 368px columns */
+  --width-callout-tablet-horizontal-rule: calc(
+    var(--width-callout-stat-cell) * 2
+  );
+  /* Space from vertical rule to copy; counts inside the 368px column (border-box) */
+  --padding-callout-tablet-after-vertical: 48px;
+  /* Media Tile embedded row: 992–1199 (lg, below xl): 240px cells, 32px inset after rule, min-height from live */
+  --width-callout-stat-embedded-narrow: 240px;
+  --padding-callout-embedded-narrow-after-vertical: 32px;
+  --min-height-callout-stat-embedded-narrow: 96.5px;
+  /* Desktop: outer cell 292×79 (border-box); after vertical line, 48px then 192×35 text */
+  --width-callout-stat-desktop-cell: 292px;
+  --height-callout-stat-desktop-cell: 79px;
+  --width-callout-stat-desktop-text: 192px;
+  --height-callout-desktop-label: 35px;
+  /* Padding from vertical line to title (matches live) */
+  --padding-callout-desktop-after-vertical: 48px;
+  /* Callout section horizontal inset on large screens (reduced to match live) */
+  --margin-callout-desktop-horizontal: 80px;
+  /*
+   * Global Locations container max-width per viewport (applied directly on the outer band).
+   * <600 fluid | 600–767 → 600 | 768–991 → 768 | 992–1199 → 992 | ≥1200 → 1200
+   */
+  --width-global-locations-content-sm: 600px;
+  --width-global-locations-content-md: 768px;
+  --width-global-locations-content-lg: 992px;
+  --width-global-locations-content-xl: 1200px;
+  /*
+   * Global Locations copy column (eyebrow, headline, description, links) per viewport band.
+   * <600 fluid | 600–767 → 568 | 768–991 → 588.8 | 992–1199 → 768 | ≥1200 → 934.4
+   */
+  --width-global-locations-copy-sm: 568px;
+  --width-global-locations-copy-md: 588.8px;
+  --width-global-locations-copy-lg: 768px;
+  --width-global-locations-copy-max: 934.4px;
+  --margin-global-locations-headline-after: 4.662px;
+  --margin-global-locations-copy-block: 16px;
+  /* Global Locations stats band: legacy horizontal inset (superseded by centered content-rail max-width on callout shell) */
+  --padding-global-locations-callout-inline: 220px;
+  /* Global Locations: per-stat cell inset (live computed pl-32 on stat block) */
+  --padding-global-locations-callout-item-inline: 32px;
+  --margin-global-locations-callout-item-top: 32px;
+  /* Global Locations stat block — live intralox.com computed box (border-box width × height) */
+  --width-global-locations-callout-stat-xl: 240px;
+  --width-global-locations-callout-stat-lg: 198.398px;
+  --width-global-locations-callout-stat-md: 153.594px;
+  --height-global-locations-callout-stat-md: 96px;
+  --height-global-locations-callout-stat-lg: 88px;
+  --height-global-locations-callout-stat-xl: 88px;
+  /*
+   * Global Locations world map frame — live intralox.com @ 1168px map width (computed height 565.844px).
+   * CMS image metadata often lists 571px height; layout uses this ratio, not Sitecore height.
+   */
+  --aspect-ratio-global-locations-map: 1168 / 565.844;
+  /* Callout TitleSize xs + Style text: label (Figma 12px / 15px) */
+  --text-callout-label-xs: 12px;
+  --leading-callout-label-xs: 15px;
+  /* Style card + Direction row: fixed stat card (1280 shell = 16px pad + 1248 inner; stat 112px + label 66px = 178px content) */
+  --height-callout-card-shell: 210px;
+  --height-callout-card-stat: 112px;
+  --min-height-callout-card-label-band: 66px;
+  --text-callout-card-value: 4rem;
+  --leading-callout-card-value: 4rem;
+  /* Horizontal-split gray column, 16px uppercase — match live tight letter-spacing (same as affix row in that card) */
+  --tracking-callout-card-column-base-label: 0.3px;
+  --leading-callout-card-label-line: 22px;
+  /* Style card + Direction column + TextSize base (affix/value metrics; row min-height uses --height-callout-card-column-row) */
+  --min-height-callout-card-stat-column-base: 104px;
+  --padding-callout-card-stat-column-base: 16px;
+  --radius-callout-card-stat-column-base: 8px;
+  /* Card + column: shared row height (stat + label columns); min-height, can grow with content */
+  --height-callout-card-column-row: 104px;
+  /* Card + column: label column width (reference computed width) */
+  --width-callout-card-column-label: 250.656px;
+  --text-callout-card-column-base-affix: 12px;
+  --leading-callout-card-column-base-affix: 12px;
+  --tracking-callout-card-column-base-affix: 0.3px;
+  --text-callout-card-column-base-value: 48px;
+  --leading-callout-card-column-base-value: 48px;
+  /* Dense uppercase label stack — match live (16px cap height, minimal between-line gap) */
+  --leading-callout-card-column-base-label: 16px;
+  /* Style card + Direction column + TextSize sm: horizontal split (live: 92px row, 36px value, 12px label) */
+  --height-callout-card-column-row-sm: 92px;
+  --width-callout-card-column-label-sm: 276px;
+  /* Product modal right column: card + column + sm label band (mobile-first) */
+  --width-callout-product-modal-label-sm: 288.66px;
+  --text-callout-card-column-sm-value: 36px;
+  --leading-callout-card-column-sm-value: 36px;
+  --tracking-callout-card-column-sm-label: 0.6px;
+  /* Style card + Direction column + TextSize xs: horizontal split (live: 64px row, 8px block / 16px inline pad, 24px value) */
+  --height-callout-card-column-row-xs: 64px;
+  --width-callout-card-column-label-xs: 301px;
+  /* Content Switcher single horizontal-split label column only: xs < sm < base (standalone callouts unchanged) */
+  --width-callout-content-switcher-hsplit-label-xs: 251.98px;
+  --width-callout-content-switcher-hsplit-label-sm: 270px;
+  --width-callout-content-switcher-hsplit-label-base: 292px;
+  --padding-callout-card-column-xs-block: 8px;
+  --padding-callout-card-column-xs-inline: 16px;
+  --text-callout-card-column-xs-value: 24px;
+  --leading-callout-card-column-xs-value: 24px;
+  /* General desktop horizontal margin (other components) */
+  --margin-desktop-horizontal: 172.5px;
+
+  --shadow-fab: 0 0 8px rgb(0 0 0 / 0.282);
+  /* Quick Link card (mobile): live computed 0 0 12px rgb(0 0 0 / 0.133) */
+  /* Media Box rail thumbnail (live ImageOptim MediaBox): 0 4px 4px rgb(0 0 0 / 0.25) */
+  --shadow-media-box-thumb: 0 4px 4px rgb(0 0 0 / 0.25);
+  --shadow-quick-link-card: 0 0 12px rgb(0 0 0 / 0.133);
+  /* Quick Link card hover: elevated shadow on card hover */
+  --shadow-quick-link-card-hover: 0 0 20px rgb(0 0 0 / 0.22);
+  /* Local navigation: desktop chrome + industry flyout; mobile strip/panel use `--shadow-header-navigation-mobile` in LocalNavigationClient */
+  --shadow-local-nav-strip: 0 0 8px rgb(0 0 0 / 0.282);
+  /* Main header row (logo + nav): stronger elevation than prior shadow-md */
+  --shadow-header-navigation:
+    0 3px 8px rgb(0 0 0 / 0.12), 0 12px 28px rgb(0 0 0 / 0.13),
+    0 2px 6px rgb(0 0 0 / 0.085);
+  /* Same stack as header, ~half alpha — mobile/tablet under local nav reads lighter */
+  --shadow-header-navigation-mobile:
+    0 3px 8px rgb(0 0 0 / 0.06), 0 12px 28px rgb(0 0 0 / 0.065),
+    0 2px 6px rgb(0 0 0 / 0.043);
+
+  --shadow-form-input: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  /* // abstract/vars /_fontSizes: */
+  --text-font-small: 11px;
+  --text-font-normal: 16px;
+  --text-font-medium: 16px;
+  --text-font-large: 18px;
+  --text-font-big: 20px;
+  --text-font-extrabig: 24px;
+  /* Media tile copy stack (live intralox.com computed styles) */
+  --text-font-media-tile-eyebrow: 14px;
+  --leading-font-media-tile-eyebrow: 17.5px;
+  --text-font-media-tile-headline: 24px;
+  --leading-font-media-tile-headline: 30px;
+  /* Media tile headline — compact theme (live: 20px / 25px line) */
+  --leading-font-media-tile-headline-compact: 25px;
+  --leading-font-media-tile-button: 17.5px;
+  /* Media tile landing theme — RTE body + list items (live: 20px / 30px) */
+  --leading-font-media-tile-description-landing: 30px;
+  --text-navigation-font-basic: 18px;
+  --text-navigation-font-basic-submenu: 14px;
+  /* Top utility strip (gray bar): phone + language glyph — live intralox.com computed */
+  --width-utility-strip-icon: 18.6667px;
+  --height-utility-strip-icon: 19px;
+  --text-utility-strip-icon: 18.6667px;
+  --leading-utility-strip-icon: 14px;
+  /* Header search box: magnifying glass + close — live intralox.com computed */
+  --width-search-box-icon: 21.34px;
+  --height-search-box-icon: 21px;
+  --text-search-box-icon: 21.34px;
+  /* Main header strip search trigger (beside SEARCH label / hamburger) — live intralox.com computed */
+  --width-header-search-icon: 20.41px;
+  --height-header-search-icon: 20px;
+  --text-header-search-icon: 20.41px;
+
+  /*
+   * Layout tiers aligned with https://www.intralox.com/ (Tailwind v4 build):
+   * mobile <600 | tablet 600–991 | desktop ≥992 | large desktop ≥1200
+   * (Use --layout-* for docs/JS; --breakpoint-* for Tailwind screens.)
+   */
+  --layout-mobile-end: 599px;
+  --layout-tablet-start: 600px;
+  --layout-tablet-end: 991px;
+  --layout-desktop-start: 992px;
+  --layout-desktop-large-start: 1200px;
+
+  --breakpoint-mobile: 380px;
+  --breakpoint-mobile-horizontal: 640px;
+  --breakpoint-mobile-large: 992px;
+  /* Align with Bootstrap `lg` / legacy site: desktop layouts from 992px up */
+  --breakpoint-desktop: 992px;
+
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /*
+   * InfoBox / Media Box / Link Group: **content** max-widths by viewport band — Tailwind in component utils
+   * add `2 * --layout-gutter-inline` when setting `max-width` (border box) so the inner area matches these values.
+   * Below 569px the box is fluid (100% of row) with gutters only.
+   */
+  --width-narrow-content-column: 782px;
+  --layout-gutter-inline: 16px;
+  --infobox-max-width-desktop: 750px; /* 992–1199 content */
+  --infobox-max-width-desktop-xl-delta: 2px; /* live ≥1200 content vs 992–1199 */
+  --infobox-max-width-desktop-xl: calc(
+    var(--infobox-max-width-desktop) + var(--infobox-max-width-desktop-xl-delta)
+  );
+  --infobox-max-width-tablet: 736px; /* 768–991 InfoBox/MediaBox standalone content */
+  --infobox-max-width-compact: 568px; /* 569–767 */
+
+  /* InfoBox/MediaBox outer border-box at tablet = content + inline gutters (768px). */
+  --infobox-shell-max-width-tablet: calc(
+    var(--infobox-max-width-tablet) + 2 * var(--layout-gutter-inline)
+  );
+
+  /*
+   * Two-column / featured-news banded shell (768–991): +8px vs standalone shell for live 70/30 left track (~464px).
+   * Grid content ≈ shell − 32px gutters; left track ≈ (content − column-gap) × 0.7.
+   */
+  --width-banded-section-live-delta: 8px;
+  --width-banded-section-max-tablet: calc(
+    var(--infobox-shell-max-width-tablet) +
+      var(--width-banded-section-live-delta)
+  );
+
+  /* Two-column grid `column-gap` from md (768px) up — keep in sync with TwoColumnContainer `md:gap-x-*`. */
+  --two-column-column-gap: 80px;
+
+  /*
+   * Link Group outer: full border-box `max-width` per band (896 / 768 / 600 — spec already includes 32px inline padding).
+   * `link-group.scss` applies these directly; inner padding remains `--layout-gutter-inline` on each side.
+   */
+  --link-group-max-width-desktop: 896px; /* viewport ≥ 992 */
+  --link-group-max-width-tablet: 768px; /* 768–991 */
+  --link-group-max-width-compact: 600px; /* 600–767, single-column grid */
+
+  /*
+   * Quick Link Group card column width (exact px) + Media Box outer column notes.
+   * Grid: `repeat(n, var(--ql-group-card-w-*))` per band; `gap-6` between columns; shell `px` = 16px.
+   * <600: single `1fr` column, fluid tile. Bands: 600–767 → sm, 768–991 → md, 992–1199 → lg, ≥1200 → xl.
+   * Media Box: `mediaBoxUtils.ts` adds `2 * --layout-gutter-inline` for border-box `max-width` (see InfoBox outer pattern).
+   */
+  --ql-group-card-w-sm: 272px; /* 600 ≤ width < 768 */
+  --ql-group-card-w-md: 356px; /* 768 ≤ width < 992 */
+  --ql-group-card-w-lg: 468px; /* 992 ≤ width < 1200 */
+  --ql-group-card-w-xl: 572px; /* width ≥ 1200 */
+}

@@ -1,0 +1,58 @@
+﻿---
+ID: "1321580a-9c11-4e24-9d49-0b81f633e791"
+Parent: "a21cbae0-c1fd-4636-bc02-25092fc1c823"
+Template: "a21cbae0-c1fd-4636-bc02-25092fc1c823"
+Path: /sitecore/templates/Feature/Customer Portal/User Profile Menu/UserProfileMenu/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {ED1F43DC-FD80-45A1-B64F-B0C3905EA44C}
+    {DE3DED5A-E3DE-4C15-9450-763C1960F15F}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "88fa1c10-30b5-4fd5-ab27-27e1ea6950fb"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "20cde342-da9c-46d0-8161-4ceb2a938947"
+      Hint: CompanyIcon
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T130831Z
+    - ID: "347a0502-9d04-434f-82bd-9544a1c02d2c"
+      Hint: CompanyName
+      Value: $Companyname
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "59d9023e-edc3-4b68-9307-5aaf485955aa"
+      Hint: CompanyAddress
+      Value: $Companyaddress
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e19e303-4625-4277-ab11-736842da0bdf"
+    - ID: "a96591e9-8baa-4b10-a352-72861652fdf3"
+      Hint: SingleAccountTitle
+      Value: Logged in as
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "cfd133be-e958-4b9a-9231-1556039905e2"
+      Hint: SectionTitle
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260403T061557Z

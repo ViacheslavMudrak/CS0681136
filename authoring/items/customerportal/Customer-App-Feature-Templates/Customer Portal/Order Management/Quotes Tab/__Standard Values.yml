@@ -1,0 +1,23 @@
+﻿---
+ID: "42e27e99-d10a-4a90-87b7-c206ec7430af"
+Parent: "98ddae7e-b760-49cc-b000-270d89dfd27c"
+Template: "98ddae7e-b760-49cc-b000-270d89dfd27c"
+Path: /sitecore/templates/Feature/Customer Portal/Order Management/Quotes Tab/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260403T074657Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d41d14b5-9d25-41f1-abfa-605fb247511c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260403T074657Z

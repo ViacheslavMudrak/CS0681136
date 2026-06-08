@@ -1,0 +1,108 @@
+.container-wrapper {
+  @apply w-full;
+}
+
+.component {
+  @apply relative py-0 max-lg:p-0;
+}
+
+.container {
+  @apply p-0;
+
+  &.fullwidth-container {
+    @apply max-w-none;
+  }
+
+  .component-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* bordered */
+.sxa-bordered {
+  @apply box-border;
+
+  > .component-content {
+    @apply p-0 border border-solid border-border-gray rounded-[5px];
+  }
+}
+
+.column-splitter,
+.row-splitter {
+  @apply box-border;
+
+  .sxa-bordered {
+    @apply p-[5px]!;
+  }
+}
+
+.title-row-box {
+  @apply border border-solid border-border-gray box-border w-full h-[87px] m-0 p-0 bg-bg-light-gray-active;
+
+  > .component-content {
+    @apply max-w-[960px]! mx-auto! my-0! max-lg:mt-[23px] max-lg:mr-0 max-lg:mb-0 max-lg:ml-[20px];
+
+    .title {
+      @apply inline-block align-middle box-border mt-[23px] mb-0 mx-0 p-0;
+
+      h1 {
+        @apply text-[22px]  border-0;
+      }
+    }
+    .rich-text {
+      @apply m-0;
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        @apply m-0 p-0;
+      }
+    }
+    .breadcrumb {
+      @apply inline-block align-middle box-border text-[14px] mt-[23px] mb-0 mx-0 p-0 float-right clear-both;
+      @apply max-lg:mt-[23px] max-lg:mr-[20px] max-lg:mb-0 max-lg:ml-0;
+      @apply max-mobile:hidden;
+    }
+  }
+
+  .alpha {
+    @apply max-lg:align-middle max-lg:box-border max-lg:w-auto! max-lg:float-left;
+  }
+
+  .omega {
+    @apply max-lg:align-middle max-lg:box-border max-lg:w-auto! max-lg:float-right;
+  }
+}
+
+/* container */
+
+body {
+  @apply font-roboto text-main-color;
+}
+
+.container {
+  @apply min-[1400px]:max-w-[1250px];
+}
+
+main {
+  @apply max-lg:pt-0 max-lg:mb-0;
+
+  .main-header {
+    @apply mt-[55px] mb-[30px] max-lg:mb-0 max-lg:mt-[10px];
+
+    h4 {
+      @apply text-[50px] font-medium leading-[70px] max-lg:text-[24px] max-lg:leading-[32px];
+    }
+  }
+
+  .main-news-header {
+    @apply mt-[60px] max-lg:pb-[35px];
+
+    h2 {
+      @apply text-[36px] leading-[43px] max-lg:mt-0 max-lg:text-[18px] max-lg:leading-[22px];
+    }
+  }
+}

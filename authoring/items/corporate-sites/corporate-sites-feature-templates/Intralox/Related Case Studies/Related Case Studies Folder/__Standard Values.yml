@@ -1,0 +1,36 @@
+﻿---
+ID: "aacd656d-412d-441b-9944-4a30014903a1"
+Parent: "4b85c5bf-58c5-46f0-a46f-e5fb25add060"
+Template: "4b85c5bf-58c5-46f0-a46f-e5fb25add060"
+Path: /sitecore/templates/Feature/Intralox/Related Case Studies/Related Case Studies Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {F4A05CD2-5EB2-48F6-B467-24CEE016F9B0}
+    {4B85C5BF-58C5-46F0-A46F-E5FB25ADD060}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0f2da7be-ec37-46d2-a659-8fdc60dd2e75"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3af7367-7a35-4cdd-bf08-e2bf6c605746"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260416T070011Z

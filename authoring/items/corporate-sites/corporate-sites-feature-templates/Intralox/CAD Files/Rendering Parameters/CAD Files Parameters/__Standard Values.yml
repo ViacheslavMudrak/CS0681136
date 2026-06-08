@@ -1,0 +1,27 @@
+﻿---
+ID: "21b62225-3512-45a0-b4c2-2e6182d7c367"
+Parent: "1b95f9e0-bae8-41f0-83f4-229a8848e712"
+Template: "1b95f9e0-bae8-41f0-83f4-229a8848e712"
+Path: /sitecore/templates/Feature/Intralox/CAD Files/Rendering Parameters/CAD Files Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "335eeb06-43ec-4e8c-b8d3-75f01abed9f3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.k@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260530T105220Z

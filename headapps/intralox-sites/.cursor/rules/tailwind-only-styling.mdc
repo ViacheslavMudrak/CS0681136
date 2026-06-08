@@ -1,0 +1,83 @@
+---
+description: Intralox Sites — Tailwind-only component styling (no component SCSS/CSS modules)
+alwaysApply: true
+globs: []
+---
+
+# Tailwind-Only Styling (Intralox Sites)
+
+**Client requirement:** All Sitecore rendering components MUST use **Tailwind utilities** for visual styling. Do not add or extend plain CSS, SCSS, or CSS modules for components.
+
+## Prohibited (component work)
+
+- **New or modified** `src/assets/components/<component>.scss` (per-component global SCSS)
+- **CSS modules** (`*.module.css`) imported from `src/components/**`
+- **Plain CSS files** colocated with components for layout/color/typography
+- **`styled-components`**, **`@emotion`**, or other CSS-in-JS for component chrome
+- **Global selectors** targeting a component (e.g. `.component.footer a { }`) — use Tailwind on the element instead
+- **Generic Tailwind palette** when an `@theme` token exists (`bg-white`, `text-gray-900`, `border-gray-200`)
+
+## Required pattern (Intralox)
+
+1. **Tailwind classes inside JSX** — literal strings on `className`.
+2. **`cn()` for conditional assignments** only (`params`, CMS, state, `params.styles`) on that same node (see `cn-conditional-only.mdc`).
+3. **No constants** for Tailwind strings — no top-level `const FOO_CLASS`, no `*Classes.ts`, no class maps in `*Utils.ts`.
+4. **No separate style files** unless Tailwind cannot be applied to the JSX node (document the reason in PR).
+5. During migration, inline legacy `componentShellClasses` / `*Classes.ts` imports when touching that component.
+4. **Design-system tokens** from `src/assets/base/variables.scss` (`@theme`) — e.g. `bg-surface`, `text-ink-primary`, `border-stroke-default`.
+5. **SXA wrappers** unchanged: `component`, `component-content`, plus `params.styles` on the root.
+
+```tsx
+// ✅ Inline on every element
+<section className="box-border w-full min-w-0">
+<article className="flex flex-col rounded-xl border border-stroke-default">
+
+// ✅ Conditional — cn() on the node only
+<div className={cn('flex gap-4', isActive && 'bg-surface-subtle', styles)}>
+
+// ❌ WRONG — top-level class const (even private, even repeated)
+const CARD_SHELL_CLASS = 'flex flex-col rounded-xl';
+<article className={CARD_SHELL_CLASS}>
+
+// ❌ WRONG — class builder in utils
+export function getFooterNavClass() { return '…'; }
+
+// ❌ WRONG — new component SCSS file
+// src/assets/components/my-component.scss
+```
+
+## Allowed (narrow exceptions)
+
+| Allowed | Purpose |
+|---------|---------|
+| `variables.scss` (`@theme`) | Token source of truth — add tokens here, not component SCSS |
+| `main.scss` / `globals.css` | Tailwind entry, variants, framework imports only |
+| `src/assets/components/container.scss` etc. | Legacy global SXA resets — **do not extend** for new components |
+| Inline `style={{ }}` | **Only** dynamic CSS variables (`--timeline-event-img-ar`, aspect ratios) — not colors/spacing/layout |
+| Tailwind arbitrary values | Only when no `@theme` token exists; prefer adding a token |
+| `!` modifiers (`p-0!`) | Override SXA `.component` padding where documented |
+
+## When editing an existing component that still has SCSS
+
+- **Migrate styling to Tailwind** in the same change (colocate in the **`.tsx`** / `partial/` that renders the UI).
+- **Delete** the component SCSS file and remove its `@import` from `src/assets/components/index.scss`.
+- Do not leave two sources of truth (SCSS + Tailwind).
+
+## Body / scroll / portaled UI
+
+- Scroll lock, focus traps: **JavaScript** (`useEffect` on `document.body`), not global `body.foo` CSS classes.
+- Portaled dropdowns/modals: Tailwind `fixed`, `z-[…]`, `pointer-events` on the portal root.
+
+## PR checklist (styling) — IT-0
+
+- [ ] No new `*.scss` under `assets/components/` for the feature
+- [ ] No new `*.module.css` under `src/components/`
+- [ ] No new `*Classes.ts` and no layout `*_CLASS` / maps in `*Utils.ts`
+- [ ] **All** layout classes **inline** on JSX (zero top-level class consts)
+- [ ] Conditionals on the rendered node use **`cn()`** in that TSX file (never `cn()` for static-only constants — see `cn-conditional-only.mdc`)
+- [ ] No remaining imports from `*Classes.ts` or class builders in touched utils
+- [ ] `<RichText className="…">` — typography inline on JSX (not utils constants)
+- [ ] Colors use `@theme` Tailwind utilities, not raw hex in TSX/SCSS
+- [ ] Visual QA at 320, 768, 992, 1200px when layout changes
+
+Referenced: `src/lib/componentShellClasses.ts`, `src/assets/base/variables.scss`, `cn-conditional-only.mdc`

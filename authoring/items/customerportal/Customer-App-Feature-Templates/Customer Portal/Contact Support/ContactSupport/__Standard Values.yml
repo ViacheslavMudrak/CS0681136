@@ -1,0 +1,47 @@
+﻿---
+ID: "3c063830-c52d-44f6-927b-8722bda544dd"
+Parent: "54a64970-c34f-4c7f-b3c4-86f771554d72"
+Template: "54a64970-c34f-4c7f-b3c4-86f771554d72"
+Path: /sitecore/templates/Feature/Customer Portal/Contact Support/ContactSupport/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D3C44880-7170-4FFA-A14D-E657D54B219F}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f16aa277-2616-4380-84b4-efbd79df75c2"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251222T130210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\suneel.joshi@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\suneel.joshi@icreon.com
+    - ID: "7ec7163e-247b-4a92-a0f0-4b9de1f57769"
+      Hint: Title
+      Value: Contact
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "498d6d2f-1104-4753-bc45-7aa97a5601d6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260519T101813Z
+    - ID: "de66b861-335c-480e-a6dc-56c28f3b094a"
+      Hint: PopupTitle
+      Value: Your Account Contacts

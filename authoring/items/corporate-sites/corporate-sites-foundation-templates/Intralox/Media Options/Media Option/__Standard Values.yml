@@ -1,0 +1,52 @@
+﻿---
+ID: "bcfb26e7-d4b2-4f06-b2d9-ae5584074c2f"
+Parent: "23ba5808-8163-4ad1-8c5a-323892898dbc"
+Template: "23ba5808-8163-4ad1-8c5a-323892898dbc"
+Path: /sitecore/templates/Foundation/Intralox/Media Options/Media Option/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a4a9281-e533-4b70-ae95-5cf9e9c91be8"
+      Hint: FocalPoint
+      Value: "{F16912F9-3803-4887-A707-77EDEA71883C}"
+    - ID: "1b663de2-bae0-43df-a802-779da7609a01"
+      Hint: MediaPosition
+      Value: "{09674120-19B9-4EB0-A012-6198195A3A38}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260217T093754Z
+    - ID: "2fe2574c-f059-4418-b128-adf264b510ae"
+      Hint: ColorScheme
+      Value: "{6AC17A08-8F09-429C-9770-9CABBC455DFD}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ef1eff8e-1ef1-41f6-996a-91a241fb5031"
+    - ID: "9d68b471-8eb7-4b7c-8642-d62ec315ef3a"
+      Hint: Theme
+      Value: "{2FFE5A6E-6DB5-4C85-81CF-1E27EE1B5E05}"
+    - ID: "ab83cd40-b268-435c-a878-13681dc99a27"
+      Hint: Style
+      Value: "{20D534E9-DA7A-4A91-8E68-30A9F2CE7139}"
+    - ID: "ac8b5f97-920a-44ec-abc5-d8bd0e69a7b2"
+      Hint: MediaRatio
+      Value: "{E5205F72-1866-4C12-9D4B-CD39EAD0C2EA}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\arun.kumar@intralox.com
+    - ID: "d8af2612-cea7-4b7b-8e26-7d0d9025c4bd"
+      Hint: MediaWidth
+      Value: "{E8D48885-8522-4982-945B-7EC9A301C6CC}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260313T101613Z

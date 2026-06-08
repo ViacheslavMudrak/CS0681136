@@ -1,0 +1,24 @@
+export enum I18N {
+  READMORE = "READMORE",
+  CASESTUDY = "CASESTUDY",
+  VIEW_BUTTON = "VIEW_BUTTON",
+  ACCESSORIES = "ACCESSORIES",
+  TOOLS = "TOOLS",
+  SPROCKETS = "SPROCKETS",
+  BELT_DATA = "BELT_DATA",
+  COPIED = "COPIED",
+  DOCUMENT_NAME = "DOCUMENT_NAME",
+  DOCUMENT_TYPE = "DOCUMENT_TYPE",
+  FILE_TYPE = "FILE_TYPE",
+  FILE_SIZE = "FILE_SIZE",
+  DOWNLOADS = "DOWNLOADS",
+  PRODUCT_DATA = "PRODUCT_DATA",
+  PRODUCT_NOTES = "PRODUCT_NOTES",
+  SEARCH = "SEARCH",
+}
+
+export type I18NType = `${I18N}`;
+
+export function isValidI18N(key: string): key is I18NType {
+  return Object.values(I18N).includes(key as I18N);
+}

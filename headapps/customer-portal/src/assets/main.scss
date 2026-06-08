@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@laitram-l-l-c/intralox-tailwind-config/theme.css";
+@import "./base/index.scss";
+@source "../../node_modules/@laitram-l-l-c/intralox-ui-components/dist/**/*.js";
+
+@import "./components/index.css";
+
+@layer base {
+  @font-face {
+    font-family: "Helvetica Neue LT Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    src: url("../assets/fonts/HelveticaNeueLTStd-Roman.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue LT Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    src: url("../assets/fonts/HelveticaNeueLTStd-Md.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Helvetica Neue LT Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    src: url("../assets/fonts/HelveticaNeueLTStd-Bd.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    @apply font-sans;
+  }
+}
+
+.flex-splitter {
+  @apply flex items-center justify-center;
+}

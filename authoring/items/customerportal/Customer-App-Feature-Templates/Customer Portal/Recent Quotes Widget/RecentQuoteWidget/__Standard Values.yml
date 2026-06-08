@@ -1,0 +1,41 @@
+﻿---
+ID: "a51acaf6-a6a0-4797-924d-03f495866a61"
+Parent: "ed916f51-e211-46c5-a10e-05a0b4d80d5b"
+Template: "ed916f51-e211-46c5-a10e-05a0b4d80d5b"
+Path: /sitecore/templates/Feature/Customer Portal/Recent Quotes Widget/RecentQuoteWidget/__Standard Values
+SharedFields:
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "aeec6d08-dab9-4dd9-ab1d-6b3c01b81986"
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260507T064719Z
+    - ID: "31900c39-eae2-456f-a7ac-73dce06f98e3"
+      Hint: DateDefaultSelectionCriteria
+      Value: "{B977F9DD-FD81-44EB-BAE7-7D33A62B426E}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e5327235-a246-4570-8599-89c758c7f4d7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\deepanshu.badge@icreon.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260528T131834Z

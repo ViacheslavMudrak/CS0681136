@@ -1,0 +1,51 @@
+---
+description: Use cn() only for conditional or dynamic className composition
+alwaysApply: true
+globs: []
+---
+
+# cn() — Conditional Classes Only
+
+`cn()` from `lib/utils` wraps `clsx` + `tailwind-merge`. Use it **only** when the final `className` depends on runtime input.
+
+## Use `cn()`
+
+- Boolean / ternary: `cn('base', isActive && 'bg-surface')`
+- CMS / params: `cn('component', styles, params?.Foo)`
+- Merged variables that may conflict: `cn(paddingClass, widthClass)` when either can change per render
+- Helper **functions** returning classes used in JSX: `className={cn('w-full', getBillboardClasses(...))}`
+
+```tsx
+<div className={cn('flex gap-4', isEditing && 'ring-2', styles ?? '')} />
+```
+
+## Do not use `cn()`
+
+- Static strings only (one or many literals)
+- Module-private layout constants with no conditionals
+- Joining fixed Tailwind chunks that never change
+
+```tsx
+// ❌ WRONG
+const CARD_SHELL_CLASS = cn('flex flex-col', 'rounded-xl');
+const CLD_WRAPPER_CLASS = cn('relative block w-full');
+
+// ✅ GOOD — plain string (join with spaces)
+const CARD_SHELL_CLASS = 'flex flex-col rounded-xl';
+const CLD_WRAPPER_CLASS = 'relative block w-full';
+
+// ✅ GOOD — composing other string constants (no conditionals)
+const LINK_CLASS = `${FOCUS_CLASS} inline-block py-1 no-underline`;
+```
+
+## JSX `className`
+
+- **Static:** `className="box-border w-full"` or `className={PRIVATE_CONST}`
+- **Dynamic:** `className={cn(PRIVATE_CONST, isOpen && 'visible', styles)}`
+
+## Cleanup / enforcement
+
+- Do not use `cn()` for static-only literals — use a plain string or private `const` in the same `.tsx`
+- Drop unused `import { cn } from 'lib/utils'` when a file no longer needs conditional classes
+
+Referenced: `lib/utils.ts`, `.cursor/rules/tailwind-only-styling.mdc`
