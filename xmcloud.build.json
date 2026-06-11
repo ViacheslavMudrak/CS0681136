@@ -1,32 +1,5 @@
 {
     "renderingHosts": {
-        "customer-portal": {
-            "path": "./headapps/customer-portal",
-            "nodeVersion": "22.11.0",
-            "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
-            "enabled": true,
-            "type": "sxa",
-            "buildCommand": "build",
-            "runCommand": "next:start"
-        },
-        "intralox-sites": {
-            "path": "./headapps/intralox-sites",
-            "nodeVersion": "22.11.0",
-            "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
-            "enabled": true,
-            "type": "sxa",
-            "buildCommand": "build",
-            "runCommand": "next:start"
-        },
-        "laitram-site": {
-            "path": "./headapps/laitram-site",
-            "nodeVersion": "22.11.0",
-            "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
-            "enabled": true,
-            "type": "sxa",
-            "buildCommand": "build",
-            "runCommand": "next:start"
-        },
         "cfs-site": {
             "path": "./headapps/cfs-site",
             "nodeVersion": "22.11.0",
