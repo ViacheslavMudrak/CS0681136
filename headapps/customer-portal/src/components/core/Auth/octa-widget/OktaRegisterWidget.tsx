@@ -267,7 +267,7 @@ export default function OktaRegisterWidget({
     };
   }, [mode]);
   
-  //My TEST
+  
   console.log('[---TEST---] ' + t('user_register_already_registered_text'));
 
   return (
@@ -293,7 +293,6 @@ export default function OktaRegisterWidget({
           <p className="text-center text-[14px] font-[400] leading-[1.38] text-[#374151]">
             {t(I18N.RegisterAlreadyRegisteredText)}
           </p>
-		  //My TEST
 		  <p>[---TEST---]</p>
           <button
             type="button"
