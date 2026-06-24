@@ -18,6 +18,10 @@ export default getRequestConfig(async ({ requestLocale }: GetRequestConfigParams
 
   let sitecoreDictionary: Record<string, string> = {};
   try {
+    console.log('[---TEST---] Sitecore client:');
+    console.log(client);
+	console.log('[---TEST---] locale: ' + locale);
+    console.log('[---TEST---] parsedSite: ' +  parsedSite);
     const sitecoreDict = await client.getDictionary({
       locale,
       site: parsedSite,
@@ -26,21 +30,30 @@ export default getRequestConfig(async ({ requestLocale }: GetRequestConfigParams
     if (sitecoreDict && typeof sitecoreDict === "object") {
       sitecoreDictionary = sitecoreDict as Record<string, string>;
     }
+	console.log('[---TEST---] inside first if in getRequestConfig func!');
     console.log("[i18n] Fetched Sitecore dictionary:", sitecoreDictionary);
   } catch (error) {
     if (process.env.NODE_ENV === "development") {
+	  console.log('[---TEST---] inside second if(catch block) in getRequestConfig func!');
       console.warn("[i18n] Failed to fetch Sitecore dictionary:", error);
     }
+	console.log('[---TEST---] inside catch block in getRequestConfig func before assigning sitecoreDictionary={}!');
     sitecoreDictionary = {};
   }
-
+  
+  console.log('[---TEST---] before return from getRequestConfig func!');
+  console.log('[---TEST---] return locale: ' + locale);
+  let messages = { ...DICTIONARY_FALLBACKS, ...sitecoreDictionary };
+  console.log('[---TEST---] return messages:');
+  console.log(messages);
   return {
     locale,
-    messages: { ...DICTIONARY_FALLBACKS, ...sitecoreDictionary },
+    messages,
     onError: (error) => {
       if (process.env.NODE_ENV === "development") {
         console.warn("[i18n] Translation error:", error);
       }
+	  console.log('[---TEST---] before onError return!');
       // Return the key itself as fallback
       return error.message;
     },
@@ -48,6 +61,7 @@ export default getRequestConfig(async ({ requestLocale }: GetRequestConfigParams
       if (process.env.NODE_ENV === "development") {
         console.warn(`[i18n] Missing translation for key: ${key}`);
       }
+	  console.log('[---TEST---] before getMessageFallback return!');
       // Return the key itself as fallback
       return key;
     },
