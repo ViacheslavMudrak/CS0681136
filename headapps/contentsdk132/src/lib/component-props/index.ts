@@ -20,6 +20,7 @@ export type ComponentProps = {
      */
     EnabledPlaceholders?: string;
   };
+  page: Page;
 };
 
 /**
