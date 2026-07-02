@@ -44,7 +44,16 @@
             "type": "sxa",
             "buildCommand": "build",
             "runCommand": "next:start"
-        }
+        },
+		"kit-nextjs-skate-park-132":{
+            "path": "./headapps/kit-nextjs-skate-park-132",
+            "nodeVersion": "22.11.0",
+            "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+            "enabled": true,
+            "type": "sxa",
+            "buildCommand": "build",
+            "runCommand": "next:start"
+		}
     },
     "postActions": {
         "actions": {
