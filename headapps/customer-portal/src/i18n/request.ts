@@ -1,69 +1,35 @@
-import { hasLocale } from "next-intl";
-import { getRequestConfig, GetRequestConfigParams } from "next-intl/server";
-import { I18N } from "@/lib/dictionary-keys";
-import client from "src/lib/sitecore-client";
-import { routing } from "./routing";
-
-/** Keys not yet in Sitecore dictionary — overridden when CMS defines the same key. */
-const DICTIONARY_FALLBACKS: Record<string, string> = {
-  [I18N.OrderMgmtSelectDateRange]: "Select date range",
-  [I18N.RegisterDuplicateInstruction]:
-    "This email is already registered. Use Reset Password the link below.",
-};
+import { getRequestConfig, GetRequestConfigParams } from 'next-intl/server';
+import { hasLocale } from 'next-intl';
+import { routing } from './routing';
+import client from 'src/lib/sitecore-client';
 
 export default getRequestConfig(async ({ requestLocale }: GetRequestConfigParams) => {
+  // Provide a static locale, fetch a user setting,
+  // read from `cookies()`, `headers()`, etc.
+  // Since this function is executed during the Server Components render pass, you can call functions like cookies() and headers() to return configuration that is request-specific. https://next-intl.dev/docs/usage/configuration
+  
+  // set by the catch-all route setRequestLocale
+  // to support SSG and multisite here we expect both site and locale in the format {site}_{locale}
   const requested = await requestLocale;
-  const [parsedSite, parsedLocale] = requested?.split("_") || [];
+  const [parsedSite, parsedLocale] = requested?.split('_') || [];
   const locale = hasLocale(routing.locales, parsedLocale) ? parsedLocale : routing.defaultLocale;
 
-  let sitecoreDictionary: Record<string, string> = {};
-  try {
-    console.log('[---TEST---] Sitecore client:');
-    console.log(client);
-	console.log('[---TEST---] locale: ' + locale);
-    console.log('[---TEST---] parsedSite: ' +  parsedSite);
-    const sitecoreDict = await client.getDictionary({
-      locale,
-      site: parsedSite,
-    });
-
-    if (sitecoreDict && typeof sitecoreDict === "object") {
-      sitecoreDictionary = sitecoreDict as Record<string, string>;
-    }
-	console.log('[---TEST---] inside first if in getRequestConfig func!');
-    console.log("[i18n] Fetched Sitecore dictionary:", sitecoreDictionary);
-  } catch (error) {
-    if (process.env.NODE_ENV === "development") {
-	  console.log('[---TEST---] inside second if(catch block) in getRequestConfig func!');
-      console.warn("[i18n] Failed to fetch Sitecore dictionary:", error);
-    }
-	console.log('[---TEST---] inside catch block in getRequestConfig func before assigning sitecoreDictionary={}!');
-    sitecoreDictionary = {};
-  }
+  const messages: Record<string, object> = {};
   
-  console.log('[---TEST---] before return from getRequestConfig func!');
-  console.log('[---TEST---] return locale: ' + locale);
-  let messages = { ...DICTIONARY_FALLBACKS, ...sitecoreDictionary };
-  console.log('[---TEST---] return messages:');
+  console.log('[---TEST---kit-nextjs-skate-park-132---] Sitecore client:');
+  console.log(client);
+  
+  messages[parsedSite] = await client.getDictionary({
+    locale,
+    site: parsedSite,
+  });
+  
+  console.log('[---TEST---kit-nextjs-skate-park-132---] return locale: ' + locale);
+  console.log('[---TEST---kit-nextjs-skate-park-132---] return messages:');
   console.log(messages);
+
   return {
     locale,
     messages,
-    onError: (error) => {
-      if (process.env.NODE_ENV === "development") {
-        console.warn("[i18n] Translation error:", error);
-      }
-	  console.log('[---TEST---] before onError return!');
-      // Return the key itself as fallback
-      return error.message;
-    },
-    getMessageFallback: ({ key }) => {
-      if (process.env.NODE_ENV === "development") {
-        console.warn(`[i18n] Missing translation for key: ${key}`);
-      }
-	  console.log('[---TEST---] before getMessageFallback return!');
-      // Return the key itself as fallback
-      return key;
-    },
   };
 });
