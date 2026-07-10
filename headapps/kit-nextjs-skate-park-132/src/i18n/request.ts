@@ -15,10 +15,18 @@ export default getRequestConfig(async ({ requestLocale }: GetRequestConfigParams
   const locale = hasLocale(routing.locales, parsedLocale) ? parsedLocale : routing.defaultLocale;
 
   const messages: Record<string, object> = {};
+  
+  console.log('[---TEST---kit-nextjs-skate-park-132---] Sitecore client:');
+  console.log(client);
+  
   messages[parsedSite] = await client.getDictionary({
     locale,
     site: parsedSite,
   });
+  
+  console.log('[---TEST---kit-nextjs-skate-park-132---] return locale: ' + locale);
+  console.log('[---TEST---kit-nextjs-skate-park-132---] return messages:');
+  console.log(messages);
 
   return {
     locale,
