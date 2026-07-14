@@ -24,6 +24,7 @@ export class CustomEditingService extends EditingService {
       version,
       layoutKind,
       mode,
+	  variantId,
     });
 
     const graphQLClient = this.graphQLClientFactory();
