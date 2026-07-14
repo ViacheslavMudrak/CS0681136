@@ -1,0 +1,132 @@
+.daily-reflection-listing {
+  &__headline {
+    span {
+      color: var(--color-brand-blue-800);
+    }
+    h2 {
+      @include title-md($margin-bottom: 0);
+      color: var(--color-brand-blue-800);
+    }
+  }
+  &__search {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    > div {
+      max-width: 100%;
+    }
+    @include min(md) {
+      text-align: left;
+      width: 100%;
+      max-width: 450px;
+      padding-top: 6px;
+    }
+    input {
+      width: 100%;
+      box-shadow: var(--sm-box);
+      padding: 15px 30px 15px 15px;
+      border-radius: 9999px;
+      background-color: var(--color-white);
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+    i {
+      background-color: var(--color-brand-blue-500);
+      border-radius: 9999px;
+      padding: 5px;
+      color: var(--color-white);
+      font-size: 22px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      @include max(md) {
+        justify-content: flex-end;
+      }
+    }
+  }
+  &__cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include min(md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @include min(lg) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  &__card {
+    border: 1px solid var(--color-brand-blue-100);
+    background-color: var(--color-white);
+    box-shadow: var(--sm-box);
+    border-radius: var(--rounded-lg);
+    padding: 18px 20px;
+    @include min(md) {
+      padding: 40px;
+    }
+    &:hover {background: #F2F9FF;
+background: var(--reflection-gradient);
+    }
+  }
+  &__card-date {
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+  }
+  &__card-title {
+    color: var(--color-brand-blue-800);
+    font-size: 20px;
+    letter-spacing: .25px;
+  }
+  &__card-reflection {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--color-brand-blue-800);
+    margin-bottom: 8px;
+  }
+  &__card-author {
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--color-brand-blue-100);
+    padding-top: 24px;
+  }
+  &__topics {
+    margin-bottom: 20px;
+    &:after {
+      content: '';
+      height: 100%;
+      width: 1px;
+      background-color: var(--color-brand-blue-800);
+    }
+  }
+  &__topic {
+		border-radius: var(--rounded-md);
+		font-family: var(--font-whitney-semibold);
+		font-size: 14px;
+		background-color: var(--color-white);
+		color: var(--color-brand-blue-800);
+		padding: 18px 24px;
+		box-shadow: var(--xs-box);
+    cursor:default;
+		&:hover {
+			background-color: var(--color-brand-blue-500);
+			color: var(--color-white);
+		}
+	}
+  &__cta {
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: var(--font-whitney-semibold);
+    letter-spacing: 1.25px;
+    color: var(--color-brand-blue-500);
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+}

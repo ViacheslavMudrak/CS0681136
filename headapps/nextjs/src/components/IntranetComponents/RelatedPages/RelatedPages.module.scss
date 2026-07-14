@@ -1,0 +1,28 @@
+.related-pages {
+  .one-card {
+    padding: 80px;
+  }
+  .two-cards {
+    padding: 80px 40px;
+  }
+  .three-cards {
+    padding: 80px 20px;
+  }
+  .four-cards {
+    padding: 40px 20px;
+  }
+  &__card-title {
+    word-break: break-word;
+    @include title-lg;
+    @include max(md) {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: .25px;
+    }
+  }
+  p {
+    @include max(md) {
+      font-size: 0.889rem;
+    }
+  }
+}

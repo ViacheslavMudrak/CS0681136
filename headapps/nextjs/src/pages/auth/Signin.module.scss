@@ -1,0 +1,98 @@
+.asc-signin {
+    min-height: 100vh;
+    &__left-column {
+        display: none;
+        @include min(md) {
+            display: flex;
+            position: relative;
+            height: stretch;
+            background-color: var(--color-brand-blue-900);
+        }
+    }
+    &__left-column-content {
+        max-width: 608px;
+        width: 100%;
+        padding: 16px;
+        span {
+            display: flex;
+            width: 100%;
+            @include title-3xl($margin-bottom: 0);
+            color: var(--color-white);
+        }
+    }
+    &__left-column-image {
+        position: absolute;
+        opacity: .3;
+        width: 100%;
+        height: stretch;
+        background: url('/assets/login-arch-lines.png') no-repeat right bottom;
+    }
+    &__right-column {
+        width: 100%;
+        overflow-y: auto;
+    }
+    &__right-column-content {
+        padding: 24px 40px;
+        width: 100%;
+        height: 100%;
+        @include min(md) {
+            padding: 80px 16px 80px 116px;
+            max-width: 608px;
+        }
+        img {
+            width: 180px;
+        }
+        h2 {
+            @include title-xl($margin-bottom: 0);
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &__google-signin-btn {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--color-brand-blue-500);
+        border-radius: var(--rounded-full);
+        padding: 4px 24px 4px 4px;
+        width: 100%;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color-brand-blue-800);
+        }
+        @include min(md) {
+            margin-top: 16px;
+            width: fit-content;
+        }
+        img {
+            width: 40px;
+            background-color: var(--color-white);
+            padding: 8px;
+            border-radius: var(--rounded-full);
+        }
+        span {
+            color: var(--color-white);
+            font-size: 14px;
+            letter-spacing: .25px;
+            width: 100%;
+        }
+    }
+    &__mock-header {
+        font-size: 32px;
+        letter-spacing: .25px;
+        margin-bottom: 0;
+        color: var(--color-brand-blue-800);
+        margin-top: 24px;
+        @include min(md) {
+            margin-top: 40px;
+        }
+    }
+    &__mock-btn {
+        height: auto;
+        width: fit-content;
+        padding: 12px 32px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+}

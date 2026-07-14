@@ -1,0 +1,189 @@
+.directory-wayward {
+  background: linear-gradient(135deg, rgba(8, 26, 79, 0.8) 0%, rgba(8, 26, 79, 0.8) 100%), url('/assets/notfound.png');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  padding: 60px 0;
+
+  @include max(md) {
+    padding: 40px 0;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include max(md) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__header {
+    order: 1;
+    flex: 0 0 auto;
+    margin-bottom: 32px;
+
+    @include max(md) {
+      order: 1;
+      margin-bottom: 24px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include title-xl;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+
+    @include max(md) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  &__search-wrapper {
+    order: 3;
+    flex: 1 1 100%;
+    margin-bottom: 0;
+
+    @include max(md) {
+      order: 2;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__search-form {
+    width: 100%;
+  }
+
+  &__search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__search-input {
+    flex: 1;
+    padding: 16px 24px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Whitney-Book', sans-serif;
+    color: #333333;
+    background: transparent;
+
+    &::placeholder {
+      color: #666666;
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @include max(md) {
+      padding: 14px 20px;
+      font-size: 14px;
+    }
+  }
+
+  &__search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0066b2;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      background: #004c85;
+    }
+
+    &:active {
+      background: #003a66;
+    }
+
+    @include max(md) {
+      width: 40px;
+      height: 40px;
+      margin-right: 6px;
+    }
+  }
+
+  &__search-icon {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+
+    @include max(md) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__view-all {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    margin-bottom: 32px;
+    margin-left: auto;
+
+    @include max(md) {
+      order: 3;
+      justify-content: center;
+      margin-bottom: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__view-all-link {
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Whitney-Semibold', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &::after {
+      content: '→';
+      margin-left: 8px;
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover::after {
+      transform: translateX(4px);
+    }
+
+    @include max(md) {
+      font-size: 13px;
+    }
+  }
+}

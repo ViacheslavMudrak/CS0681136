@@ -1,0 +1,121 @@
+.reflection-detail-header {
+  padding: 16px 0 0;
+  @include min(md) {
+    padding: 16px 0;
+    padding-top: 54px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+
+    @include max(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+
+  &__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+
+    @include max(md) {
+      width: 100%;
+      align-items: flex-start;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary, #666);
+  }
+
+  &__headline {
+    font-size: 42px;
+    color: var(--color-brand-blue-900);
+    line-height: 1.2;
+
+
+    @include max(md) {
+      font-size: 36px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+
+    @include max(md) {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  &__action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+      background-color: var(--color-primary-light, rgba(0, 102, 204, 0.1));
+    }
+
+    i {
+      font-size: 20px;
+      color: var(--color-brand-blue-500);
+    }
+
+    span {
+      white-space: nowrap;
+      color: var(--color-brand-blue-900);
+    }
+
+    @include max(sm) {
+      padding: 8px;
+      gap: 4px;
+
+      span {
+        font-size: 12px;
+      }
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__like-static {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &__no-datasource {
+    padding: 32px;
+    background-color: var(--color-background-light, #f5f5f5);
+    border-radius: 4px;
+    text-align: center;
+    color: var(--color-text-secondary, #666);
+  }
+}

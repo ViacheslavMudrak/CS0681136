@@ -1,0 +1,48 @@
+.related-news-listing {
+  &__header {
+    i {
+      color: var(--color-brand-green-500);
+      font-size: 20px;
+    }
+    h2 {
+      @include title-xs($margin-bottom: 0, $letter-spacing: 1.25px);
+      color: var(--color-eyebrow);
+    }
+  }
+  &__header-link {
+    a {
+      font-size: 12px;
+      font-family: var(--font-whitney-semibold);
+      color: var(--color-brand-blue-500);
+      text-decoration: none;
+      letter-spacing: 1.25px;
+      &:hover {
+        color: var(--color-brand-blue-800);
+        i {
+          left: 5px;
+          transition: left 0.3s ease-in-out;
+        }
+      }
+      i {
+        position: relative;
+        text-transform: lowercase;
+        font-size: 14px;
+        left: 0;
+        top: -1px;
+        transition: left 0.3s ease-in-out;
+      }
+    }
+  }
+  &__card {
+      @include title-lg($margin-bottom: 10px);
+      color: var(--color-brand-blue-800);
+      font-size: 20px;
+      line-height: 1.2;
+      gap: 1rem;
+
+      &__publish-date {
+        font-size: var(--Font-Body-SM-Size, 16px) !important;
+      }
+  }
+  
+}

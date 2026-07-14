@@ -1,0 +1,71 @@
+@mixin heading-style($font-size, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 1.2, $margin-bottom: 0.5em, $color: var(--color-brand-blue-800)) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  color: $color;
+}
+
+@mixin title-3xl($font-size: 64px, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 68px, $margin-bottom: 0.5em, $letter-spacing: -1.5px) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-2xl($font-size: 56px, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 64px, $margin-bottom: 0.5em, $letter-spacing: -1.5px) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-xl($font-size: 42px, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 48px, $margin-bottom: 0.5em, $letter-spacing: -1px) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-lg($font-size: 36px, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 40px, $margin-bottom: 0.5em, $letter-spacing: 0) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-md($font-size: 32px, $font-family: 'Whitney-Book', $font-weight: 325, $line-height: 36px, $margin-bottom: 0.5em, $letter-spacing: 0) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-sm($font-size: 24px, $font-family: 'Whitney-Semibold', $font-weight: 375, $line-height: 32px, $margin-bottom: 0.5em, $letter-spacing: 0) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title-xs($font-size: 16px, $font-family: 'Whitney-Semibold', $font-weight: 375, $line-height: 24px, $margin-bottom: 0.5em, $letter-spacing: 0.25px) {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+  letter-spacing: $letter-spacing;
+}

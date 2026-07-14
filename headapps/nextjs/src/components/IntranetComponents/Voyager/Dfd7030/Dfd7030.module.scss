@@ -1,0 +1,15 @@
+.dfd7030 {
+  &__seventy-column {
+    section {
+      width: 100%;
+    }
+  }
+  &__thirty-column {
+    height: -webkit-fill-available;
+  }
+  :global([class*='dfd7030__thirty-column']) {
+    :global([class*='daily-reflection']) {
+      margin: 0;
+    }
+  }
+}

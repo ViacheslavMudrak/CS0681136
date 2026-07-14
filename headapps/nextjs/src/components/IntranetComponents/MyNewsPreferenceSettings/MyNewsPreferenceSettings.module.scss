@@ -1,0 +1,116 @@
+.my-news-preference-settings {
+  width: 100%;
+  padding: 24px 16px;
+  background-color: var(--color-white);
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--color-brand-blue-100);
+  @include min(md) {
+    padding: 24px 32px;
+  }
+  h3 {
+    @include title-sm($font-size: 20px, $margin-bottom: 16px);
+    color: var(--color-black);
+    font-family: var(--font-whitney-semibold);
+    border-bottom: 1px solid var(--color-brand-blue-100);
+    padding-bottom: 14px;
+  }
+  &__homepage-news,
+  &__my-news-feed {
+    h4 {
+      @include title-xs($font-size: 14px, $margin-bottom: 0);
+      text-transform: uppercase;
+    }
+    i {
+      color: var(--color-brand-blue-800);
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  &__homepage-button,
+  &__my-news-feed-button {
+    button {
+      cursor: pointer;
+      margin-top: 6px;
+      i {
+        color: var(--color-brand-blue-500);
+        font-size: 18px;
+      }
+      span {
+        font-size: 12px;
+        font-family: var(--font-whitney-semibold);
+        text-transform: uppercase;
+        color: var(--color-brand-blue-500);
+      }
+      &:hover {
+        i,
+        span {
+          color: var(--color-brand-blue-800);
+        }
+      }
+    }
+  }
+  &__modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 24px;
+    z-index: 999;
+  }
+
+  &__modal {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    width: 100%;
+    max-width: 480px;
+    box-shadow: var(--shadow-lg);
+  }
+  &__modal-header {
+    padding: 16px;
+    h3 {
+      @include title-sm($font-size: 18px, $margin-bottom: 0);
+      color: var(--color-offblack);
+      border-bottom: none;
+      text-align: left;
+      padding: 0;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  &__modal-body {
+    padding: 0 16px 16px;
+    max-height: 350px;
+    overflow-y: auto;
+    span {
+      font-size: 16px;
+    }
+  }
+  &__modal-card-name {
+    @include title-sm($margin-bottom: 0);
+    color: var(--color-offblack);
+  }
+
+  &__modal-actions {
+    padding: 16px;
+    border-top: 1px solid var(--color-brand-gray-200);
+  }
+  &__modal-cancel {
+    @include title-xs($margin-bottom: 0, $letter-spacing: 1.25px);
+    text-transform: uppercase;
+    color: var(--color-brand-violet-500);
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+  &__modal-leave {
+    @include title-xs($margin-bottom: 0, $letter-spacing: 1.25px);
+    text-transform: uppercase;
+    color: var(--color-brand-violet-500);
+    color: var(--color-brand-blue-500);
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+}

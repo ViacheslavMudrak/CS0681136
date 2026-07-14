@@ -1,0 +1,46 @@
+.organizational-updates-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+
+    @include max(md) {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    color: var(--color-brand-blue-800);
+    min-width: 4rem;
+    flex-shrink: 0;
+    font-family: var(--font-whitney-semibold);
+
+    @include max(md) {
+      text-align: left;
+    }
+  }
+
+  &__value {
+    flex: 1;
+    color: var(--color-dark-grey);
+    font-size: 1.129rem;
+    font-family: var(--font-whitney-book);
+
+    @include max(md) {
+      text-align: left;
+    }
+  }
+}

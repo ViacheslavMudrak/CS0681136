@@ -1,0 +1,292 @@
+.market-news {
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    color: var(--color-brand-blue-1000);
+    margin: 0;
+  }
+
+  // Scenario 8: See All Link hover effect
+  &__see-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-brand-blue-500);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    i {
+      position: relative;
+      left: 5px;
+      transition: left 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--color-primary-dark, #003d5c);
+
+      i {
+        left: 10px;
+        transition: left 0.3s ease-in-out;
+      }
+    }
+
+    &.mobile-only {
+      display: flex;
+      margin-top: 2rem;
+
+      @include min(lg) {
+        display: none;
+      }
+    }
+
+    &.desktop-only {
+      display: none;
+
+      @include min(lg) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include min(lg) {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+
+  // Scenario 10 & 11: Featured article with hover effects
+  &__featured {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    background-color: var(--color-brand-blue-bglight);
+    border-radius: var(--rounded-lg);
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      .market-news__featured-image-wrapper {
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      .market-news__featured-icon {
+        background-color: var(--color-primary-light, #e6f2f8);
+
+        i {
+          color: var(--color-brand-blue-700);
+        }
+      }
+    }
+  }
+
+  &__featured-image-wrapper {
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    border-radius: var(--rounded-lg) var(--rounded-lg) 0px 0px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+  }
+
+  &__featured-image {
+    width: 100%;
+    aspect-ratio: 1.3 / 1;
+    overflow: hidden;
+    background-color: var(--color-brand-blue-100);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__featured-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+
+    i {
+      color: var(--color-brand-blue-500);
+      font-size: 2.5rem;
+      transition: color 0.3s ease;
+    }
+  }
+
+  &__featured-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0 1.7rem 1.5rem 1.7rem;
+  }
+
+  &__featured-date {
+    font-size: 1rem;
+    color: var(--color-text-secondary, #666);
+    margin: 0;
+  }
+
+  &__featured-headline {
+    color: var(--color-brand-blue-700);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include max(md) {
+      font-size: 1.63rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  &__articles {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  // Scenario 12 & 13: Non-featured article hover effect
+  &__article-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    position: relative;
+    align-items: center;
+
+    &:hover {
+      .market-news__article-date {
+        padding-bottom: 10px;
+        border-bottom-color: var(--color-brand-blue-500);
+      }
+    }
+
+    // Scenario 2: Handle cards without thumbnails
+    &--no-thumbnail {
+      .market-news__article-info {
+        padding-right: 2rem;
+      }
+    }
+
+    .material-icons {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.25rem;
+      color: var(--color-primary, #005587);
+    }
+  }
+
+  &__article-thumbnail {
+    width: 182px;
+    min-width: 182px;
+    aspect-ratio: 5 / 3.5;
+    overflow: hidden;
+    border-radius: var(--rounded-md);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include max(md) {
+      width: 110px;
+      min-width: 110px;
+      aspect-ratio: 1.1 / 1;
+    }
+  }
+
+  &__article-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  // Scenario 6: Truncate headlines at 3 lines
+  &__article-headline {
+    font-family: var(--font-whitney-book, 'Whitney-Book');
+    color: var(--color-brand-blue-700);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include max(md) {
+      font-size: 1rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  &__article-date {
+    font-size: 0.88rem;
+    line-height: 1.5rem;
+    color: var(--color-text-secondary, #666);
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s ease, padding-bottom 0.2s ease;
+    display: inline-block;
+
+    @include max(md) {
+      font-size: 0.75rem;
+    }
+  }
+
+}

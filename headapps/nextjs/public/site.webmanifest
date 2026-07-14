@@ -1,0 +1,23 @@
+{
+  "name": "OurAscension",
+  "short_name": "OurAscension",
+  "description": "The OurAscension intranet — quick access to news, resources, and tools for the Ascension team.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#051D64",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

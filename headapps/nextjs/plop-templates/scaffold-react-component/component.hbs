@@ -1,0 +1,118 @@
+import { JSX } from 'react';
+import {
+  Image,
+  Link,
+  RichText,
+  Text,
+  {{#if hasDatasource}}
+  withDatasourceCheck,
+  {{/if}}
+} from '@sitecore-content-sdk/nextjs';
+import classNames from 'classnames/bind';
+import React from 'react';
+
+{{#if hasStyles}}
+{{#if hasDatasource}}
+import compose from 'lib/enhancers/compose';
+{{/if}}
+{{#if hasJumplink}}
+{{#unless hasDatasource}}
+import compose from 'lib/enhancers/compose';
+{{/unless}}
+{{/if}}
+import withStyles from 'lib/enhancers/withStyles';
+{{/if}}
+{{#if hasJumplink}}
+{{#unless hasStyles}}
+{{#if hasDatasource}}
+import compose from 'lib/enhancers/compose';
+{{/if}}
+{{#unless hasDatasource}}
+import compose from 'lib/enhancers/compose';
+{{/unless}}
+{{/unless}}
+import { withJumplink } from 'lib/enhancers/withJumplink';
+{{/if}}
+{{#if hasRenderingParams}}
+import { getRenderingParam } from 'lib/component-props/rendering-params';
+
+{{/if}}
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
+
+// CSS module styles
+import styles from './{{pascalCase name}}.module.scss';
+
+const cx = classNames.bind(styles);
+
+const {{pascalCase name}} = (props: {{pascalCase name}}Props): JSX.Element => {
+  const { fields{{#unless hasJumplink}}, rendering{{/unless}}{{#if hasRenderingParams}}, params{{/if}} } = props;
+
+  {{#if hasRenderingParams}}
+  // Rendering Params
+  const imageDirection = getRenderingParam(params?.ImageDirection);
+  {{/if}}
+
+  return (
+    <div 
+      className={cx('{{kebabCase name}}', 'component', props.stylesSXA)} 
+      {{#unless hasJumplink}}id={rendering.params?.RenderingIdentifier}{{/unless}}
+    >
+      <h1>Component Generated! Name: {{pascalCase name}}</h1>
+      {{#if hasRenderingParams}}
+      <p className="mb-4">
+        Accessing Rendering Parameter <code>imageDirection</code>:{' '}
+        {JSON.stringify(params?.imageDirection)} -&gt; {imageDirection}
+      </p>
+      {{/if}}
+      <div className="flex">
+        <Image field={fields.sampleImage} className={'w-50'} />
+      </div>
+      <div>
+        <Text
+          className={cx({ title: true })}
+          encode={typeof fields.sampleTitle.metadata !== 'undefined'} // when editing, choose to encode the string so that HTML tags are shown when used
+          field={fields.sampleTitle}
+          tag="h2"
+          editable={true}
+        />
+        <RichText className={cx('body')} field={fields.sampleBody} tag="div" />
+        <Link
+            className={cx('link')}
+            field={fields.sampleLink}
+            showLinkTextWithChildrenPresent={false}
+          >
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+{{#if hasDatasource}}
+{{#if hasStyles}}
+{{#if hasJumplink}}
+export default compose<{{pascalCase name}}Props>(withDatasourceCheck(), withStyles(), withJumplink())({{pascalCase name}});
+{{else}}
+export default compose<{{pascalCase name}}Props>(withDatasourceCheck(), withStyles())({{pascalCase name}});
+{{/if}}
+{{else}}
+{{#if hasJumplink}}
+export default compose<{{pascalCase name}}Props>(withDatasourceCheck(), withJumplink())({{pascalCase name}});
+{{else}}
+export default withDatasourceCheck()<{{pascalCase name}}Props>({{pascalCase name}});
+{{/if}}
+{{/if}}
+{{else}}
+{{#if hasStyles}}
+{{#if hasJumplink}}
+export default compose<{{pascalCase name}}Props>(withStyles(), withJumplink())({{pascalCase name}});
+{{else}}
+export default withStyles()<{{pascalCase name}}Props>({{pascalCase name}});
+{{/if}}
+{{else}}
+{{#if hasJumplink}}
+export default compose<{{pascalCase name}}Props>(withJumplink())({{pascalCase name}});
+{{else}}
+export default {{pascalCase name}};
+{{/if}}
+{{/if}}
+{{/if}}

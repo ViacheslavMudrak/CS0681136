@@ -1,0 +1,196 @@
+/* Block: search-facets */
+.search-facets {
+  background-color: var(--color-white, #fff);
+  border-radius: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-brand-blue-200);
+
+  @include max(md) {
+    padding: 0px;
+    border-top: none;
+    // min-height: 82vh;
+    margin-bottom: 80px;
+  }
+
+  &__header {
+    letter-spacing: 0.5px;
+    font-family: var(--font-whitney-semibold, 'Whitney-Semibold', Arial, sans-serif);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  &__header-trigger {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  // Main accordion container
+  >div[data-orientation="vertical"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  // Individual accordion items
+  // > div[data-orientation="vertical"] > div[data-orientation="vertical"] {
+  //   border-bottom: 1px solid var(--color-brand-gray-200, #eeeeee);
+
+  //   &:first-child {
+  //     border-top: 1px solid var(--color-brand-gray-200, #eeeeee);
+  //   }
+
+  //   &:last-child {
+  //     border-bottom: 1px solid var(--color-brand-gray-200, #eeeeee);
+  //   }
+  // }
+
+  // Accordion header (h3)
+  h3[data-orientation="vertical"] {
+    margin: 0;
+    padding: 0;
+  }
+
+  // Accordion trigger button
+  h3[data-orientation="vertical"]>button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    font-family: var(--font-whitney-semibold);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black, #000);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: none;
+    text-align: left;
+
+    @include max(md) {
+      border-top: 1px solid var(--color-brand-blue-300);
+    }
+
+    &:hover {
+      background: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    // Add chevron icon using CSS
+    &::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid var(--color-black, #000);
+      border-bottom: 2px solid var(--color-black, #000);
+      transform: rotate(45deg);
+      margin-left: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    &[data-state='open']::after {
+      transform: rotate(220deg);
+    }
+  }
+
+  // Accordion content area
+  div[role="region"] {
+    padding: 0 20px 16px 32px;
+  }
+
+  // Facet value list (ul)
+  ul[data-orientation="vertical"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Individual facet item (li)
+  li[data-radix-collection-item] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: none;
+
+    // Checkbox button
+    button[role="checkbox"] {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      border: 2px solid var(--color-black);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: none;
+      background-color: var(--color-white, #fff);
+      cursor: pointer;
+      padding: 0;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+
+      // Checked state
+      &[data-state='checked'] {
+        background-color: var(--color-brand-blue-500, #1e69d2);
+        border-color: var(--color-brand-blue-500, #1e69d2);
+
+        // Add checkmark using CSS
+        &::after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 2px;
+          width: 4px;
+          height: 8px;
+          border: solid var(--color-white, #fff);
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    // Label
+    label {
+      font-family: var(--font-whitney-semibold);
+      font-size: 16px;
+      color: var(--color-black, #000);
+      flex: 1;
+      line-height: 1.5;
+      font-weight: 400;
+      opacity: 0.87;
+      cursor: pointer;
+      letter-spacing: 0.15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__count {
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+    font-family: var(--font-whitney-book);
+    color: var(--color-brand-gray-600);
+
+    // When item is selected, make label blue
+    &[data-state='selected'] label {
+      color: var(--color-brand-blue-500);
+    }
+  }
+}

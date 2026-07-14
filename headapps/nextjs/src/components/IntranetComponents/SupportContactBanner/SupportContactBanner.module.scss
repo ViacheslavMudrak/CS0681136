@@ -1,0 +1,36 @@
+.support-contact-banner {
+  &__container {
+    background-color: var(--color-brand-blue-bglight);
+    padding: 40px 20px;
+    border-radius: var(--rounded-lg);
+    @include min(md) {
+      padding: 72px;
+    }
+    i {
+      font-size: 70px;
+      color: var(--color-brand-blue-500);
+    }
+  }
+  &__content {
+    h2 {
+      @include title-sm($margin-bottom: 0);
+      color: var(--color-offblack);
+    }
+  }
+  &__contact-content {
+    a {
+      font-family: 'Whitney-Semibold', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+      color: var(--color-brand-blue-500);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    i {
+      color: var(--color-brand-blue-800);
+      font-size: 20px;
+    }
+  }
+  &__contact-eyebrow {
+    margin-bottom: 4px;
+  }
+}

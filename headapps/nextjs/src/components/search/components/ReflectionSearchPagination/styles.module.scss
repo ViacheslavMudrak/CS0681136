@@ -1,0 +1,27 @@
+/* Block: reflection-search-pagination */
+.reflection-search-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-sans-serif, Arial, sans-serif); 
+  &__show-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    height: 36px;
+    padding: 0 22px;
+    border: 2px solid var(--color-brand-blue-500, #1e69d2);
+    border-radius: 9999px;
+    background-color: var(--color-white, #fff);
+    color: var(--color-brand-blue-500, #1e69d2);
+    font-family: var(--font-whitney-semibold, Arial, sans-serif);
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;    
+  }
+}

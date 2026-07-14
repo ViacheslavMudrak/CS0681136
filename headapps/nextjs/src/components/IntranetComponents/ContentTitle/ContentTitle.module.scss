@@ -1,0 +1,8 @@
+.content-title {
+  position: relative;
+
+  // media breakpoints should be nested inline for readability
+  @include min(lg) {
+    position: static;
+  }
+}

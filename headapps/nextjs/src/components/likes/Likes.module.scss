@@ -1,0 +1,14 @@
+.likes-button {
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover {
+        color: var(--color-brand-blue-500);
+    }
+    
+    i {
+    color: var(--color-brand-blue-500);
+    }
+    
+}

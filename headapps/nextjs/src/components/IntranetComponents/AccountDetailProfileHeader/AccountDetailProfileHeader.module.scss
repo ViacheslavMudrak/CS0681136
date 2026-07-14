@@ -1,0 +1,30 @@
+.account-detail-profile-header {
+  &__image {
+    border-radius: 9999px;
+    overflow: hidden;
+    max-width: 154px;
+    position: relative;
+    aspect-ratio: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name {
+    @include title-sm($margin-bottom: 0);
+  }
+  &__info {
+    font-size: 16px;
+  }
+  &__bullet{
+    display: none;
+    @include min(md) {
+      display: flex;
+      &:before {
+        content: '\2022';
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+@use 'sass:map';
+
+// Color definitions for each variant
+$variants: (
+  'negative': ('icon-color': var(--color-brand-error-700),
+    'bg-color': var(--color-brand-error-100),
+    'text-color': var(--color-dark-grey),
+    'link-color': var(--color-brand-error-700),
+    'close-color': var(--color-brand-error-700),
+  ),
+  'warning': ('icon-color': var(--color-brand-warning-700),
+    'bg-color': var(--color-brand-warning-100),
+    'text-color': var(--color-dark-grey),
+    'link-color': var(--color-brand-warning-700),
+    'close-color': var(--color-brand-warning-700),
+  ),
+  'informational': ('icon-color': var(--color-brand-blue-500),
+    'bg-color': var(--color-brand-blue-50),
+    'text-color':var(--color-dark-grey),
+    'link-color': var(--color-brand-blue-500),
+    'close-color': var(--color-brand-blue-500),
+  ),
+  'positive': ('icon-color': var(--color-brand-success-700),
+    'bg-color': var(--color-brand-success-100),
+    'text-color': var(--color-dark-grey),
+    'link-color': var(--color-brand-success-700),
+    'close-color': var(--color-brand-success-700),
+  ),
+);
+
+.notification-banner-container {
+  width: 100%;
+}
+
+.notification-banner {
+  width: 100%;
+  padding: .5rem 0;
+  position: relative;
+  z-index: 9;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include min(md) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.5rem 1rem;
+    align-items: flex-start;
+    width: 100%;
+
+    @include min(md) {
+      grid-template-columns: auto 1fr auto auto;
+      grid-template-rows: auto;
+      gap: 1.5rem;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+    @include min(md) {
+      width: 20px;
+      height: 20px;
+    }
+
+    :global(.material-icons) {
+      font-size: 24px;
+
+      @include min(md) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--font-whitney-semibold);
+    min-width: 0;
+    color: var(--color-dark-grey);
+
+    @include min(md) {
+      font-size: 1rem;
+    }
+
+    :global(p) {
+      margin: 0;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    :global(a) {
+      text-decoration: underline;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__link-container {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    padding-left: 34px;
+
+    @include min(md) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      padding-left: 0;
+    }
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: text-decoration 0.2s ease;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1.25px;
+
+    @include min(md) {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__dismiss-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    min-width: 20px;
+
+    @include min(md) {
+      grid-column: 4 / 5;
+    }
+
+    @include max(md) {
+      min-width: 0px;
+    }
+  }
+
+  &__dismiss {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+
+    :global(.material-icons) {
+      font-size: 24px;
+    }
+  }
+
+  // Generate variant-specific styles
+  @each $variant, $colors in $variants {
+    &--#{$variant} {
+      background-color: map.get($colors, 'bg-color');
+      color: map.get($colors, 'text-color');
+
+      .notification-banner__icon {
+        color: map.get($colors, 'icon-color');
+      }
+
+      .notification-banner__text {
+        :global(a) {
+          color: map.get($colors, 'link-color');
+        }
+      }
+
+      .notification-banner__link {
+        color: map.get($colors, 'link-color');
+      }
+
+      .notification-banner__dismiss {
+        color: map.get($colors, 'close-color');
+      }
+    }
+  }
+}

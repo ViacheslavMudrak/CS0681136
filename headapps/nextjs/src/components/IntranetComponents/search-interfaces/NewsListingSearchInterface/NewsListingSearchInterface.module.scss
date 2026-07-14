@@ -1,0 +1,108 @@
+.news-listing-search-interface {
+  margin-top: 0;
+  position: relative;
+  padding-top: 64px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 192px;
+    background: linear-gradient(180deg, #E8F5FE 8.24%, #F2F9FF 46.82%, #FFFFFF 92.68%);
+    z-index: -1;
+  }
+
+  // media breakpoints should be nested inline for readability
+  @include min(lg) {}
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include max(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-whitney-book);
+    font-size: var(--2xl, 56px);
+    color: var(--color-brand-blue-1000);
+    margin: 0;
+    line-height: 1.2;
+
+    @include max(md) {
+      margin-bottom: 0;
+      font-size: 36px;
+    }
+  }
+
+  &__search-container {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    i {
+        position: absolute;
+        right: 10px;
+        top: 11px;
+      }
+    @include min(md) {
+      max-width: 450px;
+      button i {
+        right: 10px;
+      }
+    }
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 20px 70px 20px 24px;
+    border: 1px solid var(--color-brand-blue-100);
+    border-radius: 50px;
+    font-family: var(--font-whitney-book);
+    font-size: 18px;
+    color: var(--color-black, #000);
+    background-color: var(--color-white, #fff);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    opacity: 0.87;
+
+    &::placeholder {
+        font-size: 14px;
+        opacity: 0.6;
+      }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-brand-blue-500, #1e69d2);
+      box-shadow: 0 0 0 3px var(--color-brand-blue-50, #e8f5fe);
+    }
+
+    &::placeholder {
+      color: var(--color-brand-dark-grey-400);
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--color-brand-blue-600, #2563eb);
+    color: var(--color-white, #fff);
+    border-radius: 50%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

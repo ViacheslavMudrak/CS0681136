@@ -1,0 +1,65 @@
+.link-list {
+  background: linear-gradient(to bottom left, #FFFFFF 0%, rgba(238, 253, 167, 0.15) 100%);
+  overflow: hidden;
+
+  @include max(md) {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(238, 253, 167, 0.15) 100%);
+  }
+
+  h2 {
+    font-size: 36px;
+    color: var(--color-brand-blue-1000);
+
+    @include min(md) {
+      @include title-xl;
+    }
+  }
+
+  p {
+    color: var(--color-brand-blue-1000);
+  }
+
+  // &__tile-container div:last-child {
+  //   @include max(sm) {
+  //     margin-bottom: 15px;
+  //   }
+  // }
+
+  &__tile {
+    border: .25px solid rgba(162, 205, 255, 0.50);
+
+    /* Apply font and color directly to the tile */
+    color: var(--color-offblack);
+    font-family: var(--font-whitney-semibold);
+    display: flex;
+    // align-items: center;
+
+    &:hover {
+      background-color: var(--color-white);
+      box-shadow: var(--sm-box)
+    }
+
+    // span {
+    //   color: var(--color-offblack);
+    //   font-family: var(--font-whitney-semibold);
+    // }
+  }
+
+  /* Regular font weight for the Link Description */
+  &__tile-description {
+      margin-top: 4px;
+      
+      font-family: var(--font-whitney-book); 
+      line-height: 1.4;
+    }
+
+  .link-list__tile-icon {
+    color: var(--color-offblack);
+    flex-shrink: 0;
+    font-size: 18px;
+  }
+}
+
+.link-list--white-backgroud {
+  background: var(--color-white);
+}

@@ -1,0 +1,202 @@
+.key-people {
+  background: linear-gradient(180deg, var(--color-brand-blue-50) 0%, var(--color-white) 100%);
+  overflow: hidden;
+  h2 {
+    @include title-lg($letter-spacing: .25px);
+    @include min(md) {
+      @include title-xl($letter-spacing: .25px);
+    }
+  }
+  h3 {
+    color: var(--color-offblack);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include title-xs($font-size: 18px, $margin-bottom: 0);
+  }
+  h4 {
+    color: var(--color-offblack);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include title-xs($font-size: 14px, $margin-bottom: 0);
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    line-height: 16px;
+  }
+  &__wrapper {
+    grid-area: carousel;
+    padding: 8px;
+    width: calc(100% + 18px);
+    padding-right: 18px;
+    @include min(md) {
+      width: unset;
+      padding-right: 8px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "carousel"
+      "controls";
+      @include min(md) {
+        grid-template-areas:
+        "header controls"
+        "carousel carousel";
+      }
+  }
+  &__header {
+    grid-area: header;
+  }
+  &__leader {
+    background-color: var(--color-white);
+    box-shadow: var(--sm-box);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    min-width: 250px;
+  }
+  :global(.all-show).key-people__leader {
+    @include min(md) {
+      min-width: 48%;
+    }
+    @media (min-width: 862px) {
+      min-width: 49%;
+    }
+    @media (min-width: 1110px) {
+      min-width: 23.5%;
+      max-width: 23.5%;
+    }
+    @media (min-width: 1262px) {
+      min-width: 249px;
+      max-width: 100%;
+    }
+  }
+  &__image {
+    border-radius: 9999px;
+    margin: 0 auto 16px;
+    overflow: hidden;
+    position: relative;
+    height: 154px;
+    width: 154px;
+    img {
+      position: absolute;
+      width: 100%;
+      max-height: 154px;
+      min-height: 154px;
+      object-fit: cover;
+    }
+  }
+  &__controls {
+    grid-area: controls;
+    margin-bottom: 24px;
+    button {
+      cursor: pointer;
+      line-height: 0;
+      background-color: var(--color-brand-blue-500);
+      width: 40px;
+      height: 40px;
+      border-radius: 9999px;
+      &:disabled {
+        background-color: var(--color-brand-gray-400);
+        i {
+          color: var(--color-brand-gray-800);
+        }
+      }
+      &:hover {
+        background-color: var(--color-brand-blue-600);
+        &:disabled {
+          background-color: var(--color-brand-gray-400);
+        }
+      }
+    }
+    i {
+      font-size: 30px;
+      color: var(--color-white);
+      cursor: pointer;
+      &.at-start, &.at-end {
+        color: var(--color-brand-gray-600);
+        cursor: not-allowed;
+      }
+    }
+  }
+  &__slide-text {
+    color: var(--color-brand-gray-600);
+  }
+  &__contact-info {
+    height: 6rem;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-brand-blue-300);
+  }
+  &__email-url, &__phone a, &__location span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+    font-size: 14px;
+  }
+  &__dot {
+    &--active {
+      background-color: var(--color-brand-blue-500);
+    }
+    &--inactive {
+      background-color: var(--color-brand-gray-300);
+    }
+  }
+  &--dark-theme {
+    background: linear-gradient(180deg, var(--color-brand-blue-1000) 0%, var(--color-brand-blue-800) 100%);
+    h2 {
+      color: var(--color-white);
+    }
+    .key-people__controls {
+      button {
+        background-color: var(--color-white);
+
+        &:disabled {
+          background-color: var(--color-brand-gray-400);
+          i {
+            color: var(--color-brand-gray-800);
+          }
+        }
+        &:hover {
+          background-color: var(--color-brand-blue-500);
+          i {
+            color: var(--color-white);
+          }
+          &:disabled {
+            background-color: var(--color-brand-gray-400);
+            i {
+              color: var(--color-brand-gray-800);
+            }
+          }
+        }
+      }
+      i {
+        font-size: 30px;
+        color: var(--color-brand-blue-500);
+        cursor: pointer;
+        &.at-start, &.at-end {
+          color: var(--color-brand-gray-600);
+          cursor: not-allowed;
+        }
+      }
+    }
+    .key-people__dot {
+      &--active {
+        background-color: var(--color-brand-blue-300);
+      }
+      &--inactive {
+        background-color: var(--color-white);
+      }
+    }
+    .key-people__slide-text {
+      color: var(--color-white);
+    }
+  }
+}

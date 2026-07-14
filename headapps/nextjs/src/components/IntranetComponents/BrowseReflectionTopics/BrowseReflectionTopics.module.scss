@@ -1,0 +1,45 @@
+.browse-reflection-topics {
+	background-color: var(--color-brand-gray-50);
+  margin: 60px auto;
+  @include max(xl) {
+    margin: 60px 0;
+  }
+  @include max(lg) {
+    margin: 20px 0;
+  }
+  &__container {
+    padding: 32px 0;
+    margin: 0 auto;
+    width: 100%;
+    @include max(xl) {
+      margin: 0 16px;
+    }
+    @include max(lg) {
+      margin: 0px 16px;
+    }
+  }
+	&__header {
+		i {
+			color: var(--color-brand-gold-900);
+			font-size: 24px;
+		}
+}
+	&__title {
+		font-size: 16px;
+		color: var(--color-eyebrow);
+    margin-bottom: 0;
+	}
+	&__topic {
+		border-radius: var(--rounded-md);
+		font-family: var(--font-whitney-semibold);
+		font-size: 14px;
+		background-color: var(--color-white);
+		color: var(--color-offblack);
+		padding: 18px 24px;
+		box-shadow: var(--xs-box);
+		&:hover {
+			background-color: var(--color-brand-blue-500);
+			color: var(--color-white);
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.collab-site-hero {
+  overflow: hidden;
+  background-image: var(--bg-image, url('/assets/detail-hero-default.png'));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  @include max(md) {
+    background-image: none;
+    background-color: var(--color-brand-blue-900);
+  }
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--rounded-full);
+    overflow: hidden;
+    img {
+      object-fit: cover;
+    }
+  }
+  h2 {
+    @include title-lg($margin-bottom: 0);
+    color: var(--color-white);
+    @include min(md) {
+      @include title-2xl($margin-bottom: 0);
+    }
+  }
+  p {
+    color: var(--color-white);
+    margin-bottom: 0;
+    display: none;
+    @include min(md) {
+      display: flex;
+    }
+  }
+}

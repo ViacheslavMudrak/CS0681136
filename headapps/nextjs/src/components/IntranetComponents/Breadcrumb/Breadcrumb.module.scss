@@ -1,0 +1,15 @@
+.breadcrumb {
+  svg {
+    fill: var(--color-brand-blue-500);
+  }
+  &__chevron {
+    color: var(--color-gray-600);
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+:global(.container).breadcrumb {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

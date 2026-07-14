@@ -1,0 +1,94 @@
+.values {
+  background: linear-gradient(180deg, #F2F9FF 0%, #FFFFFF 100%);
+  overflow: hidden;
+  h2 {
+    @include title-xl($margin-bottom: 0);
+    @include min(md) {
+      @include title-lg($margin-bottom: 0);
+    }
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  &__card {
+    padding: 12px 0 12px 16px;
+    @include min(md) {
+      padding: 12px 0 12px 32px;
+    }
+    i {
+      font-size: 24px;
+    }
+    h3 {
+      @include title-xs($font-size: 20px, $margin-bottom: 0);
+      color: var(--color-offblack);
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  &__card-icon {
+    border-radius: var(--rounded-full);
+    width: 45px;
+    height: 45px;
+  }
+  &__card:nth-of-type(6n + 1) {
+    border-left: 4px solid var(--color-brand-blue-900);
+    .values__card-icon {
+      background-color: var(--color-brand-gray-200);
+    }
+    i {
+      color: var(--color-brand-blue-900);
+    }
+  }
+
+  &__card:nth-of-type(6n + 2) {
+    border-left: 4px solid var(--color-brand-blue-400);
+    .values__card-icon {
+      background-color: var(--color-brand-blue-bglight);
+    }
+    i {
+      color: var(--color-brand-blue-400);
+    }
+  }
+
+  &__card:nth-of-type(6n + 3) {
+    border-left: 4px solid var(--color-brand-green-500);
+    .values__card-icon {
+      background-color: var(--color-brand-green-50);
+    }
+    i {
+      color: var(--color-brand-green-500 );
+    }
+  }
+
+  &__card:nth-of-type(6n + 4) {
+    border-left: 4px solid var(--color-brand-gold-800);
+    .values__card-icon {
+      background-color: var(--color-brand-gold-50);
+    }
+    i {
+      color: var(--color-brand-gold-800);
+    }
+  }
+
+  &__card:nth-of-type(6n + 5) {
+    border-left: 4px solid var(--color-brand-violet-500);
+    .values__card-icon {
+      background-color: var(--color-brand-violet-50);
+    }
+    i{
+      color: var(--color-brand-violet-500);
+    }
+  }
+
+  &__card:nth-of-type(6n + 6) {
+    border-left: 4px solid var(--color-brand-error-500);
+    .values__card-icon {
+      background-color: var(--color-brand-error-50);
+    }
+    i{
+      color: var(--color-brand-error-500);
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.market-news-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/assets/market-news-hero-background.png');
+  overflow: hidden;
+  padding-bottom: 24px;
+  @include min(md) {
+    padding: 0;
+  }
+  &__embla-container {
+    display: flex;
+  }
+  &__embla-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  &__featured-image,
+  &__nonfeatured-image {
+    @include max(md) {
+      max-width: 100px;
+      min-width: 100px;
+      max-height: 100px;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: var(--rounded-md);
+      max-width: 100px;
+      max-height: 100px;
+      @include min(md) {
+        border-radius: 0;
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      @include min(xl) {
+        max-height: 400px;
+      }
+    }
+  }
+  &__featured-info-container {
+    padding: 32px 16px 0;
+    @include min(md) {
+      padding: 36px 0;
+    }
+  }
+  &__featured-info {
+    @include min(md) {
+      width: 100%;
+      padding-right: 36px;
+      border-right: 1px solid var(--color-white);
+      justify-content: center;
+    }
+    h2 {
+      @include title-md($font-size: 20px, $margin-bottom: 0, $line-height: 24px);
+      color: var(--color-white);
+      @include min(md) {
+        @include title-md($margin-bottom: 0);
+      }
+    }
+    p {
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+    a {
+      font-family: var(--font-whitney-semibold);
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: var(--color-white);
+      &:hover {
+        text-decoration: underline;
+      }
+      @include min(md) {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__featured-info &__featured-headline-link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__featured-eyebrow {
+    text-transform: uppercase;
+    font-family: var(--font-whitney-semibold);
+    letter-spacing: 1.25px;
+    line-height: 16px;
+    font-size: 12px;
+    color: var(--color-white);
+  }
+  &__article-links-container {
+    padding: 0 16px;
+    @include min(md) {
+      padding: 36px 16px;
+    }
+  }
+  &__article-links {
+    a {
+      font-family: var(--font-whitney-semibold);
+      color: var(--color-white);
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      letter-spacing: 0.15px;
+      line-height: 24px;
+      @include max(md) {
+        padding-right: 24px;
+      }
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-top: 20px;
+        @include min(md) {
+          border-top: none;
+          padding-top: 0;
+        }
+      }
+      i {
+        position: relative;
+        top: 4px;
+        font-size: 16px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__see-all {
+    a {
+      border: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.25px;
+      cursor: pointer;
+      color: var(--color-white);
+      &:first-child {
+        border: none;
+      }
+      i {
+        text-transform: lowercase;
+        position: relative;
+        font-size: 16px;
+        left: 5px;
+        top: 3px;
+        transition: left 0.3s ease-in-out;
+      }
+      &:hover {
+        text-decoration: none;
+        i {
+          left: 10px;
+          transition: left 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  &__mobile-article-card-container {
+    padding: 36px 16px 0;
+  }
+  &__article-card-link-mobile {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h2 {
+      @include title-md($font-size: 20px, $margin-bottom: 0, $line-height: 24px);
+      color: var(--color-white);
+    }
+  }
+  &__nav {
+    margin: 0 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgb(255 255 255 / 20%);
+  }
+  &__arrows {
+    button {
+      cursor: pointer;
+    }
+  }
+  &__arrow {
+    i {
+      font-size: 32px;
+      color: var(--color-white);
+    }
+    &--disabled {
+      i {
+        color: rgb(255 255 255 / 20%);
+      }
+    }
+  }
+}

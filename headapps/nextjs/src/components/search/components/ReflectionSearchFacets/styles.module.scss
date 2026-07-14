@@ -1,0 +1,273 @@
+/* Block: reflection-search-facets */
+.reflection-search-facets {
+  background-color: var(--color-white, #fff);
+
+  &__header {
+    letter-spacing: 0.5px;
+    font-family: var(--font-whitney-semibold, 'Whitney-Semibold', Arial, sans-serif);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  &__header-trigger {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  // Main accordion container
+  >div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  // Accordion header (h3)
+  h3[data-orientation="vertical"] {
+    margin: 0;
+    padding: 0;
+  }
+
+  // Accordion trigger button
+  h3[data-orientation="vertical"]>button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    font-family: var(--font-whitney-semibold);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black, #000);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: none;
+    text-align: left;
+
+    @include max(md) {
+      border-top: 1px solid var(--color-brand-blue-300);
+    }
+
+    &:hover {
+      background: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    // Add chevron icon using CSS
+    &::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-right: 2px solid var(--color-black, #000);
+      border-bottom: 2px solid var(--color-black, #000);
+      transform: rotate(45deg);
+      margin-left: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    &[data-state='open']::after {
+      transform: rotate(220deg);
+    }
+  }
+
+  // Accordion content area
+  div[role="region"] {
+    padding: 0 20px 16px 32px;
+  }
+
+  // Facet value list (ul)
+  ul[data-orientation="vertical"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Individual facet item (li)
+  li[data-radix-collection-item] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: none;
+
+    // Checkbox button
+    button[role="checkbox"] {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      border: 2px solid var(--color-black);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: none;
+      background-color: var(--color-white, #fff);
+      cursor: pointer;
+      padding: 0;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+
+      // Checked state
+      &[data-state='checked'] {
+        background-color: var(--color-brand-blue-500, #1e69d2);
+        border-color: var(--color-brand-blue-500, #1e69d2);
+
+        // Add checkmark using CSS
+        &::after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 2px;
+          width: 4px;
+          height: 8px;
+          border: solid var(--color-white, #fff);
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    // Label
+    label {
+      font-family: var(--font-whitney-semibold);
+      font-size: 16px;
+      color: var(--color-black, #000);
+      flex: 1;
+      line-height: 1.5;
+      font-weight: 400;
+      opacity: 0.87;
+      cursor: pointer;
+      letter-spacing: 0.15px;
+    }
+
+    // When item is selected, make label blue
+    &[data-state='selected'] label {
+      color: var(--color-brand-blue-500, #1e69d2);
+    }
+  }
+
+  &__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-direction: column;
+    @include min(xl) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__tag-button {
+    appearance: none;
+    background-color: var(--color-white);
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    box-shadow: var(--sm-box);
+    border-radius: var(--rounded-sm);
+    padding: 16px;
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    font-size: 14px;
+    &:hover {
+      background-color: var(--color-brand-blue-50, #eff5ff);
+    }
+
+    &[data-selected='true'] {
+      background-color: var(--color-brand-blue-500, #1e69d2);
+      color: var(--color-white, #fff);
+    }
+  }
+  &__filter-date {
+    display: flex;
+    gap: 24px;
+    position: relative;
+  }
+  &__filter-date-button {
+    display: flex;
+    cursor: default;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    font-size: 14px;
+    background-color: var(--color-white);
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    box-shadow: var(--sm-box);
+    border-radius: var(--rounded-sm);
+    padding: 16px;
+    &:hover {
+      background-color: var(--color-brand-blue-50, #eff5ff);
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+  &__filter-date-overlay {
+    display: none;
+    &.date-overlay-is-open {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      left: 8px;
+      min-width: 300px;
+      width: 100%;
+      padding: 16px;
+      border-radius: var(--rounded-lg);
+      border: 1px solid var(--color-brand-blue-800);
+      box-shadow: var(--sm-box);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      z-index: 2;
+      background-color: var(--color-white);
+      @include min(xl) {
+        right: 8px;
+        left: unset;
+        max-width: 400px;
+      }
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+  &__filter-date-text {
+    font-size: 14px;
+    &--bold {
+    font-family: var(--font-whitney-semibold);
+    font-size: 16px;
+    letter-spacing: .15px;
+    }
+  }
+  &__date-buttons {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+    border-top: 1px solid var(--color-brand-gray-400);
+    padding: 24px 24px 0 0;
+    button {
+      color: var(--color-brand-blue-500);
+      text-transform: uppercase;
+      font-family: var(--font-whitney-semibold);
+      font-size: 14px;
+      letter-spacing: 1.25px;
+      &:hover {
+        color: var(--color-brand-blue-800);
+      }
+    }
+  }
+}

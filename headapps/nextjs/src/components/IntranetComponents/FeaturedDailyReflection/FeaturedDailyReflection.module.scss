@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Chronicle Light Italic';
+  src: url('/fonts/ChronicleDisplayLightItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.featured-daily-reflection {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @include min(lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  &__left-column {
+    h2 {
+      font-size: 48px;
+      line-height: 46px;
+      letter-spacing: .25px;
+      color: var(--color-brand-blue-800);
+      margin-bottom: 0;
+      font-family: 'Chronicle Light Italic', Arial, Helvetica, sans-serif;
+      @include min(md) {
+        font-size: 96px;
+        line-height: 92px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      letter-spacing: .5px;
+      color: var(--color-brand-gray-800);
+    }
+  }
+  
+  &__right-column {
+    background: var(--reflection-gradient);
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--xs-box);
+    padding: 50px 20px;
+    @include min(md) {
+      padding: 50px 60px;
+    }
+    
+    h3 {
+      position: relative;
+      z-index: 1; // MOVED BEFORE &:before
+      @include title-lg($margin-bottom: 0);
+      @include min(md) {
+        @include title-xl($margin-bottom: 0);
+      }
+      
+      &:before {
+        content: '\201C';
+        position: absolute;
+        top: 74px;
+        left: 20px;
+        font-size: 300px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--color-brand-blue-100);
+        opacity: .5;
+        z-index: -1;
+      }
+    }
+  }
+  
+  &__card-date {
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.25px;
+    margin-bottom: 10px;
+    @include min(md) {
+      margin-bottom: 40px;
+    }
+  }
+  
+  &__quote-text {
+    flex-wrap: wrap;
+    line-height: 28px;
+    font-family: var(--font-whitney-book-italic);
+    
+    span {
+      font-size: 20px;
+      font-family: var(--font-whitney-book-italic);
+      font-style: italic;
+      margin-bottom: 0;
+      color: var(--color-brand-blue-800);
+    }
+    
+    q {
+      font-size: 30px;
+      font-family: var(--font-whitney-book-italic);
+      quotes: """ """; 
+    }
+  }
+  
+  &__card-author {
+    color: var(--color-brand-blue-800);
+    font-family: var(--font-whitney-semibold);
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+}

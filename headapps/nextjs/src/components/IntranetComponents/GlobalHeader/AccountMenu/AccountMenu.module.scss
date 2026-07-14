@@ -1,0 +1,125 @@
+.account-menu {
+  &__menu-header {
+    box-shadow: 0 2px 2px 0 rgba(15, 60, 151, 0.08);
+    padding: 15px;
+    span {
+      @include title-xs($letter-spacing: 0.15px, $font-size: 18px, $margin-bottom: 0);
+    }
+    i {
+      color: var(--color-brand-blue-800);
+      cursor: default;
+    }
+  }
+  &__close-menu {
+    display: flex;
+    i {
+      color: var(--color-brand-blue-500);
+      font-size: 20px;
+      cursor: pointer;
+    }
+    &:hover {
+      i {
+        color: var(--color-brand-blue-800);
+      }
+    }
+  }
+  &__menu-item-container {
+    padding: 0 15px 80px;
+    overflow: auto;
+    height: 75%;
+  }
+  &__account-details {
+    border-bottom: 1px solid var(--color-brand-blue-200);
+    padding: 8px 0 24px;
+    img {
+      width: 56px;
+      border-radius: 9999px;
+    }
+    span:first-child {
+      @include title-sm($letter-spacing: 0.25px, $margin-bottom: 0);
+    }
+    span:last-child {
+      font-size: 16px;
+    }
+  }
+  &__account-name {
+    display: flex;
+    flex-direction: column;
+  }
+  &__account-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__account-content-header {
+    display: flex;
+    flex-direction: column;
+    span:first-child {
+      @include title-xs($letter-spacing: 0.15px, $font-size: 20px, $margin-bottom: 0);
+    }
+    a {
+      color: var(--color-brand-blue-500);
+      &:hover {
+        color: var(--color-brand-blue-800);
+      }
+    }
+  }
+  &__employee-id {
+    span:first-child {
+      font-family: var(--font-whitney-semibold);
+    }
+    span:last-child {
+      font-size: 16px;
+    }
+  }
+  &__account-links {
+    margin-bottom: 8px;
+    border-top: 1px solid var(--color-brand-blue-200);
+    padding-top: 16px;
+    a {
+      color: var(--color-brand-blue-500);
+      i {
+        color: var(--color-brand-blue-500);
+      }
+      &:hover {
+        color: var(--color-brand-blue-800);
+        i {
+          color: var(--color-brand-blue-800);
+        }
+      }
+    }
+    span {
+      font-family: var(--font-whitney-semibold);
+      color: var(--color-offblack);
+    }
+  }
+  &__logout,
+  &__login {
+    cursor: pointer;
+    outline: none;
+    color: var(--color-brand-blue-500);
+    font-family: var(--font-whitney-semibold);
+    gap: 4px;
+    
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+  &__logout {
+    color: var(--color-brand-error-500);
+    i {
+      color: var(--color-brand-error-500);
+    }
+    &:hover {
+      color: var(--color-brand-error-800);
+      i {
+        color: var(--color-brand-error-800);
+      }
+    }
+  }
+  &__footer {
+    border-top: 1px solid var(--color-brand-blue-200);
+    padding-top: 16px;
+  }
+}

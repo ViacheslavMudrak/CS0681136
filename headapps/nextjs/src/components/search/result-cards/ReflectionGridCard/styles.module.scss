@@ -1,0 +1,87 @@
+/* Block: reflection-card */
+.reflection-card {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background-color: var(--color-white, #fff);
+  border: 1px solid var(--color-brand-blue-100, #d6e8ff);
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(15, 60, 151, 0.08);
+  padding: 24px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(242, 249, 255, 1) 5%, rgba(255, 250, 238, 1) 30%, rgba(242, 249, 255, 1) 90%);
+  }
+
+  &:focus-within {
+    border-color: var(--color-brand-blue-500, #1e69d2);
+    box-shadow: 0 0 0 3px rgba(30, 105, 210, 0.2);
+  }
+
+  &__link {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-brand-blue-800);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__date {
+    font-family: var(--font-whitney-semibold, 'Whitney-Semibold', Arial, sans-serif);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-brand-blue-800);
+  }
+
+  &__description {
+    font-family: var(--font-whitney-book, 'Whitney-Book', Arial, sans-serif);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-blue-600, #2563eb);
+    font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-brand-blue-100, #d6e8ff);
+    margin: 6px 0 0 0;
+    margin-top: auto;
+  }
+
+  &__author {
+    font-family: var(--font-whitney-semibold, 'Whitney-Semibold', Arial, sans-serif);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-brand-blue-700, #0f3c97);
+    margin-top: 16px;
+  }
+}

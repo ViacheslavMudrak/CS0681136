@@ -1,0 +1,176 @@
+.sub-navigation {
+  background-color: var(--color-white);
+  box-shadow: var(--sm-box);
+  z-index: 4;
+  @include max(lg) {
+    &.sub-navigation--open-mobile {
+    padding-bottom: 16px;
+    }
+    &.sub-navigation--closed-mobile {
+      padding-bottom: 0;
+    }
+  }
+  &__container {
+    @include min(lg) {
+      align-items: flex-start;
+    }
+  }
+  &__list-container {
+    @include min(lg) {
+      flex-wrap: wrap;
+      gap: 0 32px;
+    }
+    @include max(lg) {
+      margin-top: 16px;
+    }
+  }
+  &__item-wrapper {
+    position: relative;
+    @include min(lg) {
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 24px;
+      }
+    }
+  }
+  &__item {
+    font-size: 16px;
+    position: relative;
+    @include max(lg) {
+      font-family: var(--font-whitney-book);
+    }
+    &--section-title {
+      padding: 20px 0;
+      @include max(lg) {
+        padding: 20px 0;
+      }
+    }
+    &--no-link {
+      padding: 20px 0;
+      @include min(lg) {
+        flex: 1 0 auto;
+        max-width: max-content;
+      }
+      @include max(lg) {
+        padding: 20px 16px;
+        &:hover {
+          background-color: var(--color-brand-blue-bglight);
+          border-radius: 10px;
+        }
+      }
+    }
+    &--with-link {
+      padding: 20px 0;
+      @include min(lg) {
+        flex: 1 0 auto;
+        max-width: max-content;
+      }
+      @include max(lg) {
+        padding: 20px 16px;
+        &:hover {
+          background-color: var(--color-brand-blue-bglight);
+          border-radius: 10px;
+        }
+      }
+    }
+    &:hover {
+      @include min(lg) {
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background-color: var(--color-brand-blue-1000);
+        }
+      }
+    }
+    &--with-dropdown {
+      cursor: pointer;
+      position: relative;
+      padding: 0;
+      @include min(lg) {
+        flex: 1 0 auto;
+        max-width: max-content;
+        //The :after is a bridge so that if you have 2 lines of links in the subnav (hover gap), this allows you to get to the item-sub-nav without it closing right away.
+        &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 16px;
+        z-index: 9;
+      }
+      }
+      .sub-navigation__item-less {
+        display: none;
+      }
+      
+      .sub-navigation__item-sub-menu {
+        @include min(lg) {
+          position: absolute;
+          width: 200px;
+          top: 100%;
+          left: 0;
+          margin-top: 14px;
+          background-color: var(--color-white);
+          box-shadow: var(--sm-box);
+          border-radius: 8px;
+          display: none;
+          z-index: 999;
+          &--scroll {
+            overflow-y: auto;
+            max-height: 345px;
+            width: 210px;
+            max-width: 210px;
+          }
+        }
+        @include max(lg) {
+          a {
+            padding: 20px 40px;
+            &:hover {
+              background-color: var(--color-brand-blue-bglight);
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+      &.is-open {
+        .sub-navigation__item-sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+  :global(.sub-navigation__item--section-title) {
+    padding: 20px 0;
+    @include max(lg) {
+      font-family: var(--font-whitney-semibold);
+      width: 100%;
+      padding: 20px 16px;
+      &:hover {
+        background-color: var(--color-brand-gray-100);
+        border-radius: 0;
+      }
+    }
+  }
+  &__item-sub-menu {
+    a {
+      &:hover {
+        background-color: var(--color-brand-blue-bglight);
+      }
+    }
+  }
+}
+
+:global(.container).sub-navigation__container {
+  margin-top: 0;
+  margin-bottom: 0;
+}

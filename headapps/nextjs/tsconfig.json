@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "src/*": [
+        "./src/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "lib/*": [
+        "./src/lib/*"
+      ],
+      "temp/*": [
+        "./src/temp/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "ts/*": [
+        "./src/ts/*"
+      ],
+      "storybook/*": [
+        "./.storybook/*"
+      ],
+      "sitecore.config": [
+        "./sitecore.config"
+      ],
+      "next.config": [
+        "./next.config"
+      ],
+      ".sitecore/*": [
+        "./.sitecore/*"
+      ]
+    },
+    "target": "es2017",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "incremental": true,
+    "forceConsistentCasingInFileNames": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/ts/**/*.d.ts",
+    "postcss.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

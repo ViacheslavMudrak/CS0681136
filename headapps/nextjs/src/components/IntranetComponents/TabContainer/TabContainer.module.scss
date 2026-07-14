@@ -1,0 +1,177 @@
+.tab-container {
+  padding: 3rem 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 192px;
+    background: linear-gradient(180deg, #F2F9FF 8.24%, #f9fcff 46.82%, #FFFFFF 92.68%);
+    z-index: -1;
+  }
+
+  &__headline {
+    font-size: 2.5rem;
+    margin-bottom: 2.2rem;
+    font-family: var(--font-whitney-book);
+  }
+
+  // Tabs Navigation
+  &__tabs {
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  }
+
+  &__tabs-wrapper {
+    display: flex;
+    gap: 12px;
+    min-width: min-content;
+    padding: 2px;
+  }
+
+  &__tab {
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0px 1px 8px 0px #0F3C971A;
+    background: #fff;
+    color: #333;
+    font-size: 0.88rem;
+    font-family: var(--font-whitney-semibold);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    border-radius: var(--rounded-sm);
+    border: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--active {
+      background: var(--color-brand-blue-500);
+      color: #fff;
+    }
+  }
+
+  // Content Area with Dynamic Placeholders
+  &__content {
+    position: relative;
+    min-height: 200px;
+    box-shadow: 0px 1px 8px 0px #0F3C971A;
+    padding: 0;
+    border-radius: var(--rounded-lg);
+
+    @include max(md) {
+      padding: 1rem;
+    }
+
+    &--slide-left {
+      animation: slideInFromRight 0.4s ease-out;
+    }
+
+    &--slide-right {
+      animation: slideInFromLeft 0.4s ease-out;
+    }
+  }
+
+  // Tab Panel (contains placeholder components)
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+
+    // Add spacing for components inside tabs
+    >.component {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    // Remove margin from FeaturedContentBlock inside tabs
+    :global([class*="FeaturedContentBlock_featured-content-block_"]) {
+      margin: 0;
+    }
+
+    :global([class*="ContentTitle_content-title_"]) {
+      padding: 3rem 2rem;
+      margin: 0;
+    }
+
+    :global([class*="RichTextBlock_rich-text-block_"]) {
+      padding: 1rem 1rem;
+    }
+
+    :global([class*="RichTextBlock_rich-text-block_"] > .container-sm) {
+      max-width: 100%;
+    }
+  }
+
+  // Animations
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // Mobile Responsive
+  @include max(md) {
+    padding: 2rem 0;
+
+    &__headline {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__tabs {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding: 0 1rem;
+    }
+
+    &__tab {
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
+    }
+
+    &__panel {
+      >.component {
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

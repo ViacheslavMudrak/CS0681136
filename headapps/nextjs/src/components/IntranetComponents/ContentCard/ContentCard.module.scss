@@ -1,0 +1,102 @@
+.content-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  :global(.content-card_content) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.content-card_image) {
+    height: 252px;
+
+    @include max(md) {
+      margin-bottom: -20px;
+    }
+  }
+
+  :global(.content-card_icon) {
+    height: 252px;
+    background-color: var(--color-brand-blue-bglight);
+    background-image: url('/assets/Media-Slot.png');
+    background-size: cover;
+    background-position: center;    
+    font-size: 64px ;
+    color: var(--color-brand-blue-800);
+
+    @include max(md) {
+      margin-bottom: -20px;
+      height: 252px;
+      font-size: 32px ;
+    }
+  }
+
+  &__eyebrow {
+    font-size: 16px;
+
+    @include max(md) {
+      font-size: 12px;
+    }
+  }
+
+  h3 {
+    @include title-lg;
+
+    @include max(md) {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: .25px;
+    }
+  }
+
+  p {
+    @include max(md) {
+      font-size: 0.889rem;
+    }
+  }
+}
+
+.reflection-resources-card {
+  background-color: var(--color-brand-blue-bglight);
+  padding: 36px;
+  border-radius: var(--rounded-lg);
+  h3 {
+    @include title-xs($margin-bottom: 0);
+    color: var(--color-offblack);
+  }
+  div {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  &__link {
+     display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-brand-blue-500);
+    text-decoration: none;
+    font-family: var(--font-whitney-semibold);
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+    cursor: pointer;
+    span {
+      text-transform: uppercase;
+    }
+    i {
+      position: relative;
+      left: 5px;
+      transition: left 0.3s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--color-primary-dark, #003d5c);
+
+      i {
+        left: 10px;
+        transition: left 0.3s ease-in-out;
+      }
+    }
+  }
+}

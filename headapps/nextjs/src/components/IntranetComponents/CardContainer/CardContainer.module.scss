@@ -1,0 +1,213 @@
+.card-container {
+  // Masonry layout for FeaturedHorizontalSupporting
+  :global(.md\:grid-cols-2.featuredHorizontalSupporting) {
+    @include min(md) {
+      grid-auto-rows: 1fr;
+
+      // 1st card - left half, spans 2 rows
+      > :global(section:nth-of-type(6n + 1)) {
+        grid-row: span 2;
+
+        :global(.content-card_image) {
+          height: 252px;
+        }
+      }
+
+      // 4th card - right half, spans 2 rows
+      > :global(section:nth-of-type(6n + 4)) {
+        grid-row: span 2;
+
+        :global(.content-card_image) {
+          height: 252px;
+        }
+      }
+
+      // 2nd, 3rd, 5th, 6th cards - horizontal layout
+      > :global(section:nth-of-type(6n + 2)),
+      > :global(section:nth-of-type(6n + 3)),
+      > :global(section:nth-of-type(6n + 5)),
+      > :global(section:nth-of-type(6n + 6)) {
+        :global(.content-card.no_image) {
+          grid-template-columns: 2fr;
+        }
+
+        :global(.content-card) {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+
+          :global(.content-card_icon) {
+            height: 100%;
+            border-radius: 1.5rem 0 0 1.5rem !important;
+          }
+
+          :global(.content-card_image) {
+            height: 100%;
+            margin-bottom: 0;
+
+            img {
+              height: 100%;
+              border-radius: 1.5rem 0 0 1.5rem !important;
+              display: block !important;
+            }
+          }
+
+          :global(.content-card_content) {
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+
+            > div {
+              height: auto;
+            }
+
+            h3 {
+              font-size: 24px;
+              line-height: 32px;
+            }
+
+            :global(.rich-text) {
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              p {
+                display: inline;
+              }
+
+              &:not(.is-editing) {
+                @include min(md) {
+                  display: none;
+                }
+              }
+            }
+
+            :global(.asc-btn) {
+              position: static;
+              align-self: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    @include title-xl;
+    color: var(--color-brand-blue-1000);
+
+    @include max(md) {
+      @include title-lg;
+    }
+  }
+
+  :global(.md\:grid-cols-1) {
+    :global(.content-card_content) {
+      padding: 80px;
+    }
+  }
+
+  :global(.md\:grid-cols-2) {
+    :global(.content-card_content) {
+      padding: 55px 24px;
+    }
+  }
+
+  :global(.lg\:grid-cols-3) {
+    :global(.content-card_content) {
+      padding: 80px 20px;
+    }
+  }
+
+  :global(.lg\:grid-cols-4) {
+    :global(.content-card_image) {
+      margin-bottom: -20px;
+    }
+
+    :global(.content-card_content) {
+      padding: 40px 20px;
+    }
+  }
+
+  @include max(md) {
+    :global(.md\:grid-cols-1),
+    :global(.md\:grid-cols-2),
+    :global(.lg\:grid-cols-3),
+    :global(.lg\:grid-cols-4) {
+      :global(.content-card_content) {
+        padding: 40px 20px;
+      }
+    }
+  }
+
+  :global(.content-card) {
+    background-color: var(--color-brand-blue-bglight);
+  }
+
+  :global(.content-card__eyebrow) {
+    color: var(--color-eyebrow);
+  }
+
+  :global(.asc-btn) {
+    background-color: var(--color-brand-blue-500);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-brand-blue-800);
+    }
+  }
+
+  &--dark-theme {
+    :global(.content-card) {
+      background-color: var(--color-brand-blue-1000);
+
+      h3 {
+        color: var(--color-white);
+      }
+    }
+
+    :global(.content-card__eyebrow) {
+      color: var(--color-white);
+    }
+
+    p {
+      color: var(--color-white);
+    }
+
+    :global(.asc-btn) {
+      background-color: var(--color-white);
+      border: var(--color-brand-blue-500);
+      color: var(--color-brand-blue-500);
+
+      &:hover {
+        background-color: var(--color-white);
+        color: var(--color-brand-blue-800);
+      }
+    }
+  }
+}
+
+.reflection-resources {
+  &__eyebrow {
+    color: var(--color-brand-blue-800);
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  &__title {
+    @include title-md();
+  }
+  &__cards {
+    @include min(md) {
+      display: grid !important;
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+
+      > * {
+        min-width: 0;
+      }
+    }
+  }
+}

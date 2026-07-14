@@ -1,0 +1,111 @@
+.global-search-interface {
+  margin-top: 0;
+  position: relative;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100vw;
+  //   height: 250px;
+  //   background-image: url('/assets/Media-Slot.png');
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   z-index: -1;
+  // }
+
+  &__container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &__header {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+    background: url('/assets/detail-hero-default.png') no-repeat center #dce5fa;
+    background-size: cover;
+    padding: 64px 0;
+
+    @include max(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    @include title-2xl($margin-bottom: 0);
+    color: var(--color-brand-blue-1000);
+    margin: 0;
+    line-height: 1.2;
+
+    @include max(md) {
+      margin-bottom: 0;
+      font-size: 36px;
+    }
+  }
+
+  &__search-container {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+
+    @include max(md) {
+      max-width: 100%;
+    }
+    input {
+      background-color: var(--color-white);
+    }
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 20px 70px 20px 24px;
+    border: 1px solid var(--color-brand-blue-100);
+    border-radius: 50px;
+    font-family: var(--font-whitney-book);
+    font-size: 14px;
+    color: var(--color-black, #000);
+    background-color: var(--color-white, #fff);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    opacity: 0.87;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-brand-blue-500, #1e69d2);
+      box-shadow: 0 0 0 3px var(--color-brand-blue-50, #e8f5fe);
+    }
+
+    &::placeholder {
+      color: var(--color-brand-dark-grey-400);
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: var(--color-brand-blue-600, #2563eb);
+    color: var(--color-white, #fff);
+    border-radius: 50%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__results-summary {
+    font-size: 18px;
+
+    &__keyphrase {
+      font-weight: 600;
+    }
+  }
+}

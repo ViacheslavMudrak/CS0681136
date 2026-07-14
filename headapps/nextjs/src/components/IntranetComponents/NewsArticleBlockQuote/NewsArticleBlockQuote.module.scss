@@ -1,0 +1,37 @@
+.news-article-block-quote {
+  padding: 48px 0;
+
+  &__content {
+    margin: 0;
+    padding: 5rem 7rem;
+    background: linear-gradient(180deg, #F2F9FF 0%, #FFFFFF 100%);
+    border-radius: 12px;
+    box-shadow: 0px 3px 4px 0px #0F3C9712;
+
+    @include max(md) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__quote {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 32px;
+    font-family: var(--font-whitney-medium);
+    color: var(--color-brand-blue-800);
+
+    @include min(md) {
+      font-size: 24px;
+    }
+  }
+
+  &__caption {
+    margin-top: 24px;
+    font-size: 12px;
+    font-family: var(--font-whitney-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-brand-gray-600);
+  }
+
+}

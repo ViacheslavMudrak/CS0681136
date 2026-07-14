@@ -1,0 +1,287 @@
+.my-collab-sites-area {
+  background-color: var(--color-brand-blue-bglight);
+  overflow: hidden;
+  &__header {
+    padding: 48px 0;
+    h1 {
+      @include title-lg($margin-bottom: 0);
+      color: var(--color-brand-blue-1000);
+      @include min(md) {
+        @include title-2xl($margin-bottom: 0);
+      }
+    }
+    i {
+      background-color: var(--color-brand-blue-100);
+      padding: 10px;
+      border-radius: var(--rounded-full);
+      color: var(--color-brand-blue-500);
+      font-size: 32px;
+    }
+  }
+  &__tabs {
+    border-bottom: 1px solid var(--color-brand-blue-200);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  &__tab {
+    border-radius: var(--rounded-sm);
+    box-shadow: var(--xs-box);
+    padding: 16px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color-white);
+    @include title-xs($font-size: 12px, $margin-bottom: 0);
+    color: var(--color-brand-blue-500);
+    @include min(md) {
+      padding: 24px 48px;
+      width: auto;
+      @include title-xs($margin-bottom: 0);
+    }
+    i {
+      font-size: 24px;
+    }
+    &:hover {
+      box-shadow: var(--md-box);
+    }
+    &--active {
+      background-color: var(--color-brand-blue-500);
+      color: var(--color-white);
+    }
+  }
+  &__find-collab-sites {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-brand-blue-100);
+    border-radius: var(--rounded-md);
+    padding: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+    @include min(md) {
+      padding: 64px;
+    }
+    h2 {
+      @include title-lg($margin-bottom: 0);
+      color: var(--color-brand-blue-800);
+    }
+    h3 {
+      @include title-xs($margin-bottom: 0);
+      color: var(--color-brand-gray-600);
+      text-transform: uppercase;
+    }
+    p {
+      margin: auto;
+      @include min(md) {
+        max-width: 65%;
+      }
+    }
+    button {
+      padding: 16px 24px;
+      cursor: pointer;
+      @include min(md) {
+        width: fit-content;
+        margin: auto;
+      }
+      &:hover {
+        background-color: var(--color-brand-blue-800);
+      }
+    }
+  }
+  &__my-collab-sites-content {
+    h2 {
+      @include title-sm($margin-bottom: 0, $font-family: 'Whitney-book');
+      color: var(--color-brand-blue-800);
+      @include min(md) {
+        @include title-lg($margin-bottom: 0);
+      }
+    }
+  }
+  &__my-collab-site,
+  &__explore-collab-site {
+    border: 1px solid var(--color-brand-blue-100);
+    background-color: var(--color-white);
+    border-radius: var(--rounded-md);
+    padding: 8px;
+    @include min(md) {
+      padding: 24px;
+    }
+    p {
+      margin-bottom: 0;
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 20px;
+      display: none;
+      @include min(md) {
+        display: block;
+      }
+    }
+  }
+  &__my-collab-site-title,
+  &__explore-collab-site-title {
+    font-size: 14px;
+    font-family: var(--font-whitney-semibold);
+    letter-spacing: 0.25px;
+    color: var(--color-black);
+    @include min(md) {
+      font-size: 24px;
+      font-family: var(--font-whitney-semibold);
+      letter-spacing: 0.25px;
+      color: var(--color-black);
+    }
+  }  
+  &__card-image {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 9999px;
+    overflow: hidden;
+    @include min(md) {
+      width: 104px;
+      min-width: 104px;
+      height: 104px;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__my-cta {
+    color: var(--color-brand-violet-500);
+    text-transform: uppercase;
+    font-family: var(--font-whitney-semibold);
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    margin-left: 50px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+  &__explore-cta {
+    padding: 16px 24px;
+    cursor: pointer;
+    font-size: 12px;
+    @include min(md) {
+      width: fit-content;
+      margin: auto;
+    }
+    &:hover {
+      background-color: var(--color-brand-blue-800);
+    }
+    &--requested {
+      background-color: var(--color-brand-gray-100);
+      color: var(--color-brand-gray-600);
+      border: 1px solid var(--color-brand-gray-200);
+      cursor: not-allowed;
+      border-radius: 9999px;
+      font-family: var(--font-whitney-semibold);
+      letter-spacing: 1.25px;
+      &:hover {
+        background-color: var(--color-brand-gray-100);
+      }
+    }
+    &:disabled {
+      opacity: 0.6;
+      background-color: var(--color-brand-gray-100);
+      color: var(--color-brand-gray-600);
+      border: 1px solid var(--color-brand-gray-200);
+      cursor: not-allowed;
+      border-radius: 9999px;
+      font-family: var(--font-whitney-semibold);
+      letter-spacing: 1.25px;
+      &:hover {
+        background-color: var(--color-brand-gray-100);
+      }
+    }
+  }
+  &__support-banner {
+    margin-top: 40px;
+  }
+  &__modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 24px;
+    z-index: 999;
+  }
+  &__modal {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    width: 100%;
+    max-width: 480px;
+    box-shadow: var(--shadow-lg);
+  }
+  &__modal-header {
+    padding: 24px 16px;
+    @include min(md) {
+      padding: 60px 48px 60px;
+    }
+    h3 {
+      @include title-sm($margin-bottom: 0);
+      color: var(--color-offblack);
+      text-align: center;
+    }
+  }
+  &__modal-card-name {
+    @include title-sm($margin-bottom: 0);
+    color: var(--color-offblack);
+  }
+  &__modal-actions {
+    padding: 24px 16px;
+    border-top: 1px solid var(--color-brand-gray-200);
+    @include min(md) {
+      padding: 24px 60px;
+    }
+  }
+  &__modal-cancel {
+    @include title-xs($margin-bottom: 0, $letter-spacing: 1.25px);
+    text-transform: uppercase;
+    color: var(--color-brand-violet-500);
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+  }
+  &__modal-leave {
+    @include title-xs($margin-bottom: 0, $letter-spacing: 1.25px);
+    text-transform: uppercase;
+    color: var(--color-brand-blue-500);
+    &:hover {
+      color: var(--color-brand-blue-800);
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  &__sort-label {
+    font-size: 14px;
+    color: var(--color-brand-gray-600);
+  }
+  &__sort-select {
+    padding: 8px 12px;
+    border: 1px solid var(--color-brand-blue-200);
+    border-radius: var(--rounded-sm);
+    font-size: 14px;
+    color: var(--color-brand-blue-800);
+    background-color: var(--color-white);
+    cursor: pointer;
+    &:focus {
+      outline: 2px solid var(--color-brand-blue-500);
+      outline-offset: -2px;
+    }
+  }
+  &__hidden-label {
+    display: inline-block;
+    font-size: 12px;
+    font-family: var(--font-whitney-semibold);
+    color: var(--color-brand-violet-500);
+    letter-spacing: 0.25px;
+    margin-top: 4px;
+  }
+  &__loading {
+    padding: 48px 0;
+    color: var(--color-brand-gray-600);
+    font-size: 16px;
+  }
+}

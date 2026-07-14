@@ -1,0 +1,11 @@
+//For storybook only so that it can get the google font for the custom Material Icon component
+@font-face {
+    font-family: 'Material Icons Outlined';
+    src: url('/fonts/MaterialIconsOutlined-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root {
+    --font-material-icons-outlined: 'Material Icons Outlined';
+  }

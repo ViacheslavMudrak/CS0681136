@@ -1,0 +1,22 @@
+.external-link-banner {
+  background-color: var(--color-brand-blue-bglight);
+  padding: 40px 20px;
+  border-radius: var(--rounded-lg);
+  @include min(md) {
+    padding: 72px 104px;
+  }
+  h2 {
+    @include title-sm($margin-bottom: 0, $letter-spacing: .25px, $font-family: 'Whitney-Semibold');
+    color: var(--color-offblack);
+  }
+   p {
+    margin-bottom: 0;
+   }
+   &__image-container {
+    img {
+      max-height: 40px;
+      min-height: 40px;
+      width: auto;
+    }
+   }
+}

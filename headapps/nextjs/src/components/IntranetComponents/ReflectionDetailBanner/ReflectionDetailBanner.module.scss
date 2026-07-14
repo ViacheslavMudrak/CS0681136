@@ -1,0 +1,91 @@
+.reflection-detail-banner {
+  overflow: hidden;
+  background: var(--reflection-gradient);
+  &__quote {
+    background-color: var(--color-white);
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--sm-box);
+    padding: 65px 20px 48px;
+    @include min(md) {
+      padding: 100px 50px 50px;
+    }
+    h2 {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '\201C';
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        font-size: 260px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--color-brand-blue-bglight);
+        z-index: -1;
+      }
+      @include title-lg($margin-bottom: 0);
+      @include min(md) {
+        @include title-xl($margin-bottom: 0);
+      }
+    }
+    h3 {
+      @include title-xs($margin-bottom: 0);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--color-brand-blue-800);
+    }
+  }
+  
+  &__quote-text {
+    flex-wrap: wrap;
+    span {
+      font-size: 30px;
+      font-family: var(--font-whitney-book-italic);
+      margin-bottom: 0;
+      line-height: 32px;
+      letter-spacing: .25px;
+      color: var(--color-brand-blue-800);
+      @include min(md) {
+        line-height: 48px;
+      }
+    }
+    q {
+      font-size: 30px;
+      font-family: var(--font-whitney-book-italic);
+    }
+  }
+  &__description {
+    margin-top: 40px;
+  }
+  &__card-container {
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include min(md) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  &__card {
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    &:last-child {
+      @include max(md) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__card-header {
+    h3 {
+      @include title-xs($font-size: 18px, $margin-bottom: 0);
+    }
+  }
+  &__card-icon {
+    background-color: var(--color-brand-blue-200);
+    border-radius: var(--rounded-full);
+    width: 45px;
+    height: 45px;
+    i {
+      color: var(--color-brand-blue-800);
+      font-size: 24px;
+    }
+  }
+}

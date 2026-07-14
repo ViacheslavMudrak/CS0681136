@@ -1,0 +1,14 @@
+import { JSX } from 'react';
+import { Placeholder } from '@sitecore-content-sdk/nextjs';
+
+import { PlaceholderProps } from 'lib/placeholder-props';
+
+const RelatedNewsArea = (props: PlaceholderProps): JSX.Element => {
+  return (
+    <>
+      <Placeholder name="related-news-area" rendering={props.rendering} />
+    </>
+  );
+};
+
+export default RelatedNewsArea;

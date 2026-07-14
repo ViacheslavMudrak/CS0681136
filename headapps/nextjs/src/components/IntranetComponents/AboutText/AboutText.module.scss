@@ -1,0 +1,17 @@
+.about-text {
+  h2 {
+    @include title-lg($margin-bottom: 0);
+    @include min(md) {
+      @include title-xl($margin-bottom: 0);
+    }
+  }
+  h3 {
+    @include title-sm($margin-bottom: 0);
+    color: var(--color-offblack); 
+  }
+  &--text-left {
+    @include min(md) {
+      flex-direction: row-reverse;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.gated-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/notfound.png');
+  background-color: var(--color-brand-blue-800);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  border-radius: var(--rounded-lg);
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(8, 26, 79, 0.85) 0%, rgba(8, 26, 79, 0.75) 100%);
+    z-index: 1;
+    border-radius: var(--rounded-lg);
+  }
+  &__content {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    i {
+      color: var(--color-white);
+      font-size: 24px;
+    }
+    p {
+      color: var(--color-white);
+    }
+  }
+  &__eyebrow {
+    color: var(--color-white);
+  }
+  &__headline {
+    color: var(--color-white);
+    @include title-lg($font-size: 30px, $margin-bottom: 0);
+    font-family: var(--font-whitney-semibold);
+  }
+  &__divider {
+    color: var(--color-white);
+    display: flex;
+    gap: 4px;
+    &:before, &:after {
+      content: '\2014';
+    }
+  }
+}
