@@ -17,6 +17,7 @@ export class CustomEditingService extends EditingService {
     version,
     layoutKind,
     mode,
+	variantId,
   }: EditingOptions): Promise<{ layoutData: LayoutServiceData }> {
     const editingData = await super.fetchEditingData({
       itemId,
