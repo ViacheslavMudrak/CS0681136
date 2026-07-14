@@ -55,7 +55,7 @@
             "runCommand": "next:start"
 		},
         "nextjs": {
-          "path": "./nextjs",
+          "path": "./headapps/nextjs",
           "nodeVersion": "24.15.0",
           "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
           "enabled": true,
